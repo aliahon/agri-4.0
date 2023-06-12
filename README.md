@@ -1,2 +1,3 @@
-# website-agri-4.0
-le site web de notre start up AGRI 4.0
+## agri4.0 website
+
+This repository contains the source code for the agri4.0 website
