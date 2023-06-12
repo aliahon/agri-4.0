@@ -1,6 +1,8 @@
 "use client";
 
+// menu
 import { sidebarMenu } from "@/utils/Constants";
+//
 import Image from "next/image";
 import React from "react";
 import NavSectionDetails from "./NavSectionDetails";

@@ -15,6 +15,16 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
 
   const [navDetails, setNavDetails] = React.useState<null | any[]>(null);
 
+  const [selectedItem, setSelectedItem] = React.useState<null | any[]>(null);
+
+  const [arrSolutions, setArrSolutions] = React.useState<any[]>(
+    solutionsArr.slice(0, 6)
+  );
+
+  const [selectedItemName, setSelectedItemName] = React.useState<null | any>(
+    null
+  );
+
   useEffect(() => {
     if (selectedSection === "Solutions") {
       setNavDetails(solutions);
@@ -29,11 +39,23 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
     }
   }, [selectedSection]);
 
-  const [selectedItem, setSelectedItem] = React.useState<null | any[]>(null);
-
-  const [selectedItemName, setSelectedItemName] = React.useState<null | any>(
-    null
-  );
+  useEffect(() => {
+    if (selectedItemName === "Agriculture de précision") {
+      setArrSolutions(solutionsArr.slice(0, 6));
+    } else if (selectedItemName === "Aquaculture 4.0") {
+      setArrSolutions(solutionsArr.slice(6, 12));
+    } else if (selectedItemName === "Agroalimentaire 4.0") {
+      setArrSolutions(solutionsArr.slice(6, 12));
+    } else if (selectedItemName === "Smart cities") {
+      setArrSolutions(solutionsArr.slice(6, 12));
+    } else if (selectedItemName === "Durabilite") {
+      setArrSolutions(solutionsArr.slice(6, 12));
+    } else if (selectedItemName === "CO-R&D") {
+      setArrSolutions(solutionsArr.slice(6, 12));
+    } else if (selectedItemName === "Conseil") {
+      setArrSolutions(solutionsArr.slice(6, 12));
+    }
+  }, [selectedItemName]);
 
   const handleSelectedItem = (item: any) => {
     if (item === selectedItem) {
@@ -44,6 +66,7 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
   };
 
   // TODO: Other navbar items details [Devices, Sectors, More ...]
+  console.log(solutions);
 
   return (
     <div className="absolute left-0 w-full py-6 transition duration-300 ease-in-out transform bg-white h-[600px] px-14 z-90 top-14 ">
@@ -96,7 +119,7 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
             <div className="w-full">
               <hr className="w-1/2 my-2 mb-5 border-gray-300" />
               <div className="grid items-center grid-cols-2 gap-7">
-                {solutionsArr?.map((item, i) => (
+                {arrSolutions?.map((item, i) => (
                   <div
                     key={i}
                     className="relative flex flex-col max-w-[285px] space-y-2"
@@ -120,19 +143,18 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
               <h1 className="mt-4 text-sm font-semibold uppercase">apps</h1>
               <hr className="w-1/2 my-2 mb-5 border-gray-300" />
               <div className="flex-col space-y-6">
-                {[1, 2].map((item, i) => (
+                {/* @ts-ignore */}
+                {solutions[selectedItem]?.map((item: any, i: number) => (
                   <div
                     key={i}
                     className="flex flex-col max-w-[285px] space-y-2"
                   >
                     <span className="w-8 h-8 p-4 bg-blue-100 rounded-full"></span>
                     <span className="text-sm font-semibold text-gray-700">
-                      Frigo.ma
+                      {item?.name}
                     </span>
                     <p className="text-sm leading-snug text-justify text-gray-400">
-                      AGRI 4.0 propose des solutions de gestion à distance des
-                      chambres froides ; des cartes électroniques gérées par des
-                      applications web et mobile
+                      {JSON.stringify(item)}
                     </p>
                   </div>
                 ))}

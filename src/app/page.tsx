@@ -9,7 +9,7 @@ export default function Home() {
     <main className="flex flex-col text-justify pt-14">
       <section className="flex flex-col justify-center w-full h-full px-8 py-20 border-b-8 md:px-20 main-section bg-gradient-to-r border-b-secondary">
         <h1
-          className="text-3xl font-bold md:text-5xl drop-shadow-md"
+          className="text-3xl font-bold md:text-7xl drop-shadow-md"
           // aos
           data-aos="fade-right"
           data-aos-offset="300"

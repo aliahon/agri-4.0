@@ -288,6 +288,7 @@ export const secteurs: SelectedProps[] = [
 
 export const solutions = [
   {
+    id: 1,
     name: "Agriculture de précision",
     icon: <AgriPreciseLogo />,
     description:
@@ -311,18 +312,19 @@ export const solutions = [
     ],
     apps: [
       {
-        name: "App 1",
+        name: "Frigo.ma",
         description:
-          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+          "AGRI 4.0 propose des solutions de gestion à distance des chambres froides ; des cartes électroniques gérées par des applications web et mobile",
       },
       {
         name: "App 2",
         description:
-          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+          "AGRI 4.0 propose des solutions de gestion à distance des chambres froides ; des cartes électroniques gérées par des applications web et mobile",
       },
     ],
   },
   {
+    id: 2,
     name: "Aquaculture 4.0",
     icon: <AquaLogo />,
     description:
@@ -358,6 +360,7 @@ export const solutions = [
     ],
   },
   {
+    id: 3,
     name: "Agroalimentaire 4.0",
     icon: <AgroLogo />,
     description:
@@ -393,6 +396,7 @@ export const solutions = [
     ],
   },
   {
+    id: 4,
     name: "Smart cities",
     icon: <SmartCitiesLogo />,
     description:
@@ -428,6 +432,7 @@ export const solutions = [
     ],
   },
   {
+    id: 5,
     name: "Durabilite",
     icon: <DurabiliteLogo />,
     description:
@@ -463,6 +468,7 @@ export const solutions = [
     ],
   },
   {
+    id: 6,
     name: "CO-R&D",
     icon: <CoRdLogo />,
     description:
@@ -498,6 +504,7 @@ export const solutions = [
     ],
   },
   {
+    id: 7,
     name: "Conseil",
     icon: <ConseilLogo />,
     description:
@@ -574,5 +581,55 @@ export const solutionsArr = [
     desc: "Nous utilisons des capteurs pour mesurer les niveaux d'humidité du sol, de nutriments et de pH...",
     imgUrl: "/solutions/robotic.jpg",
     sectorId: 1,
+  },
+  // smart cities
+  {
+    id: 7,
+    name: "Gestion d'énergie",
+    desc: "Grâce à une appareil connecté au compteur, il sera possible de visualiser la consommation énergétique...",
+    imgUrl: "/solutions/smartparking.jpg",
+    sectorId: 4,
+  },
+  {
+    id: 8,
+    name: "Gestion d'irrigation",
+    desc: "En utilisation l’IOT; l’irrigation intelligente déclenche l’arrosage en temps opportun et en quantité optimale...",
+    imgUrl: "/solutions/smartparking.jpg",
+    sectorId: 4,
+  },
+  {
+    id: 9,
+    name: "Gestion de l'éclairage",
+    desc: "La surveillance du climat pour les cultures consiste à observer et à mesurer l'impact du temps et du climat...",
+    imgUrl: "/solutions/smartparking.jpg",
+    sectorId: 4,
+  },
+  {
+    id: 10,
+    name: "Gestion de transport",
+    desc: "Pour les sociétés de transport, nous offrons une application leur permettant de mieux gérer leur flotte de véhicules...",
+    imgUrl: "/solutions/smartparking.jpg",
+    sectorId: 4,
+  },
+  {
+    id: 11,
+    name: "Gestion de parking",
+    desc: "AGRI 4.0 offre une solution de gestion de parking permettant La gestion intelligente des parkings en utilisant...",
+    imgUrl: "/solutions/smartparking.jpg",
+    sectorId: 4,
+  },
+  {
+    id: 12,
+    name: "Traffic management",
+    desc: "Nos solutions offrent une multitude de services visant à mieux organiser le trafic routier. Nous utilisons...",
+    imgUrl: "/solutions/smartparking.jpg",
+    sectorId: 4,
+  },
+  {
+    id: 13,
+    name: "Environnement intelligent",
+    desc: "L'environnement intelligent intègre des technologies avancées dans notre environnement quotidien...",
+    imgUrl: "/solutions/smartparking.jpg",
+    sectorId: 4,
   },
 ];
