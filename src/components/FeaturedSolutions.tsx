@@ -122,6 +122,7 @@ const FeaturedSolutionCard = ({
           alt="content"
           className="object-cover object-center w-full h-full"
           src={solution?.image || "/solutions/frigo.png"}
+          loader={({ src }) => src}
           width={503}
           height={503}
         />

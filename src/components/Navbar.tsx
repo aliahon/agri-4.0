@@ -40,6 +40,7 @@ const Navbar = () => {
             height="45"
             blurDataURL={"/logo.svg"}
             className="w-20 pr-8 mr-2 border-r-2 border-gray-200"
+            loader={({ src }) => src}
           />
         </Link>
       </div>

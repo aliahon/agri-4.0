@@ -60,6 +60,7 @@ const Clients = () => {
               className="object-contain w-28 h-28 grayscale hover:grayscale-0 "
               width={200}
               height={200}
+              loader={({ src }) => src}
             />
           </div>
         ))}

@@ -130,6 +130,7 @@ const NewsletterCard = ({ title, description, image, link }: any) => {
         className="object-cover w-full h-48 rounded-2xl"
         width={200}
         height={200}
+        loader={({ src }) => src}
       />
       <div>
         <h1 className="text-xl font-semibold">{title}</h1>

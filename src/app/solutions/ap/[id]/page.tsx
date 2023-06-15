@@ -6,6 +6,9 @@ import Slider from "react-slick";
 import { gsap } from "gsap";
 // helper functions
 import { getSolutionsBySectorId } from "@/utils/helperFunctions";
+import Drone from "@/components/animate/Drone";
+import Satellite from "@/components/animate/Satellite";
+import Camera from "@/components/animate/Camera";
 
 const Solution = ({ params }: any) => {
   const NextArrow = (props: any) => {
@@ -155,25 +158,12 @@ const Solution = ({ params }: any) => {
           </p>
         </div>
         <div className="relative">
-          {/* <Image
-            src="/Vector.png"
-            width={500}
-            height={500}
-            alt="Vision et Traitement D’image"
-            className="absolute top-0 left-0 z-0 rounded-xl"
-          />
-          <Image
-            src="/solutions/sig.png"
-            width={350}
-            height={300}
-            alt="Vision et Traitement D’image"
-            className="z-50 rounded-xl"
-          /> */}
           <Image
             src="/TRAI.png"
             width={500}
             height={500}
             alt="Vision et Traitement D’image"
+            loader={({ src }) => src}
           />
         </div>
       </div>
@@ -184,7 +174,8 @@ const Solution = ({ params }: any) => {
       >
         All Services
       </h1>
-      <section className="flex items-center justify-between gap-10 px-24">
+
+      <section className="relative flex items-center justify-between gap-10 px-24">
         <div className="flex flex-col max-w-2xl space-y-3 text-justify">
           <h1 className="mb-5 text-4xl font-bold">Drone</h1>
           <ul className="space-y-3 list-disc marker:text-secondary">
@@ -220,15 +211,22 @@ const Solution = ({ params }: any) => {
             width={400}
             height={400}
             alt="Drone"
-            className="rounded-xl"
+            className="z-[9999] rounded-xl"
             data-aos="zoom-out-left"
+            loader={({ src }) => src}
           />
           <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
           <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
           <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+          {/* Drone animation */}
+          <div className="absolute -z-10 bottom-6 left-20 opacity-20">
+            <Drone />
+          </div>
+          {/*  */}
         </div>
       </section>
+
       {/* devices */}
       <section className="flex flex-col px-24 pt-12 pb-24">
         <h1 className="text-2xl font-bold text-[#00594C] mb-8">Devices</h1>
@@ -253,13 +251,19 @@ const Solution = ({ params }: any) => {
             width={500}
             height={500}
             alt="Drone"
-            className="rotate-180 rounded-xl drop-shadow-sm"
+            className="z-50 rotate-180 rounded-xl drop-shadow-sm"
             data-aos="zoom-out-right"
+            loader={({ src }) => src}
           />
           <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
           <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
           <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+          {/* Satellite animation */}
+          <div className="absolute left-0 z-0 -top-20 opacity-20">
+            <Satellite />
+          </div>
+          {/*  */}
         </div>
 
         <div className="flex flex-col max-w-lg space-y-3 text-justify">
@@ -322,14 +326,20 @@ const Solution = ({ params }: any) => {
             width={300}
             height={300}
             alt="Drone"
-            className="drop-shadow-sm"
+            className="z-50 drop-shadow-sm"
             unoptimized
             data-aos="zoom-out-left"
+            loader={({ src }) => src}
           />
           <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
           <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
           <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+          {/* Camera animation */}
+          {/* <div className="absolute right-0 -z-10 -top-20 opacity-20">
+            <Camera />
+          </div> */}
+          {/*  */}
         </div>
       </section>
     </section>
@@ -355,6 +365,7 @@ const Card = ({
         height={500}
         alt={title}
         className="object-cover w-full mb-5 rounded-xl"
+        loader={({ src }) => src}
       />
       <div>
         <h1 className="text-xl font-bold">{title}</h1>

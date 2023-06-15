@@ -6,6 +6,7 @@ import { secteurs } from "@/utils/Constants";
 import { gsap } from "gsap";
 // types
 import type { SelectedProps } from "@/utils/types";
+import Link from "next/link";
 // ==========================================================
 
 const ActivitySectors = () => {
@@ -154,7 +155,12 @@ const ActivitySectors = () => {
                 >
                   {_?.icon}
                 </span>
-                <span className="text-sm md:font-semibold">{_?.name}</span>
+                <Link
+                  className="text-sm md:font-semibold"
+                  href={`/solutions/ap/1`}
+                >
+                  {_?.name}
+                </Link>
               </div>
             ))}
           </div>

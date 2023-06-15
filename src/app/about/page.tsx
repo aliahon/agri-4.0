@@ -1,3 +1,5 @@
+"use client";
+
 import Clients from "@/components/Clients";
 import Image from "next/image";
 import React from "react";
@@ -43,6 +45,7 @@ const About = () => {
             className="object-cover h-[300px] rounded-xl w-96"
             width={1920}
             height={1080}
+            loader={({ src }) => src}
           />
         </div>
       </section>
@@ -55,6 +58,7 @@ const About = () => {
             className="object-cover rounded-xl w-96 h-[300px]"
             width={1920}
             height={1080}
+            loader={({ src }) => src}
           />
         </div>
         <div className="flex-col justify-center ">
