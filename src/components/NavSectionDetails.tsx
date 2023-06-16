@@ -68,6 +68,19 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
   // TODO: Other navbar items details [Devices, Sectors, More ...]
   console.log(solutions);
 
+  useEffect(() => {
+    // setSelectedOpen false when click outside the navbar
+    const handleClickOutside = (e: any) => {
+      if (e.target.id === "navbar") {
+        setIsSelectedOpen(false);
+      }
+    };
+    window.addEventListener("click", handleClickOutside);
+    return () => {
+      window.removeEventListener("click", handleClickOutside);
+    };
+  }, [setIsSelectedOpen]);
+
   return (
     <div className="absolute left-0 w-full py-6 transition duration-300 ease-in-out transform bg-white h-[600px] px-14 z-90 top-14 ">
       <div className="flex items-center justify-center w-full h-full">
@@ -108,61 +121,69 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
             }}
           >
             <h1 className="text-xl font-bold text-gray-700 hover:underline">
-              {selectedItemName}
+              {selectedSection === "Solutions" && selectedItemName}
             </h1>
           </Link>
           <p className="mb-5 text-sm leading-snug text-gray-400">
-            L&apos;agriculture de précision est une approche qui permet
-            d&apos;optimiser la production agricole
+            {selectedSection === "Solutions" &&
+              "L'agriculture de précision est une approche qui permet d'optimiser la production agricole"}
           </p>
           <div className="flex justify-between">
             <div className="w-full">
               <hr className="w-1/2 my-2 mb-5 border-gray-300" />
               <div className="grid items-center grid-cols-2 gap-7">
-                {arrSolutions?.map((item, i) => (
-                  <div
-                    key={i}
-                    className="relative flex flex-col max-w-[285px] space-y-2"
-                  >
-                    <span className="text-sm font-semibold text-green-700 ">
-                      {item?.name}
-                    </span>
-                    {item?.name === "Climat Monitoring" && (
-                      <span className="absolute -top-1.5 right-24 px-2 text-xs font-semibold text-white bg-[#2DB273] rounded-lg">
-                        NEW
+                {selectedSection === "Solutions" ? (
+                  arrSolutions?.map((item, i) => (
+                    <div
+                      key={i}
+                      className="relative flex flex-col max-w-[285px] space-y-2"
+                    >
+                      <span className="text-sm font-semibold text-green-700 ">
+                        {item?.name}
                       </span>
-                    )}
-                    <p className="text-sm leading-snug text-gray-400">
-                      {item?.desc}
-                    </p>
-                  </div>
-                ))}
+                      {item?.name === "Climat Monitoring" && (
+                        <span className="absolute -top-1.5 right-24 px-2 text-xs font-semibold text-white bg-[#2DB273] rounded-lg">
+                          NEW
+                        </span>
+                      )}
+                      <p className="text-sm leading-snug text-gray-400">
+                        {item?.desc}
+                      </p>
+                    </div>
+                  ))
+                ) : (
+                  <h1 className="text-sm font-semibold text-gray-700">
+                    Under Constraction
+                  </h1>
+                )}
               </div>
             </div>
-            <div className="w-1/2">
-              <h1 className="mt-4 text-sm font-semibold uppercase">apps</h1>
-              <hr className="w-1/2 my-2 mb-5 border-gray-300" />
-              <div className="flex-col space-y-6">
-                {/* @ts-ignore */}
-                {solutions[selectedItem]?.map((item: any, i: number) => (
-                  <div
-                    key={i}
-                    className="flex flex-col max-w-[285px] space-y-2"
-                  >
-                    <span className="w-8 h-8 p-4 bg-blue-100 rounded-full"></span>
-                    <span className="text-sm font-semibold text-gray-700">
-                      {item?.name}
-                    </span>
-                    <p className="text-sm leading-snug text-justify text-gray-400">
-                      {JSON.stringify(item)}
-                    </p>
-                  </div>
-                ))}
+            {selectedSection === "Solutions" && (
+              <div className="w-1/2">
+                <h1 className="mt-4 text-sm font-semibold uppercase">apps</h1>
+                <hr className="w-1/2 my-2 mb-5 border-gray-300" />
+                <div className="flex-col space-y-6">
+                  {/* @ts-ignore */}
+                  {solutions[selectedItem]?.map((item: any, i: number) => (
+                    <div
+                      key={i}
+                      className="flex flex-col max-w-[285px] space-y-2"
+                    >
+                      <span className="w-8 h-8 p-4 bg-blue-100 rounded-full"></span>
+                      <span className="text-sm font-semibold text-gray-700">
+                        {item?.name}
+                      </span>
+                      <p className="text-sm leading-snug text-justify text-gray-400">
+                        {JSON.stringify(item)}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+                <button className="mt-6 text-sm font-semibold text-secondary">
+                  View all solutions -&gt;{" "}
+                </button>
               </div>
-              <button className="mt-6 text-sm font-semibold text-secondary">
-                View all solutions -&gt;{" "}
-              </button>
-            </div>
+            )}
           </div>
         </div>
         {/* second section */}

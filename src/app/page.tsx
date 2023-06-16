@@ -14,7 +14,6 @@ export default function Home() {
           data-aos="fade-right"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="500"
         >
           We Innovate for{" "}
           <span className="block text-secondary drop-shadow-md">
@@ -56,3 +55,10 @@ export default function Home() {
     </main>
   );
 }
+
+// ===============================================
+// TODO: Routing for all titles
+// TODO: Add responsive layouts
+
+// * Date: 16-06-2021
+// ===============================================
