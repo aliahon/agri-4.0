@@ -47,7 +47,7 @@
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 0)
     ),
-    url("https://images.pexels.com/photos/1297307/pexels-photo-1297307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    url("/about.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

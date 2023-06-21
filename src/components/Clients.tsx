@@ -6,12 +6,14 @@ import Slider from "react-slick";
 
 const Clients = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 7,
+    slidesToShow: 6,
     slidesToScroll: 2,
     initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1024,

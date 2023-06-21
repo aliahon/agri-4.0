@@ -82,7 +82,7 @@ const Sector = ({ params }: any) => {
         {/* SECOND SECTION */}
         <section className="flex items-center justify-between px-24 py-10">
           <div>
-            {solutionsArr[openTab - 1].name !==
+            {/* {solutionsArr[openTab - 1].name !==
             "Vision et traitement d’image" ? (
               <Image
                 src={solutionsArr[openTab - 1].imgUrl}
@@ -94,17 +94,18 @@ const Sector = ({ params }: any) => {
               />
             ) : (
               <Drone />
-            )}
+            )} */}
+            {solutionsArr[openTab - 1].animation}
           </div>
           <div className="flex-col justify-center ">
             <h1 className="text-xl font-bold text-primary">
               {solutionsArr[openTab - 1].name}
             </h1>
-            <p className="max-w-3xl mt-3 text-sm text-gray-700">
+            <p className="max-w-3xl mt-3 text-sm text-gray-500">
               {solutionsArr[openTab - 1].desc}
             </p>
             <Link href={`/solutions/ap/${solutionsArr[openTab - 1].id}`}>
-              <button className="px-4 py-1.5 mt-4 border rounded-xl border-secondary text-primary hover:bg-secondary hover:text-white transition duration-300 ease-in-out">
+              <button className="px-4 py-1.5 mt-4 border-2 text-primary rounded-xl border-secondary hover:bg-secondary hover:text-white transition duration-300 ease-in-out">
                 Discover the devices and solutions
               </button>
             </Link>
@@ -112,10 +113,16 @@ const Sector = ({ params }: any) => {
         </section>
         <section className="flex items-center justify-between px-24 py-10 bg-gray-100">
           <div className="flex-col justify-center ">
-            <h1 className="text-xl font-bold text-secondary">
+            <h1
+              className="text-xl font-bold text-secondary"
+              data-aos="fade-left"
+            >
               Pourquoi l’agriculture de précision
             </h1>
-            <p className="max-w-2xl mt-3 text-sm text-justify text-gray-700">
+            <p
+              className="max-w-2xl mt-3 text-sm text-justify text-gray-700"
+              data-aos="fade-left"
+            >
               L`agriculture de précision est une approche de l`agriculture qui
               utilise les technologies de l`information et de la communication
               pour optimiser la gestion des cultures. Cette méthode permet de
@@ -157,10 +164,16 @@ const Sector = ({ params }: any) => {
             />
           </div>
           <div className="flex-col justify-center ">
-            <h1 className="text-xl font-bold text-primary">
+            <h1
+              className="text-xl font-bold text-primary"
+              data-aos="fade-right"
+            >
               Parmi nos missions à Agri 4.0 :
             </h1>
-            <ul className="max-w-3xl mt-3 space-y-5 text-sm text-justify text-gray-700 list-disc marker:text-secondary marker:font-bold ">
+            <ul
+              className="max-w-3xl mt-3 space-y-5 text-sm text-justify text-gray-700 list-disc marker:text-secondary marker:font-bold "
+              data-aos="fade-right"
+            >
               <li>
                 Rendre l’agriculture rentable quelle que soit la taille du
                 projet : réduire la consommation en intrants et en énergie et

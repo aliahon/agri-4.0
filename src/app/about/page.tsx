@@ -40,7 +40,7 @@ const About = () => {
         </div>
         <div>
           <Image
-            src="https://dummyimage.com/1203x703"
+            src="/why.jpeg"
             alt="why us"
             className="object-cover h-[300px] rounded-xl w-96"
             width={1920}
@@ -87,13 +87,13 @@ const About = () => {
       <section className="flex justify-between px-24 py-10 mb-5">
         {[
           [
-            "",
+            "/about/culture.svg",
             "culture",
             "Partage, Collaboration, Professionnalisme, Respect.",
           ],
-          ["", "vision", "Servir l’agriculture."],
+          ["/about/vision.svg", "vision", "Servir l’agriculture."],
           [
-            "",
+            "/about/value.svg",
             "values",
             "Citoyenneté, Engagemen, Ethique, Responsabilité sociétale.",
           ],
@@ -111,9 +111,14 @@ export default About;
 
 const Card = ({ icon, title, desc }: any) => (
   <div className="flex flex-col items-center justify-center w-64 h-64 gap-6">
-    <div className="flex items-center justify-center w-24 h-24 rounded-full bg-secondary">
-      {icon}
-    </div>
+    <Image
+      src={icon}
+      alt={title}
+      className="object-cover w-24 h-24"
+      width={100}
+      height={100}
+      loader={({ src }) => src}
+    />
     <h1 className="mt-5 text-2xl font-bold uppercase text-primary">{title}</h1>
     <p className="max-w-md mt-3 text-sm text-center text-gray-500">{desc}</p>
   </div>

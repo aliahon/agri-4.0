@@ -11,7 +11,7 @@ import { gsap } from "gsap";
 const latestSolutions = [
   {
     name: "FRIGO",
-    image: "/solutions/frigo.png",
+    image: "/frigor.png",
     description:
       "AGRI 4.0 propose des solutions de gestion à distance des chambres froides ; des cartes électroniques gérées par des applications web et mobile. Nos capteurs permettent – suivant le besoin du client – de Remonter en temps réel le flux d’entrée/sortie, la température, l’humidité...",
   },

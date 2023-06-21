@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
-import droneAnimation from "@/animations/droneCamera.json";
+import droneAnimation from "@/animations/drone.json";
 
 const Drone = ({ className = "" }: { className?: string }) => {
   const defaultOptions = {
@@ -15,7 +15,7 @@ const Drone = ({ className = "" }: { className?: string }) => {
     <div
       className={`flex justify-center items-center cursor-none ${className}`}
     >
-      <Lottie options={defaultOptions} height={300} width={300} />
+      <Lottie options={defaultOptions} height={300} width={400} />
     </div>
   );
 };

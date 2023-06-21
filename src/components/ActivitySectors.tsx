@@ -51,7 +51,11 @@ const ActivitySectors = () => {
       : "#595866";
 
   return (
-    <section className="flex flex-col md:flex-row justify-center w-full py-6 bg-[#F5F5F5]">
+    <section
+      className="flex flex-col md:flex-row justify-center w-full py-6 bg-[#F5F5F5]
+      
+    "
+    >
       <div className="flex-col items-center justify-center p-4 h-46 md:h-full md:p-10 md:w-1/4 bg-primary">
         <h1 className="text-2xl font-bold text-white md:text-4xl">
           Secteurs d&apos;activités
@@ -60,7 +64,7 @@ const ActivitySectors = () => {
           {secteurs?.map((item, i) => (
             <li
               key={i}
-              className="p-1 transition duration-300 ease-in-out transform border-2 rounded-md cursor-pointer md:py-2 md:pl-5 md:rounded-3xl border-secondary md:hover:-translate-y-1 hover:bg-secondary"
+              className="p-1 transition duration-300 ease-in-out transform border-2 rounded-md cursor-pointer text-md md:py-2 md:pl-5 md:rounded-3xl border-secondary md:hover:-translate-y-1 hover:bg-secondary"
               onClick={() => {
                 handleChangeSector(item);
               }}
@@ -81,7 +85,7 @@ const ActivitySectors = () => {
       >
         <div
           id="img-container"
-          className="relative flex items-center justify-center w-full h-full"
+          className="relative flex items-center justify-center w-[500px] h-full"
         >
           <div
             className="z-10 object-cover object-center md:h-96 h-64 w-64 md:w-[400px] shadow-xl rounded-xl"
@@ -111,25 +115,27 @@ const ActivitySectors = () => {
         </div>
 
         <div className="">
-          <h1
-            className={`text-2xl md:text-4xl font-bold ${
-              selected?.name === "Agriculture de précision"
-                ? "text-[#2DB273]"
-                : selected?.name === "Aquaculture 4.0"
-                ? "text-[#809DD0]"
-                : selected?.name === "Agroalimentaire 4.0"
-                ? "text-[#F18968]"
-                : selected?.name === "Smart cities"
-                ? "text-[#666A92]"
-                : selected?.name === "Durabilite"
-                ? "text-[#4DA99C]"
-                : selected?.name === "CO-R&D"
-                ? "text-[#315E50]"
-                : "text-[#595866]"
-            }`}
-          >
-            {selected?.name}
-          </h1>
+          <Link href="/sector/1">
+            <h1
+              className={`text-2xl md:text-4xl font-bold hover:underline ${
+                selected?.name === "Agriculture de précision"
+                  ? "text-[#2DB273]"
+                  : selected?.name === "Aquaculture 4.0"
+                  ? "text-[#809DD0]"
+                  : selected?.name === "Agroalimentaire 4.0"
+                  ? "text-[#F18968]"
+                  : selected?.name === "Smart cities"
+                  ? "text-[#666A92]"
+                  : selected?.name === "Durabilite"
+                  ? "text-[#4DA99C]"
+                  : selected?.name === "CO-R&D"
+                  ? "text-[#315E50]"
+                  : "text-[#595866]"
+              }`}
+            >
+              {selected?.name}
+            </h1>
+          </Link>
           <p className="mt-5 text-base leading-snug md:text-md">
             {selected?.desc}
           </p>

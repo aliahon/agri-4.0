@@ -1,3 +1,4 @@
+import Drone from "@/components/animate/Drone";
 import {
   AgriPreciseLogo,
   AgroLogo,
@@ -8,6 +9,11 @@ import {
   SmartCitiesLogo,
 } from "./icons";
 import { SelectedProps } from "./types";
+import Irrigation from "@/components/animate/Water";
+import Agribot from "@/components/animate/Agribot";
+import Weather from "@/components/animate/Weather";
+import Dashboard from "@/components/animate/Dashboard";
+import Fertigation from "@/components/animate/Fertigation";
 
 /*
  ? @var: this is the nav bar menu
@@ -547,49 +553,57 @@ export const solutionsArr = [
     name: "Vision et traitement d’image",
     desc: "La vision et le traitement d'image sont des outils essentiels en agriculture de précision pour aider les agriculteurs...",
     imgUrl: "/solutions/sig.png",
+    animation: <Drone />,
     sectorId: 1,
   },
   {
     id: 2,
     name: "Gestion de l’eau et du sol",
-    desc: "La gestion de l'eau et du sol en agriculture de précision consiste à utiliser des technologies de pointe ...",
+    desc: "En utilisant des capteurs smart et des applications AGRI 4.0, les agri- culteurs peuvent également prévoir les besoins en eau et en nutri- ments de leurs cultures",
     imgUrl: "/solutions/waterm.jpg",
+    animation: <Irrigation />,
     sectorId: 1,
   },
   {
     id: 3,
-    name: "Climat Monitoring",
-    desc: "La surveillance du climat pour les cultures consiste à observer et à mesurer l'impact du temps et du climat ...",
+    name: "Robotique",
+    desc: "L'utilisation des robots dans l'agriculture de précision est de plus en plus courante et a de nombreux avantages potentiels. Les robots peuvent être utilisés dans : le désherbage, la Plantation, Récolte, Pulvérisation, Surveillance et autres...",
     imgUrl: "/solutions/wm.jpg",
+    animation: <Agribot />,
     sectorId: 1,
   },
   {
     id: 4,
-    name: "Farm management",
-    desc: "Nous mettons à la disposition de nos clients des applications leur permettant de gérer leurs cultures...",
+    name: "Suivi du climat",
+    desc: "La surveillance du climat pour les cultures consiste à observer et à mesurer l'impact du temps et du climat sur la production agricole. Cela comprend la surveillance de variables telles que la température, les précipitations, l'humidité,...",
     imgUrl: "/solutions/farmm.jpeg",
+    animation: <Weather />,
   },
   {
     id: 5,
-    name: "Robotique",
-    desc: "L'utilisation des robots dans l'agriculture de précision est de plus en plus courante et a de nombreux avantages...",
+    name: "IOT",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic",
     imgUrl: "/solutions/robotic.jpg",
+    animation: <Irrigation />,
   },
   {
     id: 6,
-    name: "Fertigation connectée",
-    desc: "Nous utilisons des capteurs pour mesurer les niveaux d'humidité du sol, de nutriments et de pH...",
+    name: "Fertigation connecté",
+    desc: "Nous utilisons des captures pour mesurer les niveaux d'humidité du sol, de nutriments et de pH, ainsi que des dispositifs de contrôle pour ajuster les doses d'eau et d'engrais en fonction des besoins de la plante...",
     imgUrl: "/solutions/robotic.jpg",
     sectorId: 1,
+    animation: <Fertigation />,
   },
-  // smart cities
+
   {
     id: 7,
-    name: "Gestion d'énergie",
-    desc: "Grâce à une appareil connecté au compteur, il sera possible de visualiser la consommation énergétique...",
+    name: "Farm management",
+    desc: "Nous mettons à la disposition de nos clients des applications leur permettant de gérer leurs cultures de la meilleure façon qui soit. Nous proposons des application qui aide les agriculteurs ....",
     imgUrl: "/solutions/smartparking.jpg",
     sectorId: 4,
+    animation: <Dashboard />,
   },
+  // smart cities
   {
     id: 8,
     name: "Gestion d'irrigation",

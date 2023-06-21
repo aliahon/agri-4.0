@@ -146,14 +146,14 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
                           NEW
                         </span>
                       )}
-                      <p className="text-sm leading-snug text-gray-400">
+                      <p className="text-sm leading-snug text-gray-400 line-clamp-4">
                         {item?.desc}
                       </p>
                     </div>
                   ))
                 ) : (
                   <h1 className="text-sm font-semibold text-gray-700">
-                    Under Constraction
+                    Under Construction
                   </h1>
                 )}
               </div>

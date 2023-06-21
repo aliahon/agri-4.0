@@ -1,8 +1,8 @@
 import React from "react";
 import Lottie from "react-lottie";
-import cameraAnimation from "@/animations/erigation.json";
+import cameraAnimation from "@/animations/stationTete.json";
 
-const Camera = ({ className = "" }: { className?: string }) => {
+const Fertigation = ({ className = "" }: { className?: string }) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -15,9 +15,9 @@ const Camera = ({ className = "" }: { className?: string }) => {
     <div
       className={`flex justify-center items-center cursor-none ${className}`}
     >
-      <Lottie options={defaultOptions} height={200} width={200} />
+      <Lottie options={defaultOptions} height={300} width={400} />
     </div>
   );
 };
 
-export default Camera;
+export default Fertigation;
