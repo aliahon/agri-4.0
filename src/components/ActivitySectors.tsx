@@ -7,6 +7,10 @@ import { gsap } from "gsap";
 // types
 import type { SelectedProps } from "@/utils/types";
 import Link from "next/link";
+// swiper
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
 // ==========================================================
 
 const ActivitySectors = () => {
@@ -52,11 +56,11 @@ const ActivitySectors = () => {
 
   return (
     <section
-      className="flex flex-col md:flex-row justify-center w-full py-6 bg-[#F5F5F5]
-      
+      className="flex flex-col md:flex-row justify-center w-full bg-[#F5F5F5]
+      h-[600px]
     "
     >
-      <div className="flex-col items-center justify-center p-4 h-46 md:h-full md:p-10 md:w-1/4 bg-primary">
+      <div className="flex-col items-center justify-center p-4 h-46 md:h-full md:p-10 md:w-1/3 bg-primary">
         <h1 className="text-2xl font-bold text-white md:text-4xl">
           Secteurs d&apos;activités
         </h1>
@@ -64,7 +68,7 @@ const ActivitySectors = () => {
           {secteurs?.map((item, i) => (
             <li
               key={i}
-              className="p-1 transition duration-300 ease-in-out transform border-2 rounded-md cursor-pointer text-md md:py-2 md:pl-5 md:rounded-3xl border-secondary md:hover:-translate-y-1 hover:bg-secondary"
+              className="transition duration-300 ease-in-out transform border-2 rounded-md cursor-pointer swiper-slide-next text-md md:py-2 md:pl-5 md:rounded-3xl border-secondary hover:bg-secondary"
               onClick={() => {
                 handleChangeSector(item);
               }}
@@ -75,7 +79,7 @@ const ActivitySectors = () => {
         </ul>
       </div>
       {/* Change content by the selected state */}
-      <div
+      {/* <div
         className="flex flex-col w-full gap-4 p-8 md:flex-row md:gap-16 md:py-24 md:px-28"
         ref={(el) => {
           if (el) {
@@ -171,8 +175,24 @@ const ActivitySectors = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
       {/* )} */}
+
+      <div className="w-full h-full bg-[#F5F5F5]">
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={1}
+          slideNextClass="swiper-slide-next"
+          slidePrevClass="swiper-slide-prev"
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide>Slide 1</SwiperSlide>
+          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>Slide 4</SwiperSlide>
+        </Swiper>
+      </div>
     </section>
   );
 };
