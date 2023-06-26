@@ -39,7 +39,7 @@ export const sidebarMenu = [
 
 export const secteurs: SelectedProps[] = [
   {
-    id: 1,
+    id: "slide1",
     img: "/events/agpre.jpg",
     name: "Agriculture de précision",
     desc: "L'agriculture de précision est une approche qui permet d'optimiser la production agricole en utilisant les technologies de l'information et de la communication pour prendre des décisions plus éclairées.",
@@ -75,7 +75,7 @@ export const secteurs: SelectedProps[] = [
     ],
   },
   {
-    id: 2,
+    id: "slide2",
     img: "/sectors/aquaculture.jpg",
     name: "Aquaculture 4.0",
     desc: "Nous intégrons des technologies avancées et des systèmes numériques dans l'industrie aquacole, dans le but d'améliorer l'efficacité, la durabilité et la rentabilité de la production. Cela comprend l'utilisation de capteurs, d'application",
@@ -111,7 +111,7 @@ export const secteurs: SelectedProps[] = [
     ],
   },
   {
-    id: 3,
+    id: "slide3",
     img: "/sectors/agroalimentaire.jpg",
     name: "Agroalimentaire 4.0",
     desc: "Usines intelligentes : les capteurs IoT et les appareils connectés peuvent aider à optimiser les processus de production, à améliorer l'efficacité et à réduire les temps d'arrêt.Maintenance prédictive...",
@@ -147,7 +147,7 @@ export const secteurs: SelectedProps[] = [
     ],
   },
   {
-    id: 4,
+    id: "slide4",
     img: "/sectors/smartCities.jpg",
     name: "Smart Cities",
     desc: "Les grandes villes marocaines ont un potentiel de développement considérable, mais leur croissance rapide crée des défis tels que la congestion urbaine et la pollution. Pour surmonter ces défis de manière...",
@@ -183,7 +183,7 @@ export const secteurs: SelectedProps[] = [
     ],
   },
   {
-    id: 5,
+    id: "slide5",
     img: "/sectors/durabilite.jpg",
     name: "Durabilite",
     desc: "En intégrant la durabilité dans nos activités, nous pouvons contribuer à créer un monde plus juste, équitable et durable pour les générations futures. Cela peut se faire à travers des actions telles que la réduction de l'utilisation ...",
@@ -219,7 +219,7 @@ export const secteurs: SelectedProps[] = [
     ],
   },
   {
-    id: 6,
+    id: "slide6",
     img: "/sectors/co-rd.jpg",
     name: "CO-R&D",
     desc: "Notre engagement envers la R&D ne relève pas d'un simple caprice, mais plutôt de notre conviction que c'est la pierre angulaire de la survie de toute entreprise, quelle que soit sa taille ou son modèle économique.",
@@ -255,7 +255,7 @@ export const secteurs: SelectedProps[] = [
     ],
   },
   {
-    id: 7,
+    id: "slide7",
     img: "/sectors/conseil.jpg",
     name: "Conseil",
     desc: "Agri 4.0 ne limite pas ses prestations à la vente des produits et services. Nous assurons également un accompagnement de qualité avec une équipe jeune et pluridisciplinaire ayant comme point...",

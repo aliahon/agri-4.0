@@ -14,6 +14,8 @@ import "swiper/css";
 // ==========================================================
 
 const ActivitySectors = () => {
+  const swiperRef = React.useRef<Swiper | null>(null);
+
   const [selected, setSelected] = React.useState<SelectedProps>(secteurs[0]);
 
   const handleChangeSector = (sector: any) => {
@@ -54,12 +56,18 @@ const ActivitySectors = () => {
       ? "#315E50"
       : "#595866";
 
+  const handleSwitch = (id: string) => {
+    if (swiperRef.current && id) {
+      const swiperInstance = swiperRef.current.swiper;
+      const slideIndex = Array.from(swiperInstance.slides).findIndex(
+        (slide: any) => slide.id === id
+      );
+      swiperInstance.slideTo(slideIndex);
+    }
+  };
+
   return (
-    <section
-      className="flex flex-col md:flex-row justify-center w-full bg-[#F5F5F5]
-      h-[600px]
-    "
-    >
+    <section className="flex flex-col md:flex-row justify-center w-full bg-[#F5F5F5]h-[600px]">
       <div className="flex-col items-center justify-center p-4 h-46 md:h-full md:p-10 md:w-1/3 bg-primary">
         <h1 className="text-2xl font-bold text-white md:text-4xl">
           Secteurs d&apos;activités
@@ -68,9 +76,10 @@ const ActivitySectors = () => {
           {secteurs?.map((item, i) => (
             <li
               key={i}
-              className="transition duration-300 ease-in-out transform border-2 rounded-md cursor-pointer swiper-slide-next text-md md:py-2 md:pl-5 md:rounded-3xl border-secondary hover:bg-secondary"
+              className="transition duration-300 ease-in-out transform border-2 rounded-md cursor-pointer text-md md:py-2 md:pl-5 md:rounded-3xl border-secondary hover:bg-secondary"
               onClick={() => {
                 handleChangeSector(item);
+                handleSwitch(item.id);
               }}
             >
               <span>{item?.name}</span>
@@ -178,19 +187,58 @@ const ActivitySectors = () => {
       </div> */}
       {/* )} */}
 
-      <div className="w-full h-full bg-[#F5F5F5]">
+      <div className="w-full md:w-[75%] h-full bg-[#F5F5F5] p-10">
         <Swiper
-          spaceBetween={50}
+          ref={swiperRef}
+          // spaceBetween={5}
           slidesPerView={1}
-          slideNextClass="swiper-slide-next"
-          slidePrevClass="swiper-slide-prev"
-          onSlideChange={() => console.log("slide change")}
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
         >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide
+            id="slide1"
+            className="flex flex-col w-full gap-4 md:flex-row"
+          >
+            <div className="relative">
+              <div className="bg-[#2DB273]  w-[400px] h-96 rounded-xl"></div>
+              <div className="bg-[#884ff1] w-[400px] h-96 rounded-xl absolute bottom-10 right-4 z-[99999]"></div>
+            </div>
+
+            {/* <div className="bg-green-500 w-72 h-72"></div> */}
+          </SwiperSlide>
+          <SwiperSlide id="slide2">
+            <div className="p-5 text-lg text-white rounded-lg w-96 h-96 bg-[#809DD0]">
+              2
+            </div>
+          </SwiperSlide>
+          <SwiperSlide id="slide3">
+            <div className="p-5 text-lg text-white rounded-lg w-96 h-96 bg-[#F18968]">
+              3
+            </div>
+          </SwiperSlide>
+          <SwiperSlide id="slide4" className="flex justify-between">
+            <div className="p-5 text-lg text-white rounded-lg w-96 h-96 bg-[#666A92]">
+              4
+            </div>
+            <span>dsdshdjshjdhsjdhjsdhjshd</span>
+          </SwiperSlide>
+          <SwiperSlide id="slide5">
+            <div className="p-5 text-lg text-white rounded-lg w-96 h-96 bg-[#4DA99C]">
+              5
+            </div>
+          </SwiperSlide>
+          <SwiperSlide id="slide6">
+            <div className="p-5 text-lg text-white rounded-lg w-96 h-96 bg-[#315E50]">
+              6
+            </div>
+          </SwiperSlide>
+          <SwiperSlide id="slide7">
+            <div className="p-5 text-lg text-white rounded-lg w-96 h-96 bg-[#595866]">
+              7
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
     </section>
