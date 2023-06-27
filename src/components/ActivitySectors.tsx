@@ -187,7 +187,7 @@ const ActivitySectors = () => {
       </div> */}
       {/* )} */}
 
-      <div className="w-full md:w-[75%] h-full bg-[#F5F5F5] p-10">
+      <div className="w-full md:w-[75%] h-full bg-[#F5F5F5]">
         <Swiper
           ref={swiperRef}
           // spaceBetween={5}
@@ -201,12 +201,10 @@ const ActivitySectors = () => {
             id="slide1"
             className="flex flex-col w-full gap-4 md:flex-row"
           >
-            <div className="relative">
-              <div className="bg-[#2DB273]  w-[400px] h-96 rounded-xl"></div>
-              <div className="bg-[#884ff1] w-[400px] h-96 rounded-xl absolute bottom-10 right-4 z-[99999]"></div>
+            <div className="relative w-full h-full p-20 ">
+              <div className="bg-[#2DB273]  w-[400px] h-96 rounded-lg"></div>
+              <div className="bg-green-700 w-[400px] h-96 rounded-lg absolute bottom-24 left-5 z-[9999999]"></div>
             </div>
-
-            {/* <div className="bg-green-500 w-72 h-72"></div> */}
           </SwiperSlide>
           <SwiperSlide id="slide2">
             <div className="p-5 text-lg text-white rounded-lg w-96 h-96 bg-[#809DD0]">
