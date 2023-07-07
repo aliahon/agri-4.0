@@ -1,9 +1,14 @@
-import { secteurs, solutionsArr } from "./Constants";
+import { secteurs, solutionsDetails } from "./Constants";
+import { SolutionsDetailsProps } from "./types";
 
-export const getSolutionsBySectorId = (sectorId: number) => {
-  return solutionsArr.filter((solution) => solution.sectorId === sectorId);
+export const getSolutionDetails = (
+  solutionId: string,
+  sector: string
+): SolutionsDetailsProps => {
+  // @ts-ignore
+  return solutionsDetails.find((solution) => solution.id === solutionId);
 };
 
-export const getSectorById = (sectorId: number) => {
-  return secteurs.find((sector) => sector.id === sectorId);
+export const getSectorById = (sectorId: string) => {
+  return secteurs?.find((sector) => sector?.id === sectorId);
 };

@@ -5,60 +5,68 @@ import React, { useEffect } from "react";
 import Slider from "react-slick";
 import { gsap } from "gsap";
 // helper functions
-import { getSolutionsBySectorId } from "@/utils/helperFunctions";
+import { getSolutionDetails } from "@/utils/helperFunctions";
 import Drone from "@/components/animate/Drone";
 import Satellite from "@/components/animate/Satellite";
 import Camera from "@/components/animate/Camera";
+import { SolutionsDetailsProps } from "@/utils/types";
+// ======================================================================
+// TODO: ******************************
+// 1 - [] Create component to render devices
+// 2 - [] Add the devices to the page
+// 3 - [] Add the solutions to the page
+// 4 - [] Dynamic rendring of the page
+// ======================================================================
+
+const NextArrow = (props: any) => {
+  const { className, style, onClick } = props;
+  return (
+    <div className={`${className}`} style={{ ...style }} onClick={onClick}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6 stroke-current text-secondary"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="{2}"
+          d="M9 5l7 7-7 7"
+        />
+      </svg>
+    </div>
+  );
+};
+
+const PrevArrow = (props: any) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={`${className} bg-black`}
+      style={{ ...style }}
+      onClick={onClick}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6 stroke-current text-secondary"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="{2}"
+          d="M15 19l-7-7 7-7"
+        />
+      </svg>
+    </div>
+  );
+};
 
 const Solution = ({ params }: any) => {
-  const NextArrow = (props: any) => {
-    const { className, style, onClick } = props;
-    return (
-      <div className={`${className}`} style={{ ...style }} onClick={onClick}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-6 h-6 stroke-current text-secondary"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="{2}"
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-      </div>
-    );
-  };
-
-  const PrevArrow = (props: any) => {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={`${className} bg-black`}
-        style={{ ...style }}
-        onClick={onClick}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-6 h-6 stroke-current text-secondary"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="{2}"
-            d="M15 19l-7-7 7-7"
-          />
-        </svg>
-      </div>
-    );
-  };
-
   const settings = {
     dots: false,
     infinite: false,
@@ -90,13 +98,29 @@ const Solution = ({ params }: any) => {
     ],
   };
 
-  // const { id } = params;
+  /*
+    => 1 - Vision et traitement d’image
+    => 2 - Fertigation connecté
+    => 3 - Gestion de l’eau et du sol
+    => 4 - IOT
+    => 5 - Robotique
+    => 6 - Farm management
+    => 7 - Climat monitoring
+  */
+  const { id } = params;
 
-  // const [solutions, setSolutions] = React.useState<null | any[]>(null);
+  const [solution, setSolution] = React.useState<SolutionsDetailsProps | null>(
+    null
+  );
 
-  // useEffect(() => {
-  //   setSolutions(getSolutionsBySectorId(Number(id)));
-  // }, [id]);
+  useEffect(() => {
+    setSolution(getSolutionDetails(id, "ap"));
+  }, [id]);
+
+  console.log({
+    solution,
+    id,
+  });
 
   const devices = [
     {
@@ -117,49 +141,18 @@ const Solution = ({ params }: any) => {
       description: "NDVI Camera",
       image: "/DEVICE 3.png",
     },
-    {
-      id: 4,
-      title: "Drone",
-      description: "Drone",
-      image: "https://dummyimage.com/1200x600",
-    },
   ];
 
   return (
     <section className="flex-col py-14">
       <div className="flex justify-between w-full p-20 text-white border-b-[10px] bg-[#081B15] border-b-secondary">
         <div className="flex flex-col max-w-2xl space-y-3 text-justify">
-          <h1 className="mb-5 text-4xl font-bold">
-            Vision et <br />
-            Traitement D’image
-          </h1>
-          <p className="text-sm font-light leading-snug">
-            La vision et le traitement d&apos;image sont des outils essentiels
-            en agriculture de précision pour aider les agriculteurs à surveiller
-            et à gérer leurs cultures de manière plus efficace et efficiente.
-          </p>
-          <p className="text-sm font-light leading-snug">
-            L&apos;utilisation de drones équipés de caméras, de capteurs et de
-            logiciels d&apos;imagerie sophistiqués permet aux agriculteurs
-            d&apos;obtenir des images de haute qualité de leurs champs, y
-            compris des images aériennes et de vue de près. Ces images peuvent
-            ensuite être analysées pour fournir des informations précises sur
-            les cultures, telles que la densité des plantes, la croissance, la
-            santé des plantes, la présence de maladies et d&apos;insectes
-            nuisibles, et plus encore.
-          </p>
-          <p className="text-sm font-light leading-snug">
-            Les données collectées peuvent être traitées en temps réel à
-            l&apos;aide d&apos;application web et mobile pour aider les
-            agriculteurs à prendre des décisions plus éclairées sur
-            l&apos;utilisation des fertilisants, des pesticides et de
-            l&apos;eau. Cela peut aider à réduire les coûts, à augmenter les
-            rendements et à améliorer la qualité des cultures.
-          </p>
+          <h1 className="mb-5 text-4xl font-bold">{solution?.name || null}</h1>
+          {solution?.desc}
         </div>
         <div className="relative">
           <Image
-            src="/TRAI.png"
+            src={solution?.imgUrl || ""}
             width={500}
             height={500}
             alt="Vision et Traitement D’image"
@@ -227,7 +220,7 @@ const Solution = ({ params }: any) => {
         </div>
       </section>
 
-      {/* devices */}
+      {/* TODO: Here goes the devices component */}
       <section className="flex flex-col px-24 pt-12 pb-24">
         <h1 className="text-2xl font-bold text-[#00594C] mb-8">Devices</h1>
         <div className="w-full h-full">
@@ -244,6 +237,7 @@ const Solution = ({ params }: any) => {
         </div>
       </section>
       {/*  */}
+
       <section className="flex items-center justify-between gap-20 p-24 bg-gray-100">
         <div className="relative">
           <Image
