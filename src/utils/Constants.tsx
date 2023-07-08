@@ -724,27 +724,13 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
     desc: (
       <>
         <p className="text-sm font-light leading-snug">
-          La vision et le traitement d&apos;image sont des outils essentiels en
-          agriculture de précision pour aider les agriculteurs à surveiller et à
-          gérer leurs cultures de manière plus efficace et efficiente.
-        </p>
-        <p className="text-sm font-light leading-snug">
-          L&apos;utilisation de drones équipés de caméras, de capteurs et de
-          logiciels d&apos;imagerie sophistiqués permet aux agriculteurs
-          d&apos;obtenir des images de haute qualité de leurs champs, y compris
-          des images aériennes et de vue de près. Ces images peuvent ensuite
-          être analysées pour fournir des informations précises sur les
-          cultures, telles que la densité des plantes, la croissance, la santé
-          des plantes, la présence de maladies et d&apos;insectes nuisibles, et
-          plus encore.
-        </p>
-        <p className="text-sm font-light leading-snug">
-          Les données collectées peuvent être traitées en temps réel à
-          l&apos;aide d&apos;application web et mobile pour aider les
-          agriculteurs à prendre des décisions plus éclairées sur
-          l&apos;utilisation des fertilisants, des pesticides et de l&apos;eau.
-          Cela peut aider à réduire les coûts, à augmenter les rendements et à
-          améliorer la qualité des cultures.
+          En utilisant des capteurs smart et des applications AGRI 4.0, les
+          agri- culteurs peuvent également prévoir les besoins en eau et en
+          nutri- ments de leurs cultures. Ils peuvent ainsi prévoir les moments
+          où les cultures auront besoin d&apos;eau ou de nutriments
+          supplémentaires, ce qui permet de planifier les pratiques agricoles en
+          conséquence et d&apos;optimiser les rendements tout en préservant les
+          ressources.
         </p>
       </>
     ),
@@ -758,27 +744,16 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
     desc: (
       <>
         <p className="text-sm font-light leading-snug">
-          La vision et le traitement d&apos;image sont des outils essentiels en
-          agriculture de précision pour aider les agriculteurs à surveiller et à
-          gérer leurs cultures de manière plus efficace et efficiente.
+          L&apos;utilisation des robots dans l&apos;agriculture de précision est
+          de plus en plus courante et a de nombreux avantages potentiels. Les
+          robots peuvent être utilisés dans le désherbage, la Plantation,
+          Récolte, Pulvérisation, Surveillance et autres.
         </p>
         <p className="text-sm font-light leading-snug">
-          L&apos;utilisation de drones équipés de caméras, de capteurs et de
-          logiciels d&apos;imagerie sophistiqués permet aux agriculteurs
-          d&apos;obtenir des images de haute qualité de leurs champs, y compris
-          des images aériennes et de vue de près. Ces images peuvent ensuite
-          être analysées pour fournir des informations précises sur les
-          cultures, telles que la densité des plantes, la croissance, la santé
-          des plantes, la présence de maladies et d&apos;insectes nuisibles, et
-          plus encore.
-        </p>
-        <p className="text-sm font-light leading-snug">
-          Les données collectées peuvent être traitées en temps réel à
-          l&apos;aide d&apos;application web et mobile pour aider les
-          agriculteurs à prendre des décisions plus éclairées sur
-          l&apos;utilisation des fertilisants, des pesticides et de l&apos;eau.
-          Cela peut aider à réduire les coûts, à augmenter les rendements et à
-          améliorer la qualité des cultures.
+          Dans l&apos;ensemble, l&apos;utilisation des robots dans
+          l&apos;agriculture de préci- sion peut aider à réduire les coûts, à
+          améliorer l&apos;efficacité et à réduire l&apos;impact environnemental
+          de l&apos;agriculture.
         </p>
       </>
     ),
@@ -792,27 +767,18 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
     desc: (
       <>
         <p className="text-sm font-light leading-snug">
-          La vision et le traitement d&apos;image sont des outils essentiels en
-          agriculture de précision pour aider les agriculteurs à surveiller et à
-          gérer leurs cultures de manière plus efficace et efficiente.
+          La surveillance du climat pour les cultures consiste à observer et à
+          mesurer l&apos;impact du temps et du climat sur la production
+          agricole. Cela comprend la surveillance de variables telles que la
+          tempéra- ture, les précipitations, l&apos;humidité, le vent et le
+          rayonnement solaire, ainsi que l&apos;humidité du sol et les niveaux
+          de nutriments.
         </p>
         <p className="text-sm font-light leading-snug">
-          L&apos;utilisation de drones équipés de caméras, de capteurs et de
-          logiciels d&apos;imagerie sophistiqués permet aux agriculteurs
-          d&apos;obtenir des images de haute qualité de leurs champs, y compris
-          des images aériennes et de vue de près. Ces images peuvent ensuite
-          être analysées pour fournir des informations précises sur les
-          cultures, telles que la densité des plantes, la croissance, la santé
-          des plantes, la présence de maladies et d&apos;insectes nuisibles, et
-          plus encore.
-        </p>
-        <p className="text-sm font-light leading-snug">
-          Les données collectées peuvent être traitées en temps réel à
-          l&apos;aide d&apos;application web et mobile pour aider les
-          agriculteurs à prendre des décisions plus éclairées sur
-          l&apos;utilisation des fertilisants, des pesticides et de l&apos;eau.
-          Cela peut aider à réduire les coûts, à augmenter les rendements et à
-          améliorer la qualité des cultures.
+          En surveillant les variables climatiques et leur impact sur la produc-
+          tion agricole, les agriculteurs et les décideurs peuvent mieux com-
+          prendre et gérer les risques et opportunités associés au change- ment
+          climatique.
         </p>
       </>
     ),
@@ -826,27 +792,15 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
     desc: (
       <>
         <p className="text-sm font-light leading-snug">
-          La vision et le traitement d&apos;image sont des outils essentiels en
-          agriculture de précision pour aider les agriculteurs à surveiller et à
-          gérer leurs cultures de manière plus efficace et efficiente.
+          Nous utilisons des capteurs pour mesurer les niveaux d&apos;humidité
+          du sol, de nutriments et de pH, ainsi que des dispositifs de contrôle
+          pour ajuster les doses d&apos;eau et d&apos;engrais en fonction des
+          besoins de la plante. Ces données sont collectées et analysées à
+          distance à l&apos;aide d&apos;une application mobile.
         </p>
         <p className="text-sm font-light leading-snug">
-          L&apos;utilisation de drones équipés de caméras, de capteurs et de
-          logiciels d&apos;imagerie sophistiqués permet aux agriculteurs
-          d&apos;obtenir des images de haute qualité de leurs champs, y compris
-          des images aériennes et de vue de près. Ces images peuvent ensuite
-          être analysées pour fournir des informations précises sur les
-          cultures, telles que la densité des plantes, la croissance, la santé
-          des plantes, la présence de maladies et d&apos;insectes nuisibles, et
-          plus encore.
-        </p>
-        <p className="text-sm font-light leading-snug">
-          Les données collectées peuvent être traitées en temps réel à
-          l&apos;aide d&apos;application web et mobile pour aider les
-          agriculteurs à prendre des décisions plus éclairées sur
-          l&apos;utilisation des fertilisants, des pesticides et de l&apos;eau.
-          Cela peut aider à réduire les coûts, à augmenter les rendements et à
-          améliorer la qualité des cultures.
+          La fertigation connectée aide les agriculteurs à optimiser leur pro-
+          duction tout en réduisant les pertes et les coûts.
         </p>
       </>
     ),
@@ -860,27 +814,12 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
     desc: (
       <>
         <p className="text-sm font-light leading-snug">
-          La vision et le traitement d&apos;image sont des outils essentiels en
-          agriculture de précision pour aider les agriculteurs à surveiller et à
-          gérer leurs cultures de manière plus efficace et efficiente.
-        </p>
-        <p className="text-sm font-light leading-snug">
-          L&apos;utilisation de drones équipés de caméras, de capteurs et de
-          logiciels d&apos;imagerie sophistiqués permet aux agriculteurs
-          d&apos;obtenir des images de haute qualité de leurs champs, y compris
-          des images aériennes et de vue de près. Ces images peuvent ensuite
-          être analysées pour fournir des informations précises sur les
-          cultures, telles que la densité des plantes, la croissance, la santé
-          des plantes, la présence de maladies et d&apos;insectes nuisibles, et
-          plus encore.
-        </p>
-        <p className="text-sm font-light leading-snug">
-          Les données collectées peuvent être traitées en temps réel à
-          l&apos;aide d&apos;application web et mobile pour aider les
-          agriculteurs à prendre des décisions plus éclairées sur
-          l&apos;utilisation des fertilisants, des pesticides et de l&apos;eau.
-          Cela peut aider à réduire les coûts, à augmenter les rendements et à
-          améliorer la qualité des cultures.
+          Nous mettons à la disposition de nos clients des applications leur
+          permettant de gérer leurs cultures de la meilleure façon qui soit.
+          Nous proposons des applications qui aident les agriculteurs dans la
+          planification des cultures, la cartographie des champs, la gestion des
+          stocks et l&apos;analyse des rendements, la gestion des achats, la
+          préparation des audits,....
         </p>
       </>
     ),
