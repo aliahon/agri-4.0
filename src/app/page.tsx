@@ -45,8 +45,10 @@ export default function Home() {
         </div>
       </section>
       {/* Second Section */}
+
       <ActivitySectors />
       {/* Third Section */}
+      <div className="py-6" />
       <FeaturedSolutions />
       {/*  */}
       <Clients />

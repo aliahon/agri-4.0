@@ -11,6 +11,8 @@ type NavSectionDetailsProps = {
 };
 
 const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
+  // TODO: Other navbar items details [Devices, Sectors, More ...]
+
   const { isSelectedOpen, setIsSelectedOpen } = useNavbarContext();
 
   const [navDetails, setNavDetails] = React.useState<null | any[]>(null);
@@ -21,9 +23,12 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
     solutionsArr.slice(0, 6)
   );
 
-  const [selectedItemName, setSelectedItemName] = React.useState<null | any>(
-    null
+  const [selectedItemName, setSelectedItemName] = React.useState<string>(
+    "Agriculture de précision"
   );
+
+  const [selectedtemSubName, setSelectedItemSubName] =
+    React.useState<string>("");
 
   useEffect(() => {
     if (selectedSection === "Solutions") {
@@ -42,18 +47,25 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
   useEffect(() => {
     if (selectedItemName === "Agriculture de précision") {
       setArrSolutions(solutionsArr.slice(0, 6));
+      setSelectedItemSubName("ap");
     } else if (selectedItemName === "Aquaculture 4.0") {
       setArrSolutions(solutionsArr.slice(6, 12));
+      setSelectedItemSubName("aqua");
     } else if (selectedItemName === "Agroalimentaire 4.0") {
       setArrSolutions(solutionsArr.slice(6, 12));
+      setSelectedItemSubName("agro");
     } else if (selectedItemName === "Smart cities") {
       setArrSolutions(solutionsArr.slice(6, 12));
+      setSelectedItemSubName("sc");
     } else if (selectedItemName === "Durabilite") {
       setArrSolutions(solutionsArr.slice(6, 12));
+      setSelectedItemSubName("dura");
     } else if (selectedItemName === "CO-R&D") {
       setArrSolutions(solutionsArr.slice(6, 12));
+      setSelectedItemSubName("co");
     } else if (selectedItemName === "Conseil") {
       setArrSolutions(solutionsArr.slice(6, 12));
+      setSelectedItemSubName("cons");
     }
   }, [selectedItemName]);
 
@@ -64,9 +76,6 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
       setSelectedItem(item);
     }
   };
-
-  // TODO: Other navbar items details [Devices, Sectors, More ...]
-  console.log(solutions);
 
   useEffect(() => {
     // setSelectedOpen false when click outside the navbar
@@ -80,6 +89,8 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
       window.removeEventListener("click", handleClickOutside);
     };
   }, [setIsSelectedOpen]);
+
+  console.log(selectedItemName);
 
   return (
     <div className="absolute left-0 w-full py-6 transition duration-300 ease-in-out transform bg-white h-[600px] px-14 z-90 top-14 ">
@@ -115,7 +126,23 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
         {/* second section */}
         <div className="w-full h-full px-10 pt-4">
           <Link
-            href={`/sector/1`}
+            href={`/sector/${
+              selectedItemName === "Agriculture de précision"
+                ? "1"
+                : selectedItemName === "Aquaculture 4.0"
+                ? "2"
+                : selectedItemName === "Agroalimentaire 4.0"
+                ? "3"
+                : selectedItemName === "Smart cities"
+                ? "4"
+                : selectedItemName === "Durabilite"
+                ? "5"
+                : selectedItemName === "CO-R&D"
+                ? "6"
+                : selectedItemName === "Conseil"
+                ? "7"
+                : "1"
+            }`}
             onClick={() => {
               setIsSelectedOpen(false);
             }}
@@ -138,8 +165,13 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
                       key={i}
                       className="relative flex flex-col max-w-[285px] space-y-2"
                     >
-                      <span className="text-sm font-semibold text-green-700 ">
-                        {item?.name}
+                      <span className="text-sm font-semibold text-green-700 cursor-pointer hover:underline">
+                        <Link
+                          href={`/solutions/${selectedtemSubName}/${item?.id}`}
+                          onClick={() => setIsSelectedOpen(false)}
+                        >
+                          {item?.name}
+                        </Link>
                       </span>
                       {item?.name === "Climat Monitoring" && (
                         <span className="absolute -top-1.5 right-24 px-2 text-xs font-semibold text-white bg-[#2DB273] rounded-lg">

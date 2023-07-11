@@ -73,14 +73,14 @@ const ActivitySectors = () => {
         </ul>
       </div>
 
-      <div className="w-full md:w-[75%] h-full bg-[#F5F5F5]">
+      <div className="w-full md:w-[75%] h-[568px] bg-[#F5F5F5]">
         <Swiper
           ref={swiperRef}
           slidesPerView={1}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
         >
-          <SwiperSlide id="slide1">
+          <SwiperSlide id="1">
             <div className="relative flex w-full h-full gap-10 p-20">
               <div className="relative">
                 <div
@@ -91,7 +91,7 @@ const ActivitySectors = () => {
                 ></div>
               </div>
               <div className="">
-                <Link href="/sector/1">
+                <Link href={`/sector/${selected.id}`}>
                   <h1
                     className={`text-2xl md:text-4xl font-bold hover:underline text-[#2DB273]`}
                   >
@@ -122,7 +122,7 @@ const ActivitySectors = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide id="slide2">
+          <SwiperSlide id="2">
             <div className="flex w-full h-full gap-10 p-20 ">
               <div className="relative">
                 <div
@@ -131,7 +131,7 @@ const ActivitySectors = () => {
                 <div className="w-[400px] bg-[url('/sectors/aquaculture.jpg')] bg-center bg-cover object-cover h-96 rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
-                <Link href="/sector/1">
+                <Link href={`/sector/${selected.id}`}>
                   <h1
                     className={`text-2xl md:text-4xl font-bold hover:underline text-[#305DAC]`}
                   >
@@ -162,7 +162,7 @@ const ActivitySectors = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide id="slide3">
+          <SwiperSlide id="3">
             <div className="flex w-full h-full gap-10 p-20 ">
               <div className="relative">
                 <div
@@ -171,7 +171,7 @@ const ActivitySectors = () => {
                 <div className="w-[400px] bg-[url('/sectors/agroalimentaire.jpg')] bg-center bg-cover object-cover h-96 rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
-                <Link href="/sector/1">
+                <Link href={`/sector/${selected.id}`}>
                   <h1
                     className={`text-2xl md:text-4xl font-bold hover:underline text-[#863500]`}
                   >
@@ -202,7 +202,7 @@ const ActivitySectors = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide id="slide4" className="flex justify-between">
+          <SwiperSlide id="4" className="flex justify-between">
             <div className="flex w-full h-full gap-10 p-20 ">
               <div className="relative">
                 <div
@@ -211,7 +211,7 @@ const ActivitySectors = () => {
                 <div className="w-[400px] bg-[url('/sectors/smartCities.jpg')] bg-center bg-cover object-cover h-96 rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
-                <Link href="/sector/1">
+                <Link href={`/sector/${selected.id}`}>
                   <h1
                     className={`text-2xl md:text-4xl font-bold hover:underline text-[#0082CE]`}
                   >
@@ -242,7 +242,7 @@ const ActivitySectors = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide id="slide5">
+          <SwiperSlide id="5">
             <div className="flex w-full h-full gap-10 p-20 ">
               <div className="relative">
                 <div
@@ -251,7 +251,7 @@ const ActivitySectors = () => {
                 <div className="w-[400px] bg-[url('/sectors/durabilite.jpg')] bg-center bg-cover object-cover h-96 rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
-                <Link href="/sector/1">
+                <Link href={`/sector/${selected.id}`}>
                   <h1
                     className={`text-2xl md:text-4xl font-bold hover:underline text-[#00594C]`}
                   >
@@ -282,7 +282,7 @@ const ActivitySectors = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide id="slide6">
+          <SwiperSlide id="6">
             <div className="flex w-full h-full gap-10 p-20 ">
               <div className="relative">
                 <div
@@ -291,7 +291,7 @@ const ActivitySectors = () => {
                 <div className="w-[400px] bg-[url('/sectors/co-rd.jpg')] bg-center bg-cover object-cover h-96 rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
-                <Link href="/sector/1">
+                <Link href={`/sector/${selected.id}`}>
                   <h1
                     className={`text-2xl md:text-4xl font-bold hover:underline text-[#081B15]`}
                   >
@@ -322,7 +322,7 @@ const ActivitySectors = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide id="slide7">
+          <SwiperSlide id="7">
             <div className="flex w-full h-full gap-10 p-20 ">
               <div className="relative">
                 <div
@@ -331,7 +331,7 @@ const ActivitySectors = () => {
                 <div className="w-[400px] bg-[url('/sectors/conseil.jpg')] bg-center bg-cover object-cover h-96 rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
-                <Link href="/sector/1">
+                <Link href={`/sector/${selected.id}`}>
                   <h1
                     className={`text-2xl md:text-4xl font-bold hover:underline text-[#262532]`}
                   >

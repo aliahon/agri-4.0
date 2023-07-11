@@ -10,5 +10,5 @@ export const getSolutionDetails = (
 };
 
 export const getSectorById = (sectorId: string) => {
-  return secteurs?.find((sector) => sector?.id === sectorId);
+  return secteurs?.find((sector) => sector?.id === sectorId) || {};
 };

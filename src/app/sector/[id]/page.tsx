@@ -2,15 +2,22 @@
 
 import Drone from "@/components/animate/Drone";
 import { solutionsArr } from "@/utils/Constants";
+import { getSectorById } from "@/utils/helperFunctions";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
 
 const Sector = ({ params }: any) => {
   const { id } = params;
-  const [sector, setSector] = React.useState<null | any[]>(null);
+  const [sector, setSector] = React.useState<null | any>(null);
+
+  useEffect(() => {
+    setSector(getSectorById(id));
+  }, [id]);
 
   const [openTab, setOpenTab] = React.useState<number>(1);
+
+  console.log(sector);
 
   return (
     <section className="flex flex-col pt-14">
@@ -18,20 +25,10 @@ const Sector = ({ params }: any) => {
       <section className="flex flex-col md:flex-row justify-center w-full h-full bg-[#081B15] border-b-8 bg-gradient-to-r border-b-[#2DB273]">
         <div className="flex flex-col w-full h-full px-20 pt-16 mt-10">
           <h1 className="max-w-sm text-5xl font-bold text-white drop-shadow-md">
-            Agriculture de Précision
+            {sector?.name}
           </h1>
           <p className="max-w-lg mt-3 leading-tight text-justify text-gray-300 text-md">
-            <span className="text-green-600">
-              L&apos;agriculture de précision
-            </span>{" "}
-            est une approche qui permet d&apos;optimiser la production agricole
-            en utilisant les technologies de l&apos;information et de la
-            communication pour prendre des décisions plus éclairées, plus
-            rapides et plus précises. Elle offre de nombreux avantages pour les
-            agriculteurs, l&apos;environnement et les consommateurs, tels que
-            l&apos;augmentation des rendements, la réduction des coûts et de la
-            pollution, ainsi que l&apos;amélioration de la qualité des produits
-            agricoles.
+            {sector?.desc}
           </p>
         </div>
         <div className="flex items-center justify-center w-[800px] h-[450px]">
@@ -49,7 +46,7 @@ const Sector = ({ params }: any) => {
       {/*  */}
       <section className="flex-col w-full h-full ">
         <h1 className="text-3xl font-bold text-center text-[#00594C] pt-24">
-          All Solutions Agriculture De Précision
+          All Solutions for {sector?.name}
         </h1>
         {/* tabs */}
         <div className="flex items-center justify-center w-full px-24 pt-20 mt-5 overflow-x-scroll no-scrollbar">

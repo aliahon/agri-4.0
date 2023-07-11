@@ -17,12 +17,13 @@ export type SolutionsDetailsProps = {
   services: Array<{
     id: string | number;
     name: string;
-    desc: string;
+    desc: React.ReactElement;
     imgUrl: string;
     devices?: Array<{
       id: string | number;
-      name: string;
-      imgUrl: string;
+      title: string;
+      image: string;
+      description: string;
     }>;
   }>;
 };

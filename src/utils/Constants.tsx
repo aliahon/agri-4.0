@@ -14,6 +14,8 @@ import Agribot from "@/components/animate/Agribot";
 import Weather from "@/components/animate/Weather";
 import Dashboard from "@/components/animate/Dashboard";
 import Fertigation from "@/components/animate/Fertigation";
+import Image from "next/image";
+import Satellite from "@/components/animate/Satellite";
 // ===============================================================================================
 
 export const sidebarMenu = [
@@ -37,7 +39,7 @@ export const sidebarMenu = [
 
 export const secteurs: SelectedProps[] = [
   {
-    id: "slide1",
+    id: "1",
     img: "/events/agpre.jpg",
     name: "Agriculture de précision",
     desc: "L'agriculture de précision est une approche qui permet d'optimiser la production agricole en utilisant les technologies de l'information et de la communication pour prendre des décisions plus éclairées.",
@@ -73,7 +75,7 @@ export const secteurs: SelectedProps[] = [
     ],
   },
   {
-    id: "slide2",
+    id: "2",
     img: "/sectors/aquaculture.jpg",
     name: "Aquaculture 4.0",
     desc: "Nous intégrons des technologies avancées et des systèmes numériques dans l'industrie aquacole, dans le but d'améliorer l'efficacité, la durabilité et la rentabilité de la production. Cela comprend l'utilisation de capteurs, d'application",
@@ -109,7 +111,7 @@ export const secteurs: SelectedProps[] = [
     ],
   },
   {
-    id: "slide3",
+    id: "3",
     img: "/sectors/agroalimentaire.jpg",
     name: "Agroalimentaire 4.0",
     desc: "Usines intelligentes : les capteurs IoT et les appareils connectés peuvent aider à optimiser les processus de production, à améliorer l'efficacité et à réduire les temps d'arrêt.Maintenance prédictive...",
@@ -145,7 +147,7 @@ export const secteurs: SelectedProps[] = [
     ],
   },
   {
-    id: "slide4",
+    id: "4",
     img: "/sectors/smartCities.jpg",
     name: "Smart Cities",
     desc: "Les grandes villes marocaines ont un potentiel de développement considérable, mais leur croissance rapide crée des défis tels que la congestion urbaine et la pollution. Pour surmonter ces défis de manière...",
@@ -181,7 +183,7 @@ export const secteurs: SelectedProps[] = [
     ],
   },
   {
-    id: "slide5",
+    id: "5",
     img: "/sectors/durabilite.jpg",
     name: "Durabilite",
     desc: "En intégrant la durabilité dans nos activités, nous pouvons contribuer à créer un monde plus juste, équitable et durable pour les générations futures. Cela peut se faire à travers des actions telles que la réduction de l'utilisation ...",
@@ -217,7 +219,7 @@ export const secteurs: SelectedProps[] = [
     ],
   },
   {
-    id: "slide6",
+    id: "6",
     img: "/sectors/co-rd.jpg",
     name: "CO-R&D",
     desc: "Notre engagement envers la R&D ne relève pas d'un simple caprice, mais plutôt de notre conviction que c'est la pierre angulaire de la survie de toute entreprise, quelle que soit sa taille ou son modèle économique.",
@@ -253,7 +255,7 @@ export const secteurs: SelectedProps[] = [
     ],
   },
   {
-    id: "slide7",
+    id: "7",
     img: "/sectors/conseil.jpg",
     name: "Conseil",
     desc: "Agri 4.0 ne limite pas ses prestations à la vente des produits et services. Nous assurons également un accompagnement de qualité avec une équipe jeune et pluridisciplinaire ayant comme point...",
@@ -683,36 +685,185 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
       {
         id: 1,
         name: "Drones",
-        desc: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        desc: (
+          <section className="relative flex items-center justify-between gap-10 px-24">
+            <div className="absolute -z-10 bottom-[200px] left-20 opacity-20">
+              <Drone />
+            </div>
+
+            <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
+              <h1 className="mb-5 text-4xl font-bold">Drone</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  L&apos;agriculture numérique est une industrie florissante et
+                  les drones sont en train de devenir de plus en plus
+                  accessibles et sophistiqués. Dotés de caméras haute
+                  résolution, ces engins aériens peuvent fournir des images en
+                  temps réel des cultures, ce qui en fait des outils clés pour
+                  la micro-Gestion des vastes étendues de terres agricoles.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Les drones autonomes pourraient jouer un rôle majeur dans
+                  l&apos;inspection, le semis, l&apos;arrosage, le traitement et
+                  même la récolte des cultures. Chaque drone serait capable de
+                  prendre des microdécisions indépendantes lorsqu&apos;il se
+                  déplace entre les plantes individuelles, communiquant des
+                  informations utiles au reste de son équipe et les utilisant
+                  via l&apos;apprentissage automatique.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  {" "}
+                  Grâce aux drones il est possible de détecter le stress
+                  hydrique et réaliser des épandages précis de produits
+                  phytosanitaires ou d&apos;engrais.
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative">
+              <Image
+                src="/DRONE.png"
+                width={400}
+                height={400}
+                alt="Drone"
+                className="z-[9999] rounded-xl"
+                data-aos="zoom-out-left"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+            </div>
+          </section>
+        ),
         imgUrl: "/solutions/sig.png",
         devices: [
           {
             id: 1,
-            name: "Parrot Sequoia The revolutionary multispectral",
-            imgUrl: "/solutions/sig.png",
+            title: "Parrot Sequoia",
+            description: "The revolutionary multispectral",
+            image: "/devices/DEVICE 1.png",
           },
           {
             id: 2,
-            name: "MicaSense RedEdge-MX multispectral camera",
-            imgUrl: "/solutions/sig.png",
+            title: "MicaSense RedEdge-MX",
+            description: "Multispectral camera",
+            image: "/devices/DEVICE 2.webp",
           },
           {
             id: 3,
-            name: "SLANTRANGE 3P NDVI Camera",
-            imgUrl: "/solutions/sig.png",
+            title: "SLANTRANGE 3P",
+            description: "NDVI Camera",
+            image: "/devices/DEVICE 3.png",
           },
         ],
       },
       {
         id: 2,
         name: "Satellite",
-        desc: "L'utilisation des satellites de traitement d'images dans l'agriculture de précision aide les agriculteurs à prendre des décisions éclairées en fournissant des visualisations précises des variations d'expression végétative des parcelles. Ces informations sont d'une grande aide pour les agriculteurs, leur permettant de mieux comprendre la santé de leurs cultures et d'ajuster leur gestion en conséquence. En fin de compte, l'utilisation du traitement d'images peut améliorer la productivité et la rentabilité de l'exploitation agricole, tout en réduisant l'impact sur l'environnement.",
+        desc: (
+          <section className="flex items-center justify-between gap-20 p-24 bg-gray-100">
+            <div className="relative">
+              <Image
+                src="/SATELLITE.png"
+                width={500}
+                height={500}
+                alt="Drone"
+                className="z-50 rotate-180 rounded-xl drop-shadow-sm"
+                data-aos="zoom-out-right"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+            </div>
+
+            <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
+              <div className="absolute z-0 right-4 -top-[125px] opacity-20">
+                <Satellite />
+              </div>
+              <h1 className="mb-5 text-4xl font-bold">Satellite</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  L&apos;utilisation des satellites de traitement d&apos;images
+                  dans l&apos;agriculture de précision aide les agriculteurs à
+                  prendre des décisions éclairées en fournissant des
+                  visualisations précises des variations d&apos;expression
+                  végétative des parcelles.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Grâce à l&apos;utilisation de satellites pour le traitement
+                  d&apos;images, les agriculteurs peuvent analyser la tendance
+                  et l&apos;évolution de l&apos;état sanitaire de leurs
+                  cultures, calculer les indices de végétation et les paramètres
+                  physiologiques, et même détecter des problèmes tels que le
+                  stress hydrique, la sécheresse et la salinité des parcelles.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Ces informations sont d&apos;une grande aide pour les
+                  agriculteurs, leur permettant de mieux comprendre la santé de
+                  leurs cultures et d&apos;ajuster leur gestion en conséquence.
+                  En fin de compte, l&apos;utilisation du traitement
+                  d&apos;images peut améliorer la productivité et la rentabilité
+                  de l&apos;exploitation agricole, tout en réduisant
+                  l&apos;impact sur l&apos;environnement.
+                </li>
+              </ul>
+            </div>
+          </section>
+        ),
         imgUrl: "/solutions/sig.png",
       },
       {
         id: 3,
         name: "Caméra",
-        desc: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        desc: (
+          <section className="flex items-center justify-between gap-20 p-24">
+            <div className="flex flex-col max-w-lg space-y-3 text-justify">
+              <h1 className="mb-5 text-4xl font-bold">Camera au sol</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  Les caméras au sol peuvent également être utilisées pour aider
+                  à cartographier les champs et à identifier les zones qui
+                  nécessitent une gestion différente. Les informations
+                  collectées peuvent être utilisées pour créer des cartes de
+                  rendement, pour planifier la plantation et la fertilisation
+                  des cultures, et pour identifier les zones qui nécessitent des
+                  traitements supplémentaires.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Les avantages de l&apos;utilisation de caméras au sol en
+                  agriculture de précision sont leur capacité à fournir des
+                  informations détaillées sur les cultures et le sol à un coût
+                  relativement faible. Les images collectées peuvent être
+                  analysées pour fournir des informations utiles aux
+                  agriculteurs, ce qui peut les aider à prendre des décisions
+                  plus éclairées et à améliorer l&apos;efficacité de leur
+                  gestion des cultures.
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative">
+              <Image
+                src="/CAMERA AU SOL.png"
+                width={300}
+                height={300}
+                alt="Drone"
+                className="z-50 drop-shadow-sm"
+                unoptimized
+                data-aos="zoom-out-left"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+            </div>
+          </section>
+        ),
         imgUrl: "/solutions/sig.png",
       },
     ],
@@ -734,7 +885,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         </p>
       </>
     ),
-    imgUrl: "/solutions/sig.png",
+    imgUrl: "/solutionDetails/water.png",
     services: [],
   },
   // Robotique
@@ -757,7 +908,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         </p>
       </>
     ),
-    imgUrl: "/solutions/sig.png",
+    imgUrl: "/solutionDetails/robotique.png",
     services: [],
   },
   // Suivi du Climat
@@ -782,7 +933,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         </p>
       </>
     ),
-    imgUrl: "/solutions/sig.png",
+    imgUrl: "/solutionDetails/climat.png",
     services: [],
   },
   // Fertigation connecté
@@ -804,7 +955,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         </p>
       </>
     ),
-    imgUrl: "/solutions/sig.png",
+    imgUrl: "/solutionDetails/fertigation.png",
     services: [],
   },
   // Farm management
@@ -823,7 +974,44 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         </p>
       </>
     ),
-    imgUrl: "/solutions/sig.png",
+    imgUrl: "/solutionDetails/farm.png",
     services: [],
+  },
+];
+
+export const sectors = [
+  {
+    id: "1",
+    name: "Agriculture de Précision",
+    desc: "L'agriculture de précision est une approche qui permet d'optimiser la production agricole en utilisant les technologies de l'information et de la communication pour prendre des décisions plus éclairées, plus rapides et plus précises. Elle offre de nombreux avantages pour les agriculteurs, l'environnement et les consommateurs, tels que l'augmentation des rendements, la réduction des coûts et de la pollution, ainsi que l'amélioration de la qualité des produits agricoles.",
+    imgUrl: "/sectors/precision.png",
+    details: [
+      {
+        id: "1",
+        name: "Pourquoi l’agriculture de précision",
+        desc: "dsds",
+        image: "/sectors/precision.png",
+      },
+      {
+        id: "2",
+        name: "Parmi nos missions à Agri 4.0 :",
+        desc: "dsds",
+        image: "/sectors/precision.png",
+      },
+    ],
+  },
+  {
+    id: "2",
+    name: "AquaCulture",
+    desc: "L'aquaculture est l'élevage de poissons, de crustacés, de mollusques, de plantes aquatiques et d'autres organismes aquatiques. Elle est l'une des industries alimentaires à la croissance la plus rapide au monde et joue un rôle important dans la sécurité alimentaire mondiale. L'aquaculture est également une industrie très diversifiée, qui va de la production de masse de poissons d'élevage à la production de niche de produits de luxe.",
+    imgUrl: "/sectors/aqua.png",
+    details: [
+      {
+        id: "1",
+        name: "Pourquoi l’agriculture de précision",
+        desc: "dsds",
+        image: "/sectors/precision.png",
+      },
+    ],
   },
 ];
