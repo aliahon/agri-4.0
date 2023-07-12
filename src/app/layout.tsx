@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import "../styles/globals.css";
 import { Poppins } from "next/font/google";
 import Footer from "@/components/Footer";
+import { notFound } from "next/navigation";
 // Import styles
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

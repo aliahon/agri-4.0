@@ -8,3 +8,7 @@
 - [ ] Added on scroll event for paragraphs: 3
 - [ ] All constant should have real data: 4
 - [x] Create new build: 5
+
+## 2023-07-12
+
+- [ ] Added dynamic content for the first sector: 1

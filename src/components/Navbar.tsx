@@ -153,14 +153,14 @@ const Navbar = () => {
             </svg>
           </button>
           <Search open={openSearch} closeModal={() => setOpenSearch(false)} />
-          <a
-            href="#"
+          <Link
+            href="/contact"
             className="inline-block px-8 py-3 mt-4 text-sm leading-none text-white rounded bg-[#17352C] hover:text-primary hover:bg-white lg:mt-0
                 duration-300 ease-in-out transition-all hover:border hover:border-primary hover:font-semibold
             "
           >
             Contact Us Now
-          </a>
+          </Link>
         </div>
       </div>
       {isSelectedOpen && (

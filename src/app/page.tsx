@@ -12,8 +12,6 @@ export default function Home() {
           className="text-3xl font-bold md:text-7xl drop-shadow-md"
           // aos
           data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
         >
           We Innovate for{" "}
           <span className="block text-secondary drop-shadow-md">
@@ -23,9 +21,6 @@ export default function Home() {
         <p
           className="max-w-md mt-3 leading-snug text-gray-300 text-md"
           data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="700"
         >
           L&apos;agriculture{" "}
           <span className="font-semibold text-secondary drop-shadow-md">

@@ -61,8 +61,7 @@ const FeaturedSolutions = () => {
           </p>
           <a
             className="inline-flex items-center text-[#2DB273] hover:underline"
-            href="#"
-            target="_blank"
+            href="/about"
           >
             Learn More
             <svg
@@ -136,8 +135,7 @@ const FeaturedSolutionCard = ({
         </p>
         <a
           className="inline-flex items-center mt-3 text-secondary hover:underline"
-          href="#"
-          target="_blank"
+          href=""
         >
           Learn More
           <svg
