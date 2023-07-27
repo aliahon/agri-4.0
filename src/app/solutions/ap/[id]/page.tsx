@@ -31,8 +31,6 @@ const Solution = ({ params }: any) => {
     setSolution(getSolutionDetails(id, "ap"));
   }, [id]);
 
-  console.log(solution);
-
   return (
     <section className="flex-col py-14">
       <div className="flex justify-between w-full px-20 pb-10 pt-16 text-white border-b-[10px] bg-[#081B15] border-b-secondary">

@@ -886,7 +886,203 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
       </>
     ),
     imgUrl: "/solutionDetails/water.png",
-    services: [],
+    services: [
+      {
+        id: 1,
+        name: "Abar",
+        desc: (
+          <section className="relative flex items-center justify-between gap-10 px-24">
+            <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
+              <h1 className="mb-5 text-4xl font-bold">Abar</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  www.abar.ma est une plateforme Marocaine unique créée par AGRI
+                  4.0 qui regroupe toutes les informations sur les puits :
+                  profondeur, quantité d’eau, qualité de l’eau, le cycle de
+                  régénérations des nappes, équipement de forage pompage et
+                  maintenance.
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative">
+              <Image
+                src="/DRONE.png"
+                width={400}
+                height={400}
+                alt="Drone"
+                className="z-[9999] rounded-xl"
+                data-aos="zoom-out-left"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+            </div>
+          </section>
+        ),
+        imgUrl: "/solutions/sig.png",
+        devices: [
+          {
+            id: 1,
+            title: "Niveau Liquide",
+            description: "capteur De Niveau Pour Eau",
+            image: "/devices/DEVICE 1.png",
+          },
+          {
+            id: 2,
+            title: "Capteur de turbidite",
+            description: "Mesures et Tests",
+            image: "/devices/DEVICE 2.webp",
+          },
+          {
+            id: 3,
+            title: "Transmetteur de turbidité",
+            description: "Pour le controle En Ligne",
+            image: "/devices/DEVICE 3.png",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Osmose",
+        desc: (
+          <section className="flex items-center justify-between gap-20 p-24 bg-gray-100">
+            <div className="relative">
+              <Image
+                src="/SATELLITE.png"
+                width={500}
+                height={500}
+                alt="Drone"
+                className="z-50 rotate-180 rounded-xl drop-shadow-sm"
+                data-aos="zoom-out-right"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+            </div>
+
+            <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
+              <div className="absolute z-0 right-4 -top-[125px] opacity-20">
+                <Satellite />
+              </div>
+              <h1 className="mb-5 text-4xl font-bold">Osmose</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  OSMOSE INVERSE MONITORING: Nous proposons une solution vous
+                  permettant de suivre en temps réel l’efficacité de votre
+                  osmose ainsi que le bon fonctionnement de tous ses
+                  équipements.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Grâce à notre application vous pouvez suivre en temps réel :
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Les différentiels de pression : Une chute de pression indique
+                  un filtre obstrué, ce qui peut entraîner une réduction des
+                  performances du système.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Le débit d’eau : Cela aide à déterminer l&apos;efficacité du
+                  système et à détecter d&apos;éventuelles fuites.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Le débit d’eau : Cela aide à déterminer l&apos;efficacité du
+                  système et à détecter d&apos;éventuelles fuites.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  La concentration de solides dissous totaux dans l&apos;eau
+                  avant et après le processus d&apos;osmose inverse Cela aide à
+                  déterminer l&apos;efficacité du processus Le niveau de pH de
+                  l&apos;eau avant et après le processus d&apos;osmose inverse.
+                  Cela aide à déterminer l&apos;efficacité du processus dans
+                  l&apos;élimination des impuretés. Un journal de toutes les
+                  activités de maintenance, telles que les remplacements de
+                  filtres, le nettoyage des membranes et les inspections du
+                  système. Cela permet de suivre les performances du système au
+                  fil du temps et d&apos;identifier les tendances ou les
+                  problèmes qui doivent être résolus.
+                </li>
+              </ul>
+            </div>
+          </section>
+        ),
+        imgUrl: "/solutions/sig.png",
+        devices: [
+          {
+            id: 1,
+            title: "Niveau Liquide",
+            description: "capteur De Niveau Pour Eau",
+            image: "/devices/DEVICE 1.png",
+          },
+          {
+            id: 2,
+            title: "Capteur de turbidite",
+            description: "Mesures et Tests",
+            image: "/devices/DEVICE 2.webp",
+          },
+          {
+            id: 3,
+            title: "Transmetteur de turbidité",
+            description: "Pour le controle En Ligne",
+            image: "/devices/DEVICE 3.png",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Caméra",
+        desc: (
+          <section className="flex items-center justify-between gap-20 p-24">
+            <div className="flex flex-col max-w-lg space-y-3 text-justify">
+              <h1 className="mb-5 text-4xl font-bold">Camera au sol</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  Les caméras au sol peuvent également être utilisées pour aider
+                  à cartographier les champs et à identifier les zones qui
+                  nécessitent une gestion différente. Les informations
+                  collectées peuvent être utilisées pour créer des cartes de
+                  rendement, pour planifier la plantation et la fertilisation
+                  des cultures, et pour identifier les zones qui nécessitent des
+                  traitements supplémentaires.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Les avantages de l&apos;utilisation de caméras au sol en
+                  agriculture de précision sont leur capacité à fournir des
+                  informations détaillées sur les cultures et le sol à un coût
+                  relativement faible. Les images collectées peuvent être
+                  analysées pour fournir des informations utiles aux
+                  agriculteurs, ce qui peut les aider à prendre des décisions
+                  plus éclairées et à améliorer l&apos;efficacité de leur
+                  gestion des cultures.
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative">
+              <Image
+                src="/CAMERA AU SOL.png"
+                width={300}
+                height={300}
+                alt="Drone"
+                className="z-50 drop-shadow-sm"
+                unoptimized
+                data-aos="zoom-out-left"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+            </div>
+          </section>
+        ),
+        imgUrl: "/solutions/sig.png",
+      },
+    ],
   },
   // Robotique
   {
