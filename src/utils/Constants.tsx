@@ -581,13 +581,6 @@ export const solutionsArr = [
   },
   {
     id: 5,
-    name: "IOT",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic",
-    imgUrl: "/solutions/robotic.jpg",
-    animation: <Irrigation />,
-  },
-  {
-    id: 6,
     name: "Fertigation connecté",
     desc: "Nous utilisons des captures pour mesurer les niveaux d'humidité du sol, de nutriments et de pH, ainsi que des dispositifs de contrôle pour ajuster les doses d'eau et d'engrais en fonction des besoins de la plante...",
     imgUrl: "/solutions/robotic.jpg",
@@ -596,7 +589,7 @@ export const solutionsArr = [
   },
 
   {
-    id: 7,
+    id: 6,
     name: "Farm management",
     desc: "Nous mettons à la disposition de nos clients des applications leur permettant de gérer leurs cultures de la meilleure façon qui soit. Nous proposons des application qui aide les agriculteurs ....",
     imgUrl: "/solutions/smartparking.jpg",
@@ -605,42 +598,42 @@ export const solutionsArr = [
   },
   // smart cities
   {
-    id: 8,
+    id: 7,
     name: "Gestion d'irrigation",
     desc: "En utilisation l’IOT; l’irrigation intelligente déclenche l’arrosage en temps opportun et en quantité optimale...",
     imgUrl: "/solutions/smartparking.jpg",
     sectorId: 4,
   },
   {
-    id: 9,
+    id: 8,
     name: "Gestion de l'éclairage",
     desc: "La surveillance du climat pour les cultures consiste à observer et à mesurer l'impact du temps et du climat...",
     imgUrl: "/solutions/smartparking.jpg",
     sectorId: 4,
   },
   {
-    id: 10,
+    id: 9,
     name: "Gestion de transport",
     desc: "Pour les sociétés de transport, nous offrons une application leur permettant de mieux gérer leur flotte de véhicules...",
     imgUrl: "/solutions/smartparking.jpg",
     sectorId: 4,
   },
   {
-    id: 11,
+    id: 10,
     name: "Gestion de parking",
     desc: "AGRI 4.0 offre une solution de gestion de parking permettant La gestion intelligente des parkings en utilisant...",
     imgUrl: "/solutions/smartparking.jpg",
     sectorId: 4,
   },
   {
-    id: 12,
+    id: 11,
     name: "Traffic management",
     desc: "Nos solutions offrent une multitude de services visant à mieux organiser le trafic routier. Nous utilisons...",
     imgUrl: "/solutions/smartparking.jpg",
     sectorId: 4,
   },
   {
-    id: 13,
+    id: 12,
     name: "Environnement intelligent",
     desc: "L'environnement intelligent intègre des technologies avancées dans notre environnement quotidien...",
     imgUrl: "/solutions/smartparking.jpg",
@@ -1034,30 +1027,21 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
       },
       {
         id: 3,
-        name: "Caméra",
+        name: "Bassin et Stockage",
         desc: (
           <section className="flex items-center justify-between gap-20 p-24">
             <div className="flex flex-col max-w-lg space-y-3 text-justify">
-              <h1 className="mb-5 text-4xl font-bold">Camera au sol</h1>
+              <h1 className="mb-5 text-4xl font-bold">Bassin et Stockage</h1>
               <ul className="space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
-                  Les caméras au sol peuvent également être utilisées pour aider
-                  à cartographier les champs et à identifier les zones qui
-                  nécessitent une gestion différente. Les informations
-                  collectées peuvent être utilisées pour créer des cartes de
-                  rendement, pour planifier la plantation et la fertilisation
-                  des cultures, et pour identifier les zones qui nécessitent des
-                  traitements supplémentaires.
-                </li>
-                <li className="text-sm font-light leading-snug">
-                  Les avantages de l&apos;utilisation de caméras au sol en
-                  agriculture de précision sont leur capacité à fournir des
-                  informations détaillées sur les cultures et le sol à un coût
-                  relativement faible. Les images collectées peuvent être
-                  analysées pour fournir des informations utiles aux
-                  agriculteurs, ce qui peut les aider à prendre des décisions
-                  plus éclairées et à améliorer l&apos;efficacité de leur
-                  gestion des cultures.
+                  Nos solutions permettent aux agriculteurs de maximiser leur
+                  production avec une utilisation minimale des ressources. Grâce
+                  aux données recueillies par nos capteurs, les agriculteurs
+                  écoutent mieux les plantes et prennent ainsi les décisions les
+                  plus adéquates. L&apos;eau pénètre mieux dans le sol,
+                  l&apos;absorption des nutriments est améliorée et la salinité
+                  peut être gérée de manière durable. Nous utilisons la
+                  technologie pour mieux servir les plantes.
                 </li>
               </ul>
             </div>
@@ -1081,6 +1065,87 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
           </section>
         ),
         imgUrl: "/solutions/sig.png",
+        devices: [
+          {
+            id: 1,
+            title: "Niveau Liquide",
+            description: "capteur De Niveau Pour Eau",
+            image: "/devices/DEVICE 1.png",
+          },
+          {
+            id: 2,
+            title: "Capteur de turbidite",
+            description: "Mesures et Tests",
+            image: "/devices/DEVICE 2.webp",
+          },
+          {
+            id: 3,
+            title: "Transmetteur de turbidité",
+            description: "Pour le controle En Ligne",
+            image: "/devices/DEVICE 3.png",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Filtration",
+        desc: (
+          <section className="flex items-center justify-between gap-20 p-24 bg-gray-100">
+            <div className="relative">
+              <Image
+                src="/SATELLITE.png"
+                width={500}
+                height={500}
+                alt="Drone"
+                className="z-50 rotate-180 rounded-xl drop-shadow-sm"
+                data-aos="zoom-out-right"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+            </div>
+
+            <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
+              <h1 className="mb-5 text-4xl font-bold">Filtration</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  En surveillant régulièrement la qualité de l&apos;eau et en
+                  utilisant des systèmes de filtration appropriés, vous pouvez
+                  garantir que vos plantes reçoivent une eau de qualité optimale
+                  pour une croissance saine et maximale. Pour pouvoir y arriver
+                  nous vous proposons un système de contrôle automatisé pour
+                  surveiller la filtration de l&apos;eau. Ce système utilise des
+                  capteurs et des actionneurs pour surveiller et ajuster la
+                  qualité de l&apos;eau dans les systèmes d&apos;irrigation en
+                  temps réel.
+                </li>
+              </ul>
+            </div>
+          </section>
+        ),
+        imgUrl: "/solutions/sig.png",
+        devices: [
+          {
+            id: 1,
+            title: "Niveau Liquide",
+            description: "capteur De Niveau Pour Eau",
+            image: "/devices/DEVICE 1.png",
+          },
+          {
+            id: 2,
+            title: "Capteur de turbidite",
+            description: "Mesures et Tests",
+            image: "/devices/DEVICE 2.webp",
+          },
+          {
+            id: 3,
+            title: "Transmetteur de turbidité",
+            description: "Pour le controle En Ligne",
+            image: "/devices/DEVICE 3.png",
+          },
+        ],
       },
     ],
   },
@@ -1105,7 +1170,227 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
       </>
     ),
     imgUrl: "/solutionDetails/robotique.png",
-    services: [],
+    services: [
+      {
+        id: 1,
+        name: "AGRIBOT Récolte",
+        desc: (
+          <section className="relative flex items-center justify-between gap-10 px-24">
+            <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
+              <h1 className="mb-5 text-4xl font-bold">AGRIBOT Récolte</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  Notre produit AGRIBOT RECOLTE peut fournir les fonctionnalités
+                  suivantes suivant le besoin de nos client :
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Vision par ordinateur : Les robots peuvent être équipés de
+                  caméras pour capturer des images de la culture et utiliser des
+                  algorithmes de vision par ordinateur pour identifier les
+                  fruits ou légumes mûrs à récolter.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Bras robotique : Les robots de récolte peuvent être équipés de
+                  bras robotiques pour effectuer la cueillette des fruits ou
+                  légumes. Les bras peuvent être conçus pour s&apos;adapter à
+                  différentes tailles et formes de fruits et légumes.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Capteurs de pression : Les robots peuvent être équipés de
+                  capteurs de pression pour détecter la maturité des fruits ou
+                  légumes en mesurant leur fermeté. Les fruits mûrs ont tendance
+                  à être plus souples et moins fermes que les fruits non mûrs.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Système de navigation : Les robots peuvent être équipés de
+                  systèmes de navigation pour se déplacer à travers les champs
+                  de manière autonome. Les systèmes de navigation peuvent
+                  utiliser des capteurs lidar, des caméras ou des GPS pour aider
+                  les robots à se déplacer avec précision.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Système de collecte : Les robots peuvent être équipés de
+                  systèmes de collecte pour ramasser les fruits ou légumes
+                  récoltés et les transporter vers des bacs ou des conteneurs de
+                  stockage.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Nos robots peuvent contenir une ou plusieurs de ces
+                  fonctionnalités pour créer des robots de récolte efficaces et
+                  précis qui peuvent aider les agriculteurs à récolter leurs
+                  cultures plus rapidement et de manière plus efficace.
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative">
+              <Image
+                src="/DRONE.png"
+                width={400}
+                height={400}
+                alt="Drone"
+                className="z-[9999] rounded-xl"
+                data-aos="zoom-out-left"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+            </div>
+          </section>
+        ),
+        imgUrl: "/solutions/sig.png",
+        devices: [
+          {
+            id: 1,
+            title: "Camera de haut qualite ",
+            description: "",
+            image: "/devices/DEVICE 1.png",
+          },
+          {
+            id: 2,
+            title: "Capteur de pression",
+            description: "",
+            image: "/devices/DEVICE 2.webp",
+          },
+          {
+            id: 3,
+            title: "RPLIDAR A1M8-R6 360° Laser Range",
+            description: "Scanner - 12m range",
+            image: "/devices/DEVICE 3.png",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "AGRIBOT Traitement",
+        desc: (
+          <section className="flex items-center justify-between gap-20 p-24 bg-gray-100">
+            <div className="relative">
+              <Image
+                src="/SATELLITE.png"
+                width={500}
+                height={500}
+                alt="Drone"
+                className="z-50 rotate-180 rounded-xl drop-shadow-sm"
+                data-aos="zoom-out-right"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+            </div>
+
+            <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
+              <h1 className="mb-5 text-4xl font-bold">AGRIBOT Traitement</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  Grâce à l&apos;automatisation du traitement de vos cultures,
+                  vous bénéficiez d&apos;une pulvérisation uniforme et homogène
+                  qui assure une protection optimale pour l&apos;ensemble de vos
+                  cultures. Avec AGRIBOT Traitement vous pouvez être sûr que
+                  toutes vos plantes seront servies
+                </li>
+              </ul>
+            </div>
+          </section>
+        ),
+        imgUrl: "/solutions/sig.png",
+        devices: [
+          {
+            id: 1,
+            title: "Niveau Liquide",
+            description: "capteur De Niveau Pour Eau",
+            image: "/devices/DEVICE 1.png",
+          },
+          {
+            id: 2,
+            title: "Capteur de turbidite",
+            description: "Mesures et Tests",
+            image: "/devices/DEVICE 2.webp",
+          },
+          {
+            id: 3,
+            title: "Transmetteur de turbidité",
+            description: "Pour le controle En Ligne",
+            image: "/devices/DEVICE 3.png",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "AGRIBOT Scan",
+        desc: (
+          <section className="flex items-center justify-between gap-20 p-24">
+            <div className="flex flex-col max-w-lg space-y-3 text-justify">
+              <h1 className="mb-5 text-4xl font-bold">AGRIBOT Scan</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  Notre robot scan sera équipé de caméras et de capteurs pour
+                  vous permettre de :
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Détecter les signes de maladies dans les plantes. Ces signes
+                  pourraient inclure des changements de couleur, de texture, de
+                  forme ou de croissance anormale.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  D’identifier les couleurs des plantes. Cela aidera à
+                  identifier les plantes qui ne sont pas en bonne santé ou qui
+                  ont besoin d&apos;être récoltées.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  D’identifier les mauvaises herbes qui poussent parmi les
+                  cultures pour cibler leur traitement herbicide uniquement sur
+                  les zones où les mauvaises herbes sont présentes, plutôt que
+                  de traiter l&apos;ensemble de leur champ.
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative">
+              <Image
+                src="/CAMERA AU SOL.png"
+                width={300}
+                height={300}
+                alt="Drone"
+                className="z-50 drop-shadow-sm"
+                unoptimized
+                data-aos="zoom-out-left"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+            </div>
+          </section>
+        ),
+        imgUrl: "/solutions/sig.png",
+        devices: [
+          {
+            id: 1,
+            title: "Niveau Liquide",
+            description: "capteur De Niveau Pour Eau",
+            image: "/devices/DEVICE 1.png",
+          },
+          {
+            id: 2,
+            title: "Capteur de turbidite",
+            description: "Mesures et Tests",
+            image: "/devices/DEVICE 2.webp",
+          },
+          {
+            id: 3,
+            title: "Transmetteur de turbidité",
+            description: "Pour le controle En Ligne",
+            image: "/devices/DEVICE 3.png",
+          },
+        ],
+      },
+    ],
   },
   // Suivi du Climat
   {
@@ -1130,7 +1415,77 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
       </>
     ),
     imgUrl: "/solutionDetails/climat.png",
-    services: [],
+    services: [
+      {
+        id: 1,
+        name: "MCCC",
+        desc: (
+          <section className="relative flex items-center justify-between gap-10 px-24">
+            <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
+              <h1 className="mb-5 text-4xl font-bold">MCCC</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  Les solutions que nous proposons permettent la supervision des
+                  fermes à travers l&apos;installation de capteurs électroniques
+                  SMART gérées par des applications web et mobile.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  L&apos;application assure le suivi du climat sous-serre, le
+                  suivi des irrigations (Nombre d’irrigation par serre, date de
+                  début et de fin, niveau de l’EC et du PH lors de l’irrigation
+                  etc.) Le recueil des données importantes à la bonne croissance
+                  de la plante se fait de manière automatique et en temps réel
+                  et leur traitement se fait grâce à l’intelligence
+                  artificielle.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Toutes les données du système sont exploitables par la
+                  fonction data export pour l’analyse des données et la
+                  réalisation des rapports.
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative">
+              <Image
+                src="/DRONE.png"
+                width={400}
+                height={400}
+                alt="Drone"
+                className="z-[9999] rounded-xl"
+                data-aos="zoom-out-left"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+            </div>
+          </section>
+        ),
+        imgUrl: "/solutions/sig.png",
+        devices: [
+          {
+            id: 1,
+            title: "Rain Gouge Sensor",
+            description: "ECOWITT WH40 Wireless",
+            image: "/devices/DEVICE 1.png",
+          },
+          {
+            id: 2,
+            title: "Capteur de direction du vent",
+            description: "Tous les fabricants industriels",
+            image: "/devices/DEVICE 2.webp",
+          },
+          {
+            id: 3,
+            title: "Capteur de vent PCE",
+            description: "FST-200-201 (vitesse)",
+            image: "/devices/DEVICE 3.png",
+          },
+        ],
+      },
+    ],
   },
   // Fertigation connecté
   {
@@ -1152,7 +1507,150 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
       </>
     ),
     imgUrl: "/solutionDetails/fertigation.png",
-    services: [],
+    services: [
+      {
+        id: 1,
+        name: "Station tête monitoring",
+        desc: (
+          <section className="relative flex items-center justify-between gap-10 px-24">
+            <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
+              <h1 className="mb-5 text-4xl font-bold">
+                Station tête monitoring
+              </h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  L’application STM (Station Tête Monitoring) permet la
+                  supervision d’une ferme connectée. Elle assure le suivi du
+                  climat sous-serre, le suivi des irrigations (Nombre
+                  d’irrigation par serre, date de début et de fin, niveau de
+                  l’EC et du PH lors de l’irrigation etc.) A travers
+                  l’application, on peut aussi commander à distance et
+                  déclencher tout un système comme celui de la brumisation si un
+                  changement climatique inattendu prend place. On peut également
+                  recevoir des notifications si des indicateurs clés atteignent
+                  ou dépassent un certain seuil (humidité, température, EC, PH
+                  etc.). Toutes les données du système sont exploitables par la
+                  fonction data export pour l’analyse des données et la
+                  réalisation des rapports.
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative">
+              <Image
+                src="/DRONE.png"
+                width={400}
+                height={400}
+                alt="Drone"
+                className="z-[9999] rounded-xl"
+                data-aos="zoom-out-left"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+            </div>
+          </section>
+        ),
+        imgUrl: "/solutions/sig.png",
+        devices: [
+          {
+            id: 1,
+            title: "Manometre",
+            description: "",
+            image: "/devices/DEVICE 1.png",
+          },
+          {
+            id: 2,
+            title: "Debimetre",
+            description: "",
+            image: "/devices/DEVICE 2.webp",
+          },
+          {
+            id: 3,
+            title: "Capteur EC ",
+            description: "",
+            image: "/devices/DEVICE 3.png",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "SPAW",
+        desc: (
+          <section className="flex items-center justify-between gap-20 p-24 bg-gray-100">
+            <div className="relative">
+              <Image
+                src="/SATELLITE.png"
+                width={500}
+                height={500}
+                alt="Drone"
+                className="z-50 rotate-180 rounded-xl drop-shadow-sm"
+                data-aos="zoom-out-right"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+            </div>
+
+            <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
+              <h1 className="mb-5 text-4xl font-bold">SPAW</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  Agri 4.0 propose une nouvelle invention nommée AGRI-SPAW :
+                  SOIL – PLANT – AIR – WATER. C’est une solution intelligente
+                  intégrée qui offre l’accessibilité à toutes les informations
+                  liées à l’environnement de la plante, ce qui permet de donner
+                  une visibilité globale sur sa santé, son évolution, sa
+                  capacité de production, les maladies dont elle peut souffrir,
+                  les ravageurs qui l’attaque, anticiper l’état de stress
+                  qu’elle peut ressentir et connaitre exactement ses besoins en
+                  nutrition et en eau.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Cette solution permet de remonter en temps réel toutes les
+                  informations utiles liés au sol, les plantes, l’air et l’eau.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Les données acquises sont accessibles à tout moment via une
+                  application web dédiée, développée par Agri 4.0.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Ce suivi permet de connaitre les besoins exacts de la plante
+                  et ainsi réduire les intrants inutiles, économiser l’eau et
+                  l’énergie et donc profiter d’une agriculture saine et
+                  rentable.
+                </li>
+              </ul>
+            </div>
+          </section>
+        ),
+        imgUrl: "/solutions/sig.png",
+        devices: [
+          {
+            id: 1,
+            title: "Cellule de charge type- S ",
+            description: "Serie HM-2300 | Geneql",
+            image: "/devices/DEVICE 1.png",
+          },
+          {
+            id: 2,
+            title: "Capteur d'humidité",
+            description: "de la surface des feuilles,",
+            image: "/devices/DEVICE 2.webp",
+          },
+          {
+            id: 3,
+            title: "Capteur pH pour eau pure",
+            description: "OPTISENS PH 8100 - KROHNE",
+            image: "/devices/DEVICE 3.png",
+          },
+        ],
+      },
+    ],
   },
   // Farm management
   {
@@ -1171,7 +1669,141 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
       </>
     ),
     imgUrl: "/solutionDetails/farm.png",
-    services: [],
+    services: [
+      {
+        id: 1,
+        name: "Production",
+        desc: (
+          <section className="relative flex items-center justify-between gap-10 px-24">
+            <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
+              <h1 className="mb-5 text-4xl font-bold">Production</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  Nous mettons à votre disposition des solutions vous permettant
+                  de gérer à distance vos données, de visualiser les tendances
+                  et de rester informé grâce à des alertes en temps réel.
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Notre solution vous permettra de suivre en temps réel : L’état
+                  de vos cultures : La température L’humidité
+                  L’évapotranspiration Niveau d’eau Précipitations Humidité des
+                  feuilles Niveau d’eau Vitesse de vent
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Les prévisions des récoltes La gestion du stock La gestion des
+                  achats des intrants La gestion de la maintenance des
+                  équipements agricoles.
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative">
+              <Image
+                src="/DRONE.png"
+                width={400}
+                height={400}
+                alt="Drone"
+                className="z-[9999] rounded-xl"
+                data-aos="zoom-out-left"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+            </div>
+          </section>
+        ),
+        imgUrl: "/solutions/sig.png",
+      },
+      {
+        id: 2,
+        name: "Qualité",
+        desc: (
+          <section className="flex items-center justify-between gap-20 p-24 bg-gray-100">
+            <div className="relative">
+              <Image
+                src="/SATELLITE.png"
+                width={500}
+                height={500}
+                alt="Drone"
+                className="z-50 rotate-180 rounded-xl drop-shadow-sm"
+                data-aos="zoom-out-right"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+            </div>
+
+            <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
+              <h1 className="mb-5 text-4xl font-bold">Qualité</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  Avec notre application web et mobile AGRI-CERT, nous assurons
+                  un suivi et contrôle de toutes les certifications disponibles
+                  dans le secteur agricole, à savoir : Globalgap, Grasp, Tesco,
+                  Smeta etc.
+                </li>
+                Exemple: GLOBALG.A.
+                <li className="text-sm font-light leading-snug">
+                  Notre solution vient digitaliser le référentiel GLOBAL G.A.P
+                  avec une application simple et sans saisie. Ceci permettra
+                  d’effectuer un audit préalable plus rapide et efficace
+                </li>
+                <li className="text-sm font-light leading-snug">
+                  Cette application agricole facilite la gestion des activités
+                  de production telles que la planification, la gestion des
+                  tâches, la gestion des ressources et des stocks, ainsi que la
+                  réalisation d&apos;audits. Elle fournit une analyse des coûts
+                  de production et une planification financière pour aider les
+                  agriculteurs à mieux gérer leur exploitation agricole.
+                </li>
+              </ul>
+            </div>
+          </section>
+        ),
+        imgUrl: "/solutions/sig.png",
+      },
+      {
+        id: 3,
+        name: "Supply chain",
+        desc: (
+          <section className="relative flex items-center justify-between gap-10 px-24">
+            <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
+              <h1 className="mb-5 text-4xl font-bold">Supply chain</h1>
+              <ul className="space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  Notre application supply chain permet aux agriculteurs la
+                  gestion de la chaîne d&apos;approvisionnement, notamment la
+                  planification de la demande, la planification de la
+                  production, la gestion des stocks, la gestion des entrepôts et
+                  autres
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative">
+              <Image
+                src="/DRONE.png"
+                width={400}
+                height={400}
+                alt="Drone"
+                className="z-[9999] rounded-xl"
+                data-aos="zoom-out-left"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+            </div>
+          </section>
+        ),
+        imgUrl: "/solutions/sig.png",
+      },
+    ],
   },
 ];
 
