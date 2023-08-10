@@ -8,17 +8,17 @@ const Device = ({ params }: any) => {
   console.log(params);
 
   return (
-    <main className="px-16 pt-40 pb-20">
+    <main className="px-10 pt-40 pb-20 md:px-36">
       {/* Product header */}
       <section className="flex justify-between w-full">
         <div>
           <span className="px-2 py-1 text-white bg-green-500 rounded-lg">
             New
           </span>
-          <p className="max-w-lg mt-2 text-4xl font-bold text-gray-900">
+          <p className="max-w-lg mt-2 text-2xl font-bold text-gray-900 md:text-4xl">
             Capteur de vent PCE FST-200-201 (vitesse)
           </p>
-          <p className="max-w-lg mt-2 text-base text-gray-500">
+          <p className="mt-2 text-xs text-gray-500 md:max-w-lg md:text-base">
             Le capteur de vitesse est un générateur d&apos;impulsion qui
             transforme un mouvement de rotation mécanique en un signal
             électrique. Ce dernier est envoyé au calculateur pour être
@@ -28,7 +28,7 @@ const Device = ({ params }: any) => {
         </div>
         <div>
           <Image
-            src="/devices/DEVICE 3.png"
+            src="/logo.svg"
             alt="logo"
             width="350"
             height="350"
@@ -41,8 +41,8 @@ const Device = ({ params }: any) => {
         <h1 className="text-3xl font-bold text-green-700 mt-14">
           Product Information:
         </h1>
-        <div className="flex justify-between">
-          <h1 className="mt-10 text-2xl font-bold text-gray-900">Overview:</h1>
+        <div className="flex flex-col justify-between mt-12 md:flex-row">
+          <h1 className="text-2xl font-bold text-gray-900">Overview:</h1>
           <div className="max-w-4xl">
             <p className="mt-2 text-base text-gray-500 ">
               L&apos;utilisation des capteurs de roue actifs présente plusieurs
@@ -71,7 +71,7 @@ const Device = ({ params }: any) => {
           Similar products:
         </h1>
         <hr className="max-w-[120px] mt-2 border-2 border-green-400 border-solid" />
-        <div className="flex gap-4 mt-10">
+        <div className="grid grid-cols-1 gap-4 mt-10 md:grid-cols-4">
           {[1, 2, 3, 4].map((item) => (
             <div
               key={item}

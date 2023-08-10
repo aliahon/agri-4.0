@@ -90,11 +90,10 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
     };
   }, [setIsSelectedOpen]);
 
-  console.log(selectedItemName);
-
   return (
-    <div className="absolute left-0 w-full py-6 transition duration-300 ease-in-out transform bg-white h-[600px] px-14 z-90 top-14 ">
-      <div className="flex items-center justify-center w-full h-full">
+    <div className="absolute left-0 w-full py-6 transition duration-300 ease-in-out transform bg-white h-[600px] md:px-14 z-90 top-14">
+      <div className="flex flex-col items-center justify-center w-full h-full overflow-y-scroll scrollbar-hide md:flex-row md:justify-between md:items-start md:space-x-4 ">
+        {/* Sidebar */}
         <div className="flex flex-col w-1/3 h-full overflow-y-scroll scrollbar-hide">
           {navDetails?.map((item, i) => (
             <div
@@ -123,7 +122,9 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
             </div>
           ))}
         </div>
-        {/* second section */}
+        {/* End Sidebar */}
+
+        {/* Content */}
         <div className="w-full h-full px-10 pt-4">
           <Link
             href={`/sector/${
@@ -151,13 +152,13 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
               {selectedSection === "Solutions" && selectedItemName}
             </h1>
           </Link>
-          <p className="mb-5 text-sm leading-snug text-gray-400">
+          <p className="text-sm leading-snug text-gray-400 md-3 md:mb-5">
             {selectedSection === "Solutions" &&
               "L'agriculture de précision est une approche qui permet d'optimiser la production agricole"}
           </p>
-          <div className="flex justify-between">
+          <div className="flex flex-wrap justify-between gap-4 md:flex-nowrap z ">
             <div className="w-full">
-              <hr className="w-1/2 my-2 mb-5 border-gray-300" />
+              <hr className="my-2 mb-5 border-gray-300 md:w-1/2" />
               <div className="grid items-center grid-cols-2 gap-7">
                 {selectedSection === "Solutions" ? (
                   arrSolutions?.map((item, i) => (
@@ -191,9 +192,9 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
               </div>
             </div>
             {selectedSection === "Solutions" && (
-              <div className="w-1/2">
+              <div className="w-full md:w-1/2">
                 <h1 className="mt-4 text-sm font-semibold uppercase">apps</h1>
-                <hr className="w-1/2 my-2 mb-5 border-gray-300" />
+                <hr className="w-1/2 my-2 mb-1 border-gray-300 md:mb-5" />
                 <div className="flex-col space-y-6">
                   {/* @ts-ignore */}
                   {solutions[selectedItem]?.map((item: any, i: number) => (
@@ -211,14 +212,14 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
                     </div>
                   ))}
                 </div>
-                <button className="mt-6 text-sm font-semibold text-secondary">
+                <button className="text-sm font-semibold md:mt-6 text-secondary">
                   View all solutions -&gt;{" "}
                 </button>
               </div>
             )}
           </div>
         </div>
-        {/* second section */}
+        {/* End Content */}
       </div>
     </div>
   );

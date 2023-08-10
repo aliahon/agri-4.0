@@ -29,6 +29,12 @@ const Navbar = () => {
 
   const [openSearch, setOpenSearch] = React.useState<boolean>(false);
 
+  const [open, setOpen] = React.useState<boolean>(false);
+
+  const [openMenu, setOpenMenu] = React.useState<boolean>(false);
+
+  const [openMenuMobile, setOpenMenuMobile] = React.useState<boolean>(false);
+
   return (
     <nav className="fixed top-0 z-50 flex flex-wrap items-center justify-between w-full px-6 py-2 bg-white border-b-2 border-gray-300 shadow-md md:px-20">
       <div className="flex items-center flex-shrink-0 mr-6 text-black">
@@ -45,7 +51,12 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="block lg:hidden">
-        <button className="flex items-center px-3 py-2 text-black border-2 border-white rounded hover:text-primary hover:border-primary">
+        <button
+          className="flex items-center px-3 py-2 text-black border-2 border-white rounded hover:text-primary hover:border-primary"
+          onClick={() => {
+            setOpenMenuMobile(!openMenuMobile);
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -62,12 +73,15 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-      <div className="flex-grow hidden w-full md:block lg:flex lg:items-center lg:w-auto">
+      <div
+        className={`flex-grow hidden w-full lg:flex lg:items-center lg:w-auto
+        ${openMenuMobile ? "block" : "hidden"}`}
+      >
         <div className="text-sm lg:flex-grow">
           {sidebarMenu?.map((item, i) => (
             <button
               key={i}
-              className={`block px-4 py-2 mt-2 border-b-4  text-base font-semibold text-black transition duration-300 ease-in-out transform lg:inline-block lg:mt-0 hover:text-primary hover:bg-gray-100 ${
+              className={` px-4 py-2 mt-2 border-b-4  text-base font-semibold text-black transition duration-300 ease-in-out transform lg:inline-block lg:mt-0 hover:text-primary hover:bg-gray-100 ${
                 selectedSection === item?.name && isSelectedOpen
                   ? "border-secondary"
                   : "border-white"
@@ -111,6 +125,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center justify-center w-full mt-4 text-base lg:mt-0 lg:w-auto">
+          {/* Language */}
           <button className="inline-flex items-center mr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -127,6 +142,7 @@ const Navbar = () => {
               />
             </svg>
           </button>
+          {/* Search */}
           <button
             className="inline-flex items-center mr-4"
             onClick={() => setOpenSearch(true)}

@@ -15,7 +15,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const poppins = Poppins({
-  weight: ["400", "600", "700", "800"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin-ext"],
   preload: true,
 });
