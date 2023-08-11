@@ -33,9 +33,14 @@ const Solution = ({ params }: any) => {
 
   return (
     <section className="flex-col py-14">
-      <div className="flex justify-between w-full px-20 pb-10 pt-16 text-white border-b-[10px] bg-[#081B15] border-b-secondary">
-        <div className="flex flex-col max-w-2xl space-y-3 text-justify">
-          <h1 className="mb-5 text-4xl font-bold">{solution?.name || null}</h1>
+      <div
+        className="flex justify-between w-full px-5 md:px-20 pb-10 pt-16 text-white border-b-[10px] bg-[#081B15] border-b-secondary flex-col-reverse md:flex-row
+      "
+      >
+        <div className="flex flex-col space-y-3 md:max-w-2xl md:text-justify">
+          <h1 className="mb-5 text-xl font-bold md:text-4xl">
+            {solution?.name || null}
+          </h1>
           {solution?.desc}
         </div>
         <div className="relative">

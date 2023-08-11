@@ -8,10 +8,10 @@ const Device = ({ params }: any) => {
   console.log(params);
 
   return (
-    <main className="px-10 pt-40 pb-20 md:px-36">
+    <main className="px-10 pt-20 pb-20 md:pt-40 md:px-36">
       {/* Product header */}
-      <section className="flex justify-between w-full">
-        <div>
+      <section className="flex flex-col-reverse w-full md:flex-row md:items-center md:justify-between md:space-x-10 md:space-y-0 ">
+        <div className="mt-4">
           <span className="px-2 py-1 text-white bg-green-500 rounded-lg">
             New
           </span>
@@ -91,6 +91,7 @@ const Device = ({ params }: any) => {
           ))}
         </div>
       </section>
+
       {/*  */}
     </main>
   );

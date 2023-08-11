@@ -29,10 +29,6 @@ const Navbar = () => {
 
   const [openSearch, setOpenSearch] = React.useState<boolean>(false);
 
-  const [open, setOpen] = React.useState<boolean>(false);
-
-  const [openMenu, setOpenMenu] = React.useState<boolean>(false);
-
   const [openMenuMobile, setOpenMenuMobile] = React.useState<boolean>(false);
 
   return (
