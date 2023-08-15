@@ -679,14 +679,14 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 1,
         name: "Drones",
         desc: (
-          <section className="relative flex items-center justify-between gap-10 px-24">
+          <section className="relative flex flex-col items-center justify-between gap-10 px-5 md:px-24 md:flex-row">
             <div className="absolute -z-10 bottom-[200px] left-20 opacity-20">
               <Drone />
             </div>
 
             <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
               <h1 className="mb-5 text-4xl font-bold">Drone</h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-2 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   L&apos;agriculture numérique est une industrie florissante et
                   les drones sont en train de devenir de plus en plus
@@ -756,7 +756,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 2,
         name: "Satellite",
         desc: (
-          <section className="flex items-center justify-between gap-20 p-24 bg-gray-100">
+          <section className="flex flex-col items-center justify-between gap-20 p-4 py-10 bg-gray-100 md:p-24 md:flex-row">
             <div className="relative">
               <Image
                 src="/SATELLITE.png"
@@ -778,7 +778,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 <Satellite />
               </div>
               <h1 className="mb-5 text-4xl font-bold">Satellite</h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-2 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   L&apos;utilisation des satellites de traitement d&apos;images
                   dans l&apos;agriculture de précision aide les agriculteurs à
@@ -813,10 +813,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 3,
         name: "Caméra",
         desc: (
-          <section className="flex items-center justify-between gap-20 p-24">
+          <section className="flex flex-col items-center justify-between gap-20 p-4 md:p-24 md:flex-row ">
             <div className="flex flex-col max-w-lg space-y-3 text-justify">
               <h1 className="mb-5 text-4xl font-bold">Camera au sol</h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-2 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   Les caméras au sol peuvent également être utilisées pour aider
                   à cartographier les champs et à identifier les zones qui
@@ -884,10 +884,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 1,
         name: "Abar",
         desc: (
-          <section className="relative flex items-center justify-between gap-10 px-24">
+          <section className="relative flex flex-col items-center justify-between gap-10 px-4 md:px-24 md:flex-row">
             <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
               <h1 className="mb-5 text-4xl font-bold">Abar</h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-2 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   www.abar.ma est une plateforme Marocaine unique créée par AGRI
                   4.0 qui regroupe toutes les informations sur les puits :
@@ -941,7 +941,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 2,
         name: "Osmose",
         desc: (
-          <section className="flex items-center justify-between gap-20 p-24 bg-gray-100">
+          <section className="flex flex-col items-center justify-between gap-20 px-4 py-10 bg-gray-100 md:px-24 md:flex-row">
             <div className="relative">
               <Image
                 src="/SATELLITE.png"
@@ -963,7 +963,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 <Satellite />
               </div>
               <h1 className="mb-5 text-4xl font-bold">Osmose</h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   OSMOSE INVERSE MONITORING: Nous proposons une solution vous
                   permettant de suivre en temps réel l’efficacité de votre
@@ -1029,10 +1029,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 3,
         name: "Bassin et Stockage",
         desc: (
-          <section className="flex items-center justify-between gap-20 p-24">
+          <section className="flex flex-col items-center justify-between gap-20 px-4 md:px-24 md:flex-row">
             <div className="flex flex-col max-w-lg space-y-3 text-justify">
               <h1 className="mb-5 text-4xl font-bold">Bassin et Stockage</h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   Nos solutions permettent aux agriculteurs de maximiser leur
                   production avec une utilisation minimale des ressources. Grâce
@@ -1090,7 +1090,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 2,
         name: "Filtration",
         desc: (
-          <section className="flex items-center justify-between gap-20 p-24 bg-gray-100">
+          <section className="flex flex-col items-center justify-between gap-20 px-4 py-10 bg-gray-100 md:px-24 md:flex-row">
             <div className="relative">
               <Image
                 src="/SATELLITE.png"
@@ -1109,7 +1109,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
 
             <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
               <h1 className="mb-5 text-4xl font-bold">Filtration</h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   En surveillant régulièrement la qualité de l&apos;eau et en
                   utilisant des systèmes de filtration appropriés, vous pouvez
@@ -1175,10 +1175,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 1,
         name: "AGRIBOT Récolte",
         desc: (
-          <section className="relative flex items-center justify-between gap-10 px-24">
+          <section className="relative flex flex-col items-center justify-between gap-10 px-4 py-10 md:px-24 md:flex-row">
             <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
               <h1 className="mb-5 text-4xl font-bold">AGRIBOT Récolte</h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   Notre produit AGRIBOT RECOLTE peut fournir les fonctionnalités
                   suivantes suivant le besoin de nos client :
@@ -1266,7 +1266,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 2,
         name: "AGRIBOT Traitement",
         desc: (
-          <section className="flex items-center justify-between gap-20 p-24 bg-gray-100">
+          <section className="flex flex-col items-center justify-between gap-20 px-6 py-10 bg-gray-100 md:p-24 md:flex-row">
             <div className="relative">
               <Image
                 src="/SATELLITE.png"
@@ -1285,7 +1285,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
 
             <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
               <h1 className="mb-5 text-4xl font-bold">AGRIBOT Traitement</h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   Grâce à l&apos;automatisation du traitement de vos cultures,
                   vous bénéficiez d&apos;une pulvérisation uniforme et homogène
@@ -1323,10 +1323,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 3,
         name: "AGRIBOT Scan",
         desc: (
-          <section className="flex items-center justify-between gap-20 p-24">
+          <section className="flex flex-col items-center justify-between gap-20 p-2 md:p-24 md:flex-row">
             <div className="flex flex-col max-w-lg space-y-3 text-justify">
               <h1 className="mb-5 text-4xl font-bold">AGRIBOT Scan</h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   Notre robot scan sera équipé de caméras et de capteurs pour
                   vous permettre de :
@@ -1420,10 +1420,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 1,
         name: "MCCC",
         desc: (
-          <section className="relative flex items-center justify-between gap-10 px-24">
+          <section className="relative flex flex-col items-center justify-between gap-10 px-4 md:px-24 md:flex-row">
             <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
               <h1 className="mb-5 text-4xl font-bold">MCCC</h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   Les solutions que nous proposons permettent la supervision des
                   fermes à travers l&apos;installation de capteurs électroniques
@@ -1512,12 +1512,12 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 1,
         name: "Station tête monitoring",
         desc: (
-          <section className="relative flex items-center justify-between gap-10 px-24">
+          <section className="relative flex flex-col items-center justify-between gap-10 px-4 md:px-24 md:flex-row">
             <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
               <h1 className="mb-5 text-4xl font-bold">
                 Station tête monitoring
               </h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   L’application STM (Station Tête Monitoring) permet la
                   supervision d’une ferme connectée. Elle assure le suivi du
@@ -1579,7 +1579,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 2,
         name: "SPAW",
         desc: (
-          <section className="flex items-center justify-between gap-20 p-24 bg-gray-100">
+          <section className="flex flex-col items-center justify-between gap-20 px-4 bg-gray-100 md:px-24 md:flex-row">
             <div className="relative">
               <Image
                 src="/SATELLITE.png"
@@ -1596,7 +1596,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
               <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
             </div>
 
-            <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
+            <div className="relative flex flex-col max-w-lg px-3 space-y-3 text-justify">
               <h1 className="mb-5 text-4xl font-bold">SPAW</h1>
               <ul className="space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
@@ -1674,10 +1674,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 1,
         name: "Production",
         desc: (
-          <section className="relative flex items-center justify-between gap-10 px-24">
+          <section className="relative flex flex-col items-center justify-between gap-10 px-4 md:px-24 md:flex-row">
             <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
               <h1 className="mb-5 text-4xl font-bold">Production</h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   Nous mettons à votre disposition des solutions vous permettant
                   de gérer à distance vos données, de visualiser les tendances
@@ -1720,7 +1720,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 2,
         name: "Qualité",
         desc: (
-          <section className="flex items-center justify-between gap-20 p-24 bg-gray-100">
+          <section className="flex flex-col items-center justify-between gap-20 px-4 py-10 bg-gray-100 md:px-24 md:flex-row">
             <div className="relative">
               <Image
                 src="/SATELLITE.png"
@@ -1739,7 +1739,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
 
             <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
               <h1 className="mb-5 text-4xl font-bold">Qualité</h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   Avec notre application web et mobile AGRI-CERT, nous assurons
                   un suivi et contrôle de toutes les certifications disponibles
@@ -1770,10 +1770,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 3,
         name: "Supply chain",
         desc: (
-          <section className="relative flex items-center justify-between gap-10 px-24">
+          <section className="relative flex flex-col items-center justify-between gap-10 px-4 md:px-24 md:flex-row">
             <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
               <h1 className="mb-5 text-4xl font-bold">Supply chain</h1>
-              <ul className="space-y-3 list-disc marker:text-secondary">
+              <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   Notre application supply chain permet aux agriculteurs la
                   gestion de la chaîne d&apos;approvisionnement, notamment la

@@ -61,7 +61,7 @@ const ActivitySectors = () => {
           {secteurs?.map((item, i) => (
             <li
               key={i}
-              className="transition duration-300 ease-in-out transform border-2 rounded-md cursor-pointer text-md md:py-2 md:pl-5 md:rounded-3xl border-secondary hover:bg-secondary "
+              className="p-2 transition duration-300 ease-in-out transform border-2 rounded-md cursor-pointer text-md md:py-2 md:pl-5 md:rounded-3xl border-secondary hover:bg-secondary "
               onClick={() => {
                 handleChangeSector(item);
                 handleSwitch(item.id);
@@ -73,7 +73,7 @@ const ActivitySectors = () => {
         </ul>
       </div>
 
-      <div className="w-full md:w-[75%] h-[568px] bg-[#F5F5F5]">
+      <div className="w-full md:w-[75%] md:h-[568px] bg-[#F5F5F5]">
         <Swiper
           ref={swiperRef}
           slidesPerView={1}
@@ -81,13 +81,13 @@ const ActivitySectors = () => {
           onSlideChange={() => console.log("slide change")}
         >
           <SwiperSlide id="1">
-            <div className="relative flex w-full h-full gap-10 p-20">
+            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div
-                  className={`bg-[#2DB273] w-[400px] h-96 rounded-lg `}
+                  className={`bg-[#2DB273] w-full md:w-[400px] h-40 md:h-96 rounded-lg `}
                 ></div>
                 <div
-                  className={`-top-3 right-3 w-[400px] bg-[url("/events/agpre.jpg")] bg-center bg-cover object-cover h-96 rounded-lg absolute z-[9999999]`}
+                  className={`-top-3 right-3 w-full md:w-[400px] bg-[url("/events/agpre.jpg")] bg-center bg-cover object-cover h-40 md:h-96 rounded-lg absolute z-[9999999]`}
                 ></div>
               </div>
               <div className="">
@@ -123,12 +123,12 @@ const ActivitySectors = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide id="2">
-            <div className="flex w-full h-full gap-10 p-20 ">
+            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div
-                  className={`bg-[#809DD0] w-[400px] h-96 rounded-lg `}
+                  className={`bg-[#809DD0] w-full md:w-[400px] h-40 md:h-96 rounded-lg `}
                 ></div>
-                <div className="w-[400px] bg-[url('/sectors/aquaculture.jpg')] bg-center bg-cover object-cover h-96 rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
+                <div className="bg-[url('/sectors/aquaculture.jpg')] bg-center bg-cover object-cover w-full md:w-[400px] h-40 md:h-96 rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
                 <Link href={`/sector/${selected.id}`}>
@@ -163,12 +163,12 @@ const ActivitySectors = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide id="3">
-            <div className="flex w-full h-full gap-10 p-20 ">
+            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div
-                  className={`bg-[#B87950] w-[400px] h-96 rounded-lg `}
+                  className={`bg-[#B87950] w-full md:w-[400px] h-40 md:h-96 rounded-lg `}
                 ></div>
-                <div className="w-[400px] bg-[url('/sectors/agroalimentaire.jpg')] bg-center bg-cover object-cover h-96 rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
+                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/agroalimentaire.jpg')] bg-center bg-cover object-cover  rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
                 <Link href={`/sector/${selected.id}`}>
@@ -203,12 +203,12 @@ const ActivitySectors = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide id="4" className="flex justify-between">
-            <div className="flex w-full h-full gap-10 p-20 ">
+            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div
-                  className={`bg-[#7BADCAD1]  w-[400px] h-96 rounded-lg `}
+                  className={`bg-[#7BADCAD1] w-full md:w-[400px] h-40 md:h-96 rounded-lg `}
                 ></div>
-                <div className="w-[400px] bg-[url('/sectors/smartCities.jpg')] bg-center bg-cover object-cover h-96 rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
+                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/smartCities.jpg')] bg-center bg-cover object-cover rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
                 <Link href={`/sector/${selected.id}`}>
@@ -243,12 +243,12 @@ const ActivitySectors = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide id="5">
-            <div className="flex w-full h-full gap-10 p-20 ">
+            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div
-                  className={`bg-[#4DA99C] w-[400px] h-96 rounded-lg `}
+                  className={`bg-[#4DA99C] w-full md:w-[400px] h-40 md:h-96 rounded-lg `}
                 ></div>
-                <div className="w-[400px] bg-[url('/sectors/durabilite.jpg')] bg-center bg-cover object-cover h-96 rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
+                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/durabilite.jpg')] bg-center bg-cover object-cover rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
                 <Link href={`/sector/${selected.id}`}>
@@ -283,12 +283,12 @@ const ActivitySectors = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide id="6">
-            <div className="flex w-full h-full gap-10 p-20 ">
+            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div
-                  className={`bg-[#585C5B] w-[400px] h-96 rounded-lg `}
+                  className={`bg-[#585C5B] w-full md:w-[400px] h-40 md:h-96 rounded-lg `}
                 ></div>
-                <div className="w-[400px] bg-[url('/sectors/co-rd.jpg')] bg-center bg-cover object-cover h-96 rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
+                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/co-rd.jpg')] bg-center bg-cover object-cover rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
                 <Link href={`/sector/${selected.id}`}>
@@ -323,12 +323,12 @@ const ActivitySectors = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide id="7">
-            <div className="flex w-full h-full gap-10 p-20 ">
+            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div
-                  className={`bg-[#595866] w-[400px] h-96 rounded-lg `}
+                  className={`bg-[#595866] w-full md:w-[400px] h-40 md:h-96 rounded-lg `}
                 ></div>
-                <div className="w-[400px] bg-[url('/sectors/conseil.jpg')] bg-center bg-cover object-cover h-96 rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
+                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/conseil.jpg')] bg-center bg-cover object-cover rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
                 <Link href={`/sector/${selected.id}`}>

@@ -13,7 +13,8 @@ type NavSectionDetailsProps = {
 const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
   // TODO: Other navbar items details [Devices, Sectors, More ...]
 
-  const { isSelectedOpen, setIsSelectedOpen } = useNavbarContext();
+  const { setIsSelectedOpen, isSubNavOpen, setIsSubNavOpen } =
+    useNavbarContext();
 
   const [navDetails, setNavDetails] = React.useState<null | any[]>(null);
 
@@ -91,7 +92,11 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
   }, [setIsSelectedOpen]);
 
   return (
-    <div className="absolute left-0 w-full py-6 transition duration-300 ease-in-out transform bg-white h-[600px] md:px-14 z-90 top-14">
+    <div
+      className={`absolute left-0 w-full py-6 transition duration-300 ease-in-out transform bg-white h-[600px] md:px-14 z-90 top-14
+      ${isSubNavOpen ? "translate-x-0" : "-translate-x-full"}
+      `}
+    >
       <div className="flex flex-col items-center justify-center w-full h-full overflow-y-scroll scrollbar-hide md:flex-row md:justify-between md:items-start md:space-x-4 ">
         {/* Sidebar */}
         <div className="flex flex-col w-1/3 h-full overflow-y-scroll scrollbar-hide">
@@ -126,6 +131,29 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
 
         {/* Content */}
         <div className="w-full h-full px-10 pt-4">
+          <button
+            className="absolute top-0 px-1 py-1 text-sm font-semibold text-gray-700 transition duration-500 ease-in-out transform bg-white border border-gray-300 rounded-md left-15 hover:bg-gray-100 hover:scale-105 hover:shadow-xl md:hidden "
+            onClick={() => {
+              // @ts-ignore
+              setIsSubNavOpen(false);
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </button>
+
           <Link
             href={`/sector/${
               selectedItemName === "Agriculture de précision"

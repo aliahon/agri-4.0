@@ -71,6 +71,7 @@ const DevicesSection = ({ devices }: any) => {
           slidesToScroll: 2,
           infinite: true,
           dots: true,
+          arrows: false,
         },
       },
       {
@@ -78,13 +79,14 @@ const DevicesSection = ({ devices }: any) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],
   };
 
   return (
-    <section className="flex flex-col px-24 pt-12 pb-24">
+    <section className="flex flex-col px-4 pt-12 pb-24 md:px-24">
       <h1 className="text-2xl font-bold text-[#00594C] mb-8">Devices</h1>
       <div className="w-full h-full">
         <Slider {...settings}>

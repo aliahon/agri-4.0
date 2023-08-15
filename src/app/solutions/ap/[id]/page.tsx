@@ -12,12 +12,6 @@ import Camera from "@/components/animate/Camera";
 import { SolutionsDetailsProps } from "@/utils/types";
 import DevicesSection from "@/components/DevicesSection";
 // ======================================================================
-// TODO: ******************************
-// 1 - [x] Create component to render devices
-// 2 - [x] Add the devices to the page
-// 3 - [x] Add the solutions to the page
-// 4 - [] Dynamic rendring of the page
-// ======================================================================
 
 const Solution = ({ params }: any) => {
   const { id } = params;
@@ -34,7 +28,8 @@ const Solution = ({ params }: any) => {
   return (
     <section className="flex-col py-14">
       <div
-        className="flex justify-between w-full px-5 md:px-20 pb-10 pt-16 text-white border-b-[10px] bg-[#081B15] border-b-secondary flex-col-reverse md:flex-row
+        className="flex justify-between w-full px-2 
+        md:px-20 pb-10 pt-16 text-white border-b-[10px] bg-[#081B15] border-b-secondary flex-col-reverse md:flex-row
       "
       >
         <div className="flex flex-col space-y-3 md:max-w-2xl md:text-justify">
@@ -68,7 +63,7 @@ const Solution = ({ params }: any) => {
             {_.devices ? (
               <DevicesSection devices={_.devices} />
             ) : (
-              <div className="py-4" />
+              <div className="py-3" />
             )}
           </>
         ))
