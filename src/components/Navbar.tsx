@@ -29,7 +29,13 @@ const Navbar = () => {
 
   const [openSearch, setOpenSearch] = React.useState<boolean>(false);
 
-  const [openMenuMobile, setOpenMenuMobile] = React.useState<boolean>(false);
+  // TODO: update this
+  const { isNavBarOpen, setIsNavBarOpen, setIsSubNavOpen } = useNavbarContext();
+
+  // const [openMenuMobile, setOpenMenuMobile] = React.useState<boolean>(false);
+  console.log("====================================");
+  console.log("isNavBarOpen", isNavBarOpen);
+  console.log("====================================");
 
   return (
     <nav className="fixed top-0 z-50 flex flex-wrap items-center justify-between w-full px-6 py-2 bg-white border-b-2 border-gray-300 shadow-md md:px-20">
@@ -46,11 +52,15 @@ const Navbar = () => {
           />
         </Link>
       </div>
-      <div className="block lg:hidden">
+      {/*  */}
+      <div className="block lg:flex-grow lg:hidden">
         <button
-          className="flex items-center px-3 py-2 text-black border-2 border-white rounded hover:text-primary hover:border-primary"
+          className="flex items-center px-3 py-2 text-black border-2 border-white rounded hover:text-secondary hover:border-secondary"
           onClick={() => {
-            setOpenMenuMobile(!openMenuMobile);
+            // @ts-ignore
+            setIsNavBarOpen(!isNavBarOpen);
+            // @ts-ignore
+            setIsSubNavOpen(false);
           }}
         >
           <svg
@@ -69,11 +79,14 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
+      {/*  */}
       <div
-        className={`flex-grow hidden w-full lg:flex lg:items-center lg:w-auto
-        ${openMenuMobile ? "block" : "hidden"}`}
+        className={`lg:flex-grow w-full flex lg:flex-row flex-col justify-between lg:items-center lg:w-auto `}
+        // ${
+        //   isNavBarOpen ? "block" : "hidden"
+        // }
       >
-        <div className="text-sm lg:flex-grow">
+        <div className="text-sm">
           {sidebarMenu?.map((item, i) => (
             <button
               key={i}
@@ -82,7 +95,10 @@ const Navbar = () => {
                   ? "border-secondary"
                   : "border-white"
               }`}
-              onClick={() => handleChangeSection(item?.name)}
+              onClick={() => {
+                handleChangeSection(item?.name);
+                setIsSubNavOpen(true);
+              }}
             >
               {item?.name}{" "}
               {isSelectedOpen && selectedSection === item?.name ? (
@@ -120,7 +136,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="flex items-center justify-center w-full mt-4 text-base lg:mt-0 lg:w-auto">
+        <div className="flex w-full mt-4 text-base lg:mt-0 lg:w-auto">
           {/* Language */}
           <button className="inline-flex items-center mr-4">
             <svg

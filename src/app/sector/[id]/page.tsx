@@ -21,15 +21,15 @@ const Sector = ({ params }: any) => {
     <section className="flex flex-col pt-14">
       {/* TOP SECTION */}
       <section className="flex flex-col md:flex-row justify-center w-full h-full bg-[#081B15] border-b-8 bg-gradient-to-r border-b-[#2DB273]">
-        <div className="flex flex-col w-full h-full px-20 pt-16 mt-10">
-          <h1 className="max-w-sm text-5xl font-bold text-white drop-shadow-md">
+        <div className="flex flex-col w-full h-full p-6 mt-10 md:pt-16 md:px-20">
+          <h1 className="max-w-sm text-xl font-bold text-white md:text-5xl drop-shadow-md">
             {sector?.name}
           </h1>
           <p className="max-w-lg mt-3 leading-tight text-justify text-gray-300 text-md">
             {sector?.desc}
           </p>
         </div>
-        <div className="flex items-center justify-center w-[800px] h-[450px]">
+        <div className="items-center justify-center w-[800px] h-[450px] md:flex">
           <Image
             src="/agric.png"
             width={800}
@@ -42,7 +42,7 @@ const Sector = ({ params }: any) => {
       </section>
       {/* TOP SECTION */}
       {/*  */}
-      <section className="flex-col w-full h-full ">
+      <section className="flex-col w-full h-full">
         <h1 className="text-3xl font-bold text-center text-[#00594C] pt-24">
           All Solutions for {sector?.name}
         </h1>
@@ -54,7 +54,7 @@ const Sector = ({ params }: any) => {
                 {solutionsArr.slice(0, 7).map((tab, i) => (
                   <li
                     key={i}
-                    className="flex items-center gap-3 w-full h-[50px] text-md font-bold cursor-pointer transition duration-300 ease-in-out"
+                    className="flex items-center gap-3 w-full md:h-[50px] text-md font-bold cursor-pointer transition duration-300 ease-in-out"
                     onClick={(e) => {
                       e.preventDefault();
                       setOpenTab(tab.id);
@@ -77,7 +77,7 @@ const Sector = ({ params }: any) => {
               </ul>
             </div>
             {/* SECOND SECTION */}
-            <section className="flex items-center justify-between px-24 py-10">
+            <section className="flex flex-col items-center justify-between px-4 py-10 md:px-24 md:flex-row">
               <div>
                 {/* {solutionsArr[openTab - 1].name !==
             "Vision et traitement d’image" ? (
@@ -108,7 +108,7 @@ const Sector = ({ params }: any) => {
                 </Link>
               </div>
             </section>
-            <section className="flex items-center justify-between px-24 py-10 bg-gray-100">
+            <section className="flex flex-col items-center justify-between px-4 py-10 space-y-5 bg-gray-100 md:px-24 md:flex-row md:space-y-0">
               <div className="flex-col justify-center ">
                 <h1
                   className="text-xl font-bold text-secondary"
@@ -151,7 +151,7 @@ const Sector = ({ params }: any) => {
                 />
               </div>
             </section>
-            <section className="flex items-center justify-between px-24 py-10">
+            <section className="flex flex-col items-center justify-between px-6 py-10 space-y-5 md:px-24 md:flex-row md:space-y-0">
               <div>
                 <Image
                   src="/sectors/ourGoals.png"

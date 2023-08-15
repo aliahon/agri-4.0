@@ -1323,7 +1323,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 3,
         name: "AGRIBOT Scan",
         desc: (
-          <section className="flex flex-col items-center justify-between gap-20 p-2 md:p-24 md:flex-row">
+          <section className="flex flex-col items-center justify-between gap-20 p-2 md:px-24 md:flex-row">
             <div className="flex flex-col max-w-lg space-y-3 text-justify">
               <h1 className="mb-5 text-4xl font-bold">AGRIBOT Scan</h1>
               <ul className="px-3 space-y-3 list-disc marker:text-secondary">
