@@ -29,13 +29,8 @@ const Navbar = () => {
 
   const [openSearch, setOpenSearch] = React.useState<boolean>(false);
 
-  // TODO: update this
+  // ? This is the nav context
   const { isNavBarOpen, setIsNavBarOpen, setIsSubNavOpen } = useNavbarContext();
-
-  // const [openMenuMobile, setOpenMenuMobile] = React.useState<boolean>(false);
-  console.log("====================================");
-  console.log("isNavBarOpen", isNavBarOpen);
-  console.log("====================================");
 
   return (
     <nav className="fixed top-0 z-50 flex flex-wrap items-center justify-between w-full px-6 py-2 bg-white border-b-2 border-gray-300 shadow-md md:px-20">
@@ -81,7 +76,10 @@ const Navbar = () => {
       </div>
       {/*  */}
       <div
-        className={`lg:flex-grow w-full flex lg:flex-row flex-col justify-between lg:items-center lg:w-auto `}
+        // TODO: update this
+        className={`lg:flex-grow w-full flex lg:flex-row flex-col justify-between lg:items-center lg:w-auto ${
+          isNavBarOpen ? "block" : "hidden"
+        }`}
         // ${
         //   isNavBarOpen ? "block" : "hidden"
         // }
@@ -97,6 +95,7 @@ const Navbar = () => {
               }`}
               onClick={() => {
                 handleChangeSection(item?.name);
+                // @ts-ignore
                 setIsSubNavOpen(true);
               }}
             >

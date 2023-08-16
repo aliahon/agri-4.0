@@ -82,31 +82,31 @@ export const secteurs: SelectedProps[] = [
     subItems: [
       {
         icon: <AquaLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <AquaLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <AquaLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <AquaLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <AquaLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <AquaLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <AquaLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
     ],
   },
@@ -122,27 +122,27 @@ export const secteurs: SelectedProps[] = [
       },
       {
         icon: <AgroLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <AgroLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <AgroLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <AgroLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <AgroLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <AgroLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
     ],
   },
@@ -190,31 +190,31 @@ export const secteurs: SelectedProps[] = [
     subItems: [
       {
         icon: <DurabiliteLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <DurabiliteLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <DurabiliteLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <DurabiliteLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <DurabiliteLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <DurabiliteLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <DurabiliteLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
     ],
   },
@@ -226,31 +226,31 @@ export const secteurs: SelectedProps[] = [
     subItems: [
       {
         icon: <CoRdLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <CoRdLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <CoRdLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <CoRdLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <CoRdLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <CoRdLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <CoRdLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
     ],
   },
@@ -262,31 +262,31 @@ export const secteurs: SelectedProps[] = [
     subItems: [
       {
         icon: <ConseilLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <ConseilLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <ConseilLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <ConseilLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <ConseilLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <ConseilLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
       {
         icon: <ConseilLogo />,
-        name: "xxxxxxxxxxxx",
+        name: "Lorem ipsume",
       },
     ],
   },

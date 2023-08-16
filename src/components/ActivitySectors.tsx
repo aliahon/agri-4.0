@@ -74,20 +74,15 @@ const ActivitySectors = () => {
       </div>
 
       <div className="w-full md:w-[75%] md:h-[568px] bg-[#F5F5F5]">
-        <Swiper
-          ref={swiperRef}
-          slidesPerView={1}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-        >
+        <Swiper ref={swiperRef} slidesPerView={1}>
           <SwiperSlide id="1">
             <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div
-                  className={`bg-[#2DB273] w-full md:w-[400px] h-40 md:h-96 rounded-lg `}
+                  className={`bg-[#2DB273] w-full md:w-[400px] h-40 md:h-96 rounded-3xl`}
                 ></div>
                 <div
-                  className={`-top-3 right-3 w-full md:w-[400px] bg-[url("/events/agpre.jpg")] bg-center bg-cover object-cover h-40 md:h-96 rounded-lg absolute z-[9999999]`}
+                  className={`-top-3 right-3 w-full md:w-[400px] bg-[url("/events/agpre.jpg")] bg-center bg-cover object-cover h-40 md:h-96 rounded-3xl absolute z-[9999999]`}
                 ></div>
               </div>
               <div className="">
@@ -98,7 +93,7 @@ const ActivitySectors = () => {
                     {selected?.name}
                   </h1>
                 </Link>
-                <p className="mt-5 text-base leading-snug md:text-md">
+                <p className="mt-5 text-base leading-snug text-gray-600 md:text-md">
                   {selected?.desc}
                 </p>
                 <div className="grid grid-cols-2 gap-4">
@@ -107,7 +102,9 @@ const ActivitySectors = () => {
                       key={i}
                       className="flex items-center w-full gap-4 mt-5"
                     >
-                      <span className={`w-8 h-8 rounded-xl bg-[#2DB273]`}>
+                      <span
+                        className={`w-9 h-9 flex justify-center items-center rounded-xl bg-[#2DB273]`}
+                      >
                         {_?.icon}
                       </span>
                       <Link
@@ -126,9 +123,9 @@ const ActivitySectors = () => {
             <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div
-                  className={`bg-[#809DD0] w-full md:w-[400px] h-40 md:h-96 rounded-lg `}
+                  className={`bg-[#809DD0] w-full md:w-[400px] h-40 md:h-96 rounded-3xl`}
                 ></div>
-                <div className="bg-[url('/sectors/aquaculture.jpg')] bg-center bg-cover object-cover w-full md:w-[400px] h-40 md:h-96 rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
+                <div className="bg-[url('/sectors/aquaculture.jpg')] bg-center bg-cover object-cover w-full md:w-[400px] h-40 md:h-96 rounded-3xl absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
                 <Link href={`/sector/${selected.id}`}>
@@ -138,7 +135,7 @@ const ActivitySectors = () => {
                     {selected?.name}
                   </h1>
                 </Link>
-                <p className="mt-5 text-base leading-snug md:text-md">
+                <p className="mt-5 text-base leading-snug text-gray-600 md:text-md">
                   {selected?.desc}
                 </p>
                 <div className="grid grid-cols-2 gap-4">
@@ -147,7 +144,9 @@ const ActivitySectors = () => {
                       key={i}
                       className="flex items-center w-full gap-4 mt-5"
                     >
-                      <span className={`w-8 h-8 rounded-xl bg-[#305DAC]`}>
+                      <span
+                        className={`w-9 h-9 flex items-center justify-center rounded-xl bg-[#305DAC]`}
+                      >
                         {_?.icon}
                       </span>
                       <Link
@@ -166,9 +165,9 @@ const ActivitySectors = () => {
             <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div
-                  className={`bg-[#B87950] w-full md:w-[400px] h-40 md:h-96 rounded-lg `}
+                  className={`bg-[#B87950] w-full md:w-[400px] h-40 md:h-96 rounded-3xl`}
                 ></div>
-                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/agroalimentaire.jpg')] bg-center bg-cover object-cover  rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
+                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/agroalimentaire.jpg')] bg-center bg-cover object-cover rounded-3xl absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
                 <Link href={`/sector/${selected.id}`}>
@@ -187,7 +186,9 @@ const ActivitySectors = () => {
                       key={i}
                       className="flex items-center w-full gap-4 mt-5"
                     >
-                      <span className={`w-8 h-8 rounded-xl bg-[#863500]`}>
+                      <span
+                        className={`w-9 h-9 rounded-xl bg-[#863500] shadow-md items-center justify-center flex`}
+                      >
                         {_?.icon}
                       </span>
                       <Link
@@ -206,9 +207,9 @@ const ActivitySectors = () => {
             <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div
-                  className={`bg-[#7BADCAD1] w-full md:w-[400px] h-40 md:h-96 rounded-lg `}
+                  className={`bg-[#7BADCAD1] w-full md:w-[400px] h-40 md:h-96 rounded-3xl`}
                 ></div>
-                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/smartCities.jpg')] bg-center bg-cover object-cover rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
+                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/smartCities.jpg')] bg-center bg-cover object-cover rounded-3xl absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
                 <Link href={`/sector/${selected.id}`}>
@@ -227,7 +228,9 @@ const ActivitySectors = () => {
                       key={i}
                       className="flex items-center w-full gap-4 mt-5"
                     >
-                      <span className={`w-8 h-8 rounded-xl bg-[#0082CE]`}>
+                      <span
+                        className={`w-9 h-9 flex justify-center items-center rounded-xl bg-[#0082CE]`}
+                      >
                         {_?.icon}
                       </span>
                       <Link
@@ -246,9 +249,9 @@ const ActivitySectors = () => {
             <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div
-                  className={`bg-[#4DA99C] w-full md:w-[400px] h-40 md:h-96 rounded-lg `}
+                  className={`bg-[#4DA99C] w-full md:w-[400px] h-40 md:h-96 rounded-3xl`}
                 ></div>
-                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/durabilite.jpg')] bg-center bg-cover object-cover rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
+                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/durabilite.jpg')] bg-center bg-cover object-cover rounded-3xl absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
                 <Link href={`/sector/${selected.id}`}>
@@ -267,7 +270,9 @@ const ActivitySectors = () => {
                       key={i}
                       className="flex items-center w-full gap-4 mt-5"
                     >
-                      <span className={`w-8 h-8 rounded-xl bg-[#00594C]`}>
+                      <span
+                        className={`w-9 h-9 flex justify-center items-center rounded-xl bg-[#00594C]`}
+                      >
                         {_?.icon}
                       </span>
                       <Link
@@ -286,9 +291,9 @@ const ActivitySectors = () => {
             <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div
-                  className={`bg-[#585C5B] w-full md:w-[400px] h-40 md:h-96 rounded-lg `}
+                  className={`bg-[#585C5B] w-full md:w-[400px] h-40 md:h-96 rounded-3xl`}
                 ></div>
-                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/co-rd.jpg')] bg-center bg-cover object-cover rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
+                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/co-rd.jpg')] bg-center bg-cover object-cover rounded-3xl absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
                 <Link href={`/sector/${selected.id}`}>
@@ -298,7 +303,7 @@ const ActivitySectors = () => {
                     {selected?.name}
                   </h1>
                 </Link>
-                <p className="mt-5 text-base leading-snug md:text-md">
+                <p className="mt-5 text-base leading-snug text-gray-600 md:text-md">
                   {selected?.desc}
                 </p>
                 <div className="grid grid-cols-2 gap-4">
@@ -307,7 +312,9 @@ const ActivitySectors = () => {
                       key={i}
                       className="flex items-center w-full gap-4 mt-5"
                     >
-                      <span className={`w-8 h-8 rounded-xl bg-[#081B15]`}>
+                      <span
+                        className={`w-9 h-9 flex justify-center items-center rounded-xl bg-[#081B15]`}
+                      >
                         {_?.icon}
                       </span>
                       <Link
@@ -326,9 +333,9 @@ const ActivitySectors = () => {
             <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div
-                  className={`bg-[#595866] w-full md:w-[400px] h-40 md:h-96 rounded-lg `}
+                  className={`bg-[#595866] w-full md:w-[400px] h-40 md:h-96 rounded-3xl`}
                 ></div>
-                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/conseil.jpg')] bg-center bg-cover object-cover rounded-lg absolute -top-3 right-3 z-[9999999]"></div>
+                <div className="w-full md:w-[400px] h-40 md:h-96 bg-[url('/sectors/conseil.jpg')] bg-center bg-cover object-cover rounded-3xl absolute -top-3 right-3 z-[9999999]"></div>
               </div>
               <div>
                 <Link href={`/sector/${selected.id}`}>
@@ -338,7 +345,7 @@ const ActivitySectors = () => {
                     {selected?.name}
                   </h1>
                 </Link>
-                <p className="mt-5 text-base leading-snug md:text-md">
+                <p className="mt-5 text-base leading-snug text-gray-600 md:text-md">
                   {selected?.desc}
                 </p>
                 <div className="grid grid-cols-2 gap-4">
@@ -347,7 +354,9 @@ const ActivitySectors = () => {
                       key={i}
                       className="flex items-center w-full gap-4 mt-5"
                     >
-                      <span className={`w-8 h-8 rounded-xl bg-[#262532]`}>
+                      <span
+                        className={`w-9 h-9 flex justify-center items-center rounded-xl bg-[#262532]`}
+                      >
                         {_?.icon}
                       </span>
                       <Link

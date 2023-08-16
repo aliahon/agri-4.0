@@ -8,17 +8,17 @@ const Device = ({ params }: any) => {
   console.log(params);
 
   return (
-    <main className="px-10 pt-20 pb-20 md:pt-40 md:px-36">
+    <main className="px-6 pt-20 pb-20 md:pt-40 md:px-36">
       {/* Product header */}
       <section className="flex flex-col-reverse w-full md:flex-row md:items-center md:justify-between md:space-x-10 md:space-y-0 ">
-        <div className="mt-4">
+        <div className="mt-6">
           <span className="px-2 py-1 text-white bg-green-500 rounded-lg">
             New
           </span>
-          <p className="max-w-lg mt-2 text-2xl font-bold text-gray-900 md:text-4xl">
+          <p className="max-w-lg mt-2 text-xl font-bold text-gray-900 md:text-4xl">
             Capteur de vent PCE FST-200-201 (vitesse)
           </p>
-          <p className="mt-2 text-xs text-gray-500 md:max-w-lg md:text-base">
+          <p className="mt-2 text-sm text-gray-500 md:max-w-lg md:text-base">
             Le capteur de vitesse est un générateur d&apos;impulsion qui
             transforme un mouvement de rotation mécanique en un signal
             électrique. Ce dernier est envoyé au calculateur pour être
@@ -38,12 +38,12 @@ const Device = ({ params }: any) => {
       </section>
       {/* End product header */}
       <section>
-        <h1 className="text-3xl font-bold text-green-700 mt-14">
+        <h1 className="mt-6 text-3xl font-bold text-green-700 md:mt-14">
           Product Information:
         </h1>
         <div className="flex flex-col justify-between mt-12 md:flex-row">
           <h1 className="text-2xl font-bold text-gray-900">Overview:</h1>
-          <div className="max-w-4xl">
+          <div className="max-w-3xl">
             <p className="mt-2 text-base text-gray-500 ">
               L&apos;utilisation des capteurs de roue actifs présente plusieurs
               avantages : Ils détectent la vitesse de rotation des roues à
@@ -58,9 +58,23 @@ const Device = ({ params }: any) => {
               la vitesse de rotation magnétique afin de fournir une tension qui
               correspond à la vitesse de rotation.
             </p>
-            <hr className="max-w-4xl mt-10 border-gray-300 border-opacity-50 border-solid border-1 " />
-            <div className="flex justify-between">
-              <p className="max-w-4xl mt-2 text-base text-gray-500">18</p>
+            <hr className="max-w-4xl mt-4 border-gray-300 border-opacity-50 border-solid md:mt-10 border-1 " />
+            <div className="flex justify-between mt-4">
+              <p className="mt-2 text-xl text-green-500 rounded-xl">
+                <span className="font-bold text-gray-700">Temp:</span> 18°C
+              </p>
+              <p className="mt-2 text-xl text-green-500 rounded-xl">
+                {" "}
+                <span className="font-bold text-gray-700">Radi:</span> 14
+              </p>
+              <p className="mt-2 text-xl text-green-500 rounded-xl">
+                {" "}
+                <span className="font-bold text-gray-700">PH:</span> 5.5
+              </p>
+              <p className="mt-2 text-xl text-green-500 rounded-xl">
+                {" "}
+                <span className="font-bold text-gray-700">EC:</span> 3.5
+              </p>
             </div>
           </div>
         </div>
