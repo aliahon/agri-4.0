@@ -35,8 +35,15 @@ export default function Example() {
     resolver: zodResolver(validationSchema),
   });
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    const { company, email, firstName, lastName, message, phone } = data;
+    await fetch("/api/send", {
+      method: "POST",
+      body: JSON.stringify({
+        firstName,
+        email,
+      }),
+    });
     reset();
   };
 

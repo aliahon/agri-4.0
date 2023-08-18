@@ -13,6 +13,7 @@ import { NavbarProvider } from "@/contexts/navbarContext";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
+import CookiesMiddleware from "@/components/CookiesMiddleware";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -54,14 +55,13 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${poppins.className}`}>
+      <body className={`${poppins.className} w-full mx-auto max-w-[2000px]`}>
         <NavbarProvider>
           <Navbar />
           {children}
           <button
             className="fixed z-50 flex items-center justify-center w-12 h-12 text-white transition-all duration-300 ease-in-out border-2 rounded-full shadow-lg border-white/40 bottom-4 right-4 bg-primary hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:ring-opacity-75 hover:scale-110 "
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            // show this scroll to top button only when the user scrolls past 400px
             style={{ opacity: visible ? "1" : "0" }}
           >
             <span className="sr-only">Scroll to top</span>
@@ -80,6 +80,8 @@ export default function RootLayout({
               ></path>
             </svg>
           </button>
+          {/* Cookies */}
+          <CookiesMiddleware />
           <Footer />
         </NavbarProvider>
       </body>
