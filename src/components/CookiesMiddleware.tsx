@@ -6,19 +6,16 @@ const CookiesMiddleware = () => {
   const [showBanner, setShowBanner] = React.useState(true);
 
   useEffect(() => {
-    const banner = localStorage.getItem("BANNER_COOKIES");
-    if (!banner) {
-      setShowBanner(false);
-    }
+    const data = localStorage.getItem("BANNER_COOKIES");
+    if (data !== null) setShowBanner(JSON.parse(data));
   }, []);
 
-  const handleAccept = () => {
-    localStorage.setItem("BANNER_COOKIES", "true");
-    setShowBanner(false);
-  };
+  useEffect(() => {
+    localStorage.setItem("BANNER_COOKIES", JSON.stringify(showBanner));
+  }, [showBanner]);
 
-  return (
-    <div className="z-[99999] p-6 rounded-3xl bottom-4 left-4 sticky text-white max-w-xl my-4 glass-bg border-2 border-primary/60 space-y-2">
+  return showBanner ? (
+    <div className="z-[99999] p-6 rounded-3xl bottom-4 left-4 sticky text-white max-w-xl my-4 glass-bg border-2 border-primary/60 space-y-2 mx-2">
       <p className="text-lg">
         Nous utilisons les témoins de navigations pour analyser
         l&apos;utilisation de notre site web ainsi qu&apos;appuyer nos efforts
@@ -27,14 +24,22 @@ const CookiesMiddleware = () => {
       <div className="flex justify-between">
         <button className="text-xs">Personnaliser votre expérience.</button>
         <div className="">
-          <button className="mr-6 underline">Refuser</button>
-          <button className="relative px-4 py-2 transition-all duration-300 border-2 rounded-3xl border-secondary hover:bg-secondary">
+          <button
+            className="mr-6 underline"
+            onClick={() => setShowBanner(false)}
+          >
+            Refuser
+          </button>
+          <button
+            className="relative px-4 py-2 transition-all duration-300 border-2 rounded-3xl border-secondary hover:bg-secondary"
+            onClick={() => setShowBanner(false)}
+          >
             Accepter
           </button>
         </div>
       </div>
     </div>
-  );
+  ) : null;
 };
 
 export default CookiesMiddleware;

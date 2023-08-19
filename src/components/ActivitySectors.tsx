@@ -86,7 +86,7 @@ const ActivitySectors = () => {
                 ></div>
               </div>
               <div className="">
-                <Link href={`/sector/${selected.id}`}>
+                <Link href={`/sector/${selected?.id}`}>
                   <h1
                     className={`text-2xl md:text-4xl font-bold hover:underline text-[#2DB273]`}
                   >
@@ -109,7 +109,7 @@ const ActivitySectors = () => {
                       </span>
                       <Link
                         className="text-sm md:font-semibold"
-                        href={`/solutions/ap/1`}
+                        href={`/solutions/${_?.id}`}
                       >
                         {_?.name}
                       </Link>
@@ -203,7 +203,7 @@ const ActivitySectors = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide id="4" className="flex justify-between">
+          <SwiperSlide id="4">
             <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:flex-row">
               <div className="relative">
                 <div

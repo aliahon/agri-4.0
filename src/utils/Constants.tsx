@@ -45,30 +45,37 @@ export const secteurs: SelectedProps[] = [
     desc: "L'agriculture de précision est une approche qui permet d'optimiser la production agricole en utilisant les technologies de l'information et de la communication pour prendre des décisions plus éclairées.",
     subItems: [
       {
+        id: "/ap/1",
         icon: <AgriPreciseLogo />,
         name: "Vision et traitement d’image",
       },
       {
+        id: "/ap/2",
         icon: <AgriPreciseLogo />,
         name: "Fertigation connecté",
       },
       {
+        id: "/ap/3",
         icon: <AgriPreciseLogo />,
         name: "Gestion de l’eau et du sol",
       },
       {
+        id: "/ap/4",
         icon: <AgriPreciseLogo />,
         name: "IOT",
       },
       {
+        id: "/ap/5",
         icon: <AgriPreciseLogo />,
         name: "Robotique",
       },
       {
+        id: "/ap/6",
         icon: <AgriPreciseLogo />,
         name: "Farm management",
       },
       {
+        id: "/ap/7",
         icon: <AgriPreciseLogo />,
         name: "Climat monitoring",
       },
@@ -81,30 +88,37 @@ export const secteurs: SelectedProps[] = [
     desc: "Nous intégrons des technologies avancées et des systèmes numériques dans l'industrie aquacole, dans le but d'améliorer l'efficacité, la durabilité et la rentabilité de la production. Cela comprend l'utilisation de capteurs, d'application",
     subItems: [
       {
+        id: "/aqua/1",
         icon: <AquaLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/aqua/2",
         icon: <AquaLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/aqua/3",
         icon: <AquaLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/aqua/4",
         icon: <AquaLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/aqua/5",
         icon: <AquaLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/aqua/6",
         icon: <AquaLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/aqua/7",
         icon: <AquaLogo />,
         name: "Lorem ipsume",
       },
@@ -117,30 +131,37 @@ export const secteurs: SelectedProps[] = [
     desc: "Usines intelligentes : les capteurs IoT et les appareils connectés peuvent aider à optimiser les processus de production, à améliorer l'efficacité et à réduire les temps d'arrêt.Maintenance prédictive...",
     subItems: [
       {
+        id: "/agro/1",
         icon: <AgroLogo />,
         name: "Frigo connecté",
       },
       {
+        id: "/agro/2",
         icon: <AgroLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/agro/3",
         icon: <AgroLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/agro/4",
         icon: <AgroLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/agro/5",
         icon: <AgroLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/agro/6",
         icon: <AgroLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/agro/7",
         icon: <AgroLogo />,
         name: "Lorem ipsume",
       },
@@ -153,30 +174,37 @@ export const secteurs: SelectedProps[] = [
     desc: "Les grandes villes marocaines ont un potentiel de développement considérable, mais leur croissance rapide crée des défis tels que la congestion urbaine et la pollution. Pour surmonter ces défis de manière...",
     subItems: [
       {
+        id: "/sc/1",
         icon: <SmartCitiesLogo />,
         name: "Gestion d'énergie",
       },
       {
+        id: "/sc/2",
         icon: <SmartCitiesLogo />,
         name: "Gestion d'irrigation",
       },
       {
+        id: "/sc/3",
         icon: <SmartCitiesLogo />,
         name: "Gestion de l'éclairage",
       },
       {
+        id: "/sc/4",
         icon: <SmartCitiesLogo />,
         name: "Gestion de transport",
       },
       {
+        id: "/sc/5",
         icon: <SmartCitiesLogo />,
         name: "Gestion de parking",
       },
       {
+        id: "/sc/6",
         icon: <SmartCitiesLogo />,
         name: "Traffic management",
       },
       {
+        id: "/sc/7",
         icon: <SmartCitiesLogo />,
         name: "Environnement intelligent",
       },
@@ -189,30 +217,37 @@ export const secteurs: SelectedProps[] = [
     desc: "En intégrant la durabilité dans nos activités, nous pouvons contribuer à créer un monde plus juste, équitable et durable pour les générations futures. Cela peut se faire à travers des actions telles que la réduction de l'utilisation ...",
     subItems: [
       {
+        id: "/dura/1",
         icon: <DurabiliteLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/dura/2",
         icon: <DurabiliteLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/dura/3",
         icon: <DurabiliteLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/dura/4",
         icon: <DurabiliteLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/dura/5",
         icon: <DurabiliteLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/dura/6",
         icon: <DurabiliteLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/dura/7",
         icon: <DurabiliteLogo />,
         name: "Lorem ipsume",
       },
@@ -225,30 +260,37 @@ export const secteurs: SelectedProps[] = [
     desc: "Notre engagement envers la R&D ne relève pas d'un simple caprice, mais plutôt de notre conviction que c'est la pierre angulaire de la survie de toute entreprise, quelle que soit sa taille ou son modèle économique.",
     subItems: [
       {
+        id: "/co/1",
         icon: <CoRdLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/co/2",
         icon: <CoRdLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/co/3",
         icon: <CoRdLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/co/4",
         icon: <CoRdLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/co/5",
         icon: <CoRdLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/co/6",
         icon: <CoRdLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/co/7",
         icon: <CoRdLogo />,
         name: "Lorem ipsume",
       },
@@ -261,30 +303,37 @@ export const secteurs: SelectedProps[] = [
     desc: "Agri 4.0 ne limite pas ses prestations à la vente des produits et services. Nous assurons également un accompagnement de qualité avec une équipe jeune et pluridisciplinaire ayant comme point...",
     subItems: [
       {
+        id: "/cons/1",
         icon: <ConseilLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/cons/2",
         icon: <ConseilLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/cons/3",
         icon: <ConseilLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/cons/4",
         icon: <ConseilLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/cons/5",
         icon: <ConseilLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/cons/6",
         icon: <ConseilLogo />,
         name: "Lorem ipsume",
       },
       {
+        id: "/cons/7",
         icon: <ConseilLogo />,
         name: "Lorem ipsume",
       },
@@ -900,7 +949,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
 
             <div className="relative">
               <Image
-                src="/DRONE.png"
+                src="/about/BG1.png"
                 width={400}
                 height={400}
                 alt="Drone"
@@ -921,19 +970,19 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
             id: 1,
             title: "Niveau Liquide",
             description: "capteur De Niveau Pour Eau",
-            image: "/devices/DEVICE 1.png",
+            image: "/devices/DEVICE 12.png",
           },
           {
             id: 2,
             title: "Capteur de turbidite",
             description: "Mesures et Tests",
-            image: "/devices/DEVICE 2.webp",
+            image: "/devices/DEVICE 8.png",
           },
           {
             id: 3,
             title: "Transmetteur de turbidité",
             description: "Pour le controle En Ligne",
-            image: "/devices/DEVICE 3.png",
+            image: "/devices/DEVICE 7.png",
           },
         ],
       },
@@ -1266,7 +1315,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 2,
         name: "AGRIBOT Traitement",
         desc: (
-          <section className="flex flex-col items-center justify-between gap-20 px-6 py-10 bg-gray-100 md:p-24 md:flex-row">
+          <section className="flex flex-col items-center justify-between gap-20 px-6 py-10 bg-gray-100 md:px-24 md:flex-row">
             <div className="relative">
               <Image
                 src="/SATELLITE.png"

@@ -4,6 +4,7 @@ export type SelectedProps = {
   name: string;
   desc: string;
   subItems: Array<{
+    id: string;
     icon: any;
     name: string;
   }>;
