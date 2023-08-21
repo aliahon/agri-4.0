@@ -16,6 +16,14 @@ import DevicesSection from "@/components/DevicesSection";
 const Solution = ({ params }: any) => {
   const { id } = params;
 
+  useEffect(() => {
+    const solutions = [1, 2, 3, 4, 5, 6];
+
+    if (!solutions.includes(parseInt(id))) {
+      window.location.href = "/404";
+    }
+  }, [id]);
+
   const [solution, setSolution] = React.useState<SolutionsDetailsProps | null>(
     null
   );

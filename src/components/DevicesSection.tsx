@@ -116,13 +116,13 @@ const Card = ({
   image: string;
 }) => {
   return (
-    <div className="flex flex-col justify-between w-full h-full p-5 space-y-1 border border-gray-300 shadow-md rounded-xl">
+    <div className="flex flex-col items-center justify-between w-full h-full p-5 space-y-1 border border-gray-300 shadow-md rounded-xl">
       <Image
         src={image}
-        width={200}
-        height={200}
+        width={100}
+        height={100}
         alt={title}
-        className="object-cover w-full mb-5 rounded-xl"
+        className="object-cover w-64 h-64 mb-5 rounded-xl"
         loader={({ src }) => src}
       />
       <div>

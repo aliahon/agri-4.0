@@ -50,22 +50,22 @@ export const secteurs: SelectedProps[] = [
         name: "Vision et traitement d’image",
       },
       {
-        id: "/ap/2",
+        id: "/ap/5",
         icon: <AgriPreciseLogo />,
         name: "Fertigation connecté",
       },
       {
-        id: "/ap/3",
+        id: "/ap/2",
         icon: <AgriPreciseLogo />,
         name: "Gestion de l’eau et du sol",
       },
       {
-        id: "/ap/4",
+        id: "/ap/8",
         icon: <AgriPreciseLogo />,
         name: "IOT",
       },
       {
-        id: "/ap/5",
+        id: "/ap/3",
         icon: <AgriPreciseLogo />,
         name: "Robotique",
       },
@@ -75,7 +75,7 @@ export const secteurs: SelectedProps[] = [
         name: "Farm management",
       },
       {
-        id: "/ap/7",
+        id: "/ap/4",
         icon: <AgriPreciseLogo />,
         name: "Climat monitoring",
       },
@@ -805,7 +805,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 2,
         name: "Satellite",
         desc: (
-          <section className="flex flex-col items-center justify-between gap-20 p-4 py-10 bg-gray-100 md:p-24 md:flex-row">
+          <section className="flex flex-col items-center justify-between gap-20 p-4 py-10 bg-gray-100 md:px-24 md:flex-row">
             <div className="relative">
               <Image
                 src="/SATELLITE.png"
@@ -862,7 +862,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 3,
         name: "Caméra",
         desc: (
-          <section className="flex flex-col items-center justify-between gap-20 p-4 md:p-24 md:flex-row ">
+          <section className="flex flex-col items-center justify-between gap-20 p-4 md:px-24 md:flex-row ">
             <div className="flex flex-col max-w-lg space-y-3 text-justify">
               <h1 className="mb-5 text-4xl font-bold">Camera au sol</h1>
               <ul className="px-2 space-y-3 list-disc marker:text-secondary">
@@ -950,17 +950,17 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
             <div className="relative">
               <Image
                 src="/about/BG1.png"
-                width={400}
-                height={400}
-                alt="Drone"
+                width={450}
+                height={450}
+                alt="Abar"
                 className="z-[9999] rounded-xl"
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
             </div>
           </section>
         ),
@@ -993,7 +993,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
           <section className="flex flex-col items-center justify-between gap-20 px-4 py-10 bg-gray-100 md:px-24 md:flex-row">
             <div className="relative">
               <Image
-                src="/SATELLITE.png"
+                src="/about/BG5.png"
                 width={500}
                 height={500}
                 alt="Drone"
@@ -1001,16 +1001,13 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 data-aos="zoom-out-right"
                 loader={({ src }) => src}
               />
-              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
-              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" /> */}
             </div>
 
-            <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
-              <div className="absolute z-0 right-4 -top-[125px] opacity-20">
-                <Satellite />
-              </div>
+            <div className="relative flex flex-col max-w-2xl space-y-3 text-justify">
               <h1 className="mb-5 text-4xl font-bold">Osmose</h1>
               <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
@@ -1056,21 +1053,21 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         devices: [
           {
             id: 1,
-            title: "Niveau Liquide",
-            description: "capteur De Niveau Pour Eau",
-            image: "/devices/DEVICE 1.png",
+            title: "Capteur de pression",
+            description: "différentielle en ligne",
+            image: "/devices/DEVICE 19.png",
           },
           {
             id: 2,
-            title: "Capteur de turbidite",
-            description: "Mesures et Tests",
-            image: "/devices/DEVICE 2.webp",
+            title: "Capteur de pH Numérique",
+            description: "Camera S23 Ultr-camera au sol",
+            image: "/devices/DEVICE 21.png",
           },
           {
             id: 3,
-            title: "Transmetteur de turbidité",
-            description: "Pour le controle En Ligne",
-            image: "/devices/DEVICE 3.png",
+            title: "Capteur de Debit d’eau",
+            description: "Camera S23 Ultr-camera au sol",
+            image: "/devices/DEVICE 22.png",
           },
         ],
       },
@@ -1097,41 +1094,41 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
 
             <div className="relative">
               <Image
-                src="/CAMERA AU SOL.png"
-                width={300}
-                height={300}
+                src="/about/BG8.png"
+                width={450}
+                height={450}
                 alt="Drone"
                 className="z-50 drop-shadow-sm"
                 unoptimized
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
             </div>
           </section>
         ),
-        imgUrl: "/solutions/sig.png",
+        imgUrl: "/about/BG8.png",
         devices: [
           {
             id: 1,
             title: "Niveau Liquide",
             description: "capteur De Niveau Pour Eau",
-            image: "/devices/DEVICE 1.png",
+            image: "/devices/DEVICE 12.png",
           },
           {
             id: 2,
             title: "Capteur de turbidite",
             description: "Mesures et Tests",
-            image: "/devices/DEVICE 2.webp",
+            image: "/devices/DEVICE 8.png",
           },
           {
             id: 3,
-            title: "Transmetteur de turbidité",
-            description: "Pour le controle En Ligne",
-            image: "/devices/DEVICE 3.png",
+            title: "Capteur de EC",
+            description: "",
+            image: "/devices/DEVICE 13.png",
           },
         ],
       },
@@ -1142,18 +1139,18 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
           <section className="flex flex-col items-center justify-between gap-20 px-4 py-10 bg-gray-100 md:px-24 md:flex-row">
             <div className="relative">
               <Image
-                src="/SATELLITE.png"
-                width={500}
-                height={500}
+                src="/about/BG10.png"
+                width={450}
+                height={450}
                 alt="Drone"
                 className="z-50 rotate-180 rounded-xl drop-shadow-sm"
                 data-aos="zoom-out-right"
                 loader={({ src }) => src}
               />
-              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
-              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" /> */}
             </div>
 
             <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
@@ -1178,21 +1175,21 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         devices: [
           {
             id: 1,
-            title: "Niveau Liquide",
-            description: "capteur De Niveau Pour Eau",
-            image: "/devices/DEVICE 1.png",
+            title: "Capteur de pression",
+            description: "différentielle en ligne",
+            image: "/devices/DEVICE 19.png",
           },
           {
             id: 2,
-            title: "Capteur de turbidite",
-            description: "Mesures et Tests",
-            image: "/devices/DEVICE 2.webp",
+            title: "Capteur de pH Numérique",
+            description: "Camera S23 Ultr-camera au sol",
+            image: "/devices/DEVICE 21.png",
           },
           {
             id: 3,
-            title: "Transmetteur de turbidité",
-            description: "Pour le controle En Ligne",
-            image: "/devices/DEVICE 3.png",
+            title: "Capteur de turbidite",
+            description: "Mesures et Tests",
+            image: "/devices/DEVICE 8.png",
           },
         ],
       },
@@ -1274,18 +1271,18 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
 
             <div className="relative">
               <Image
-                src="/DRONE.png"
-                width={400}
-                height={400}
+                src="/about/BG2.png"
+                width={450}
+                height={450}
                 alt="Drone"
                 className="z-[9999] rounded-xl"
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
             </div>
           </section>
         ),
@@ -1295,19 +1292,19 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
             id: 1,
             title: "Camera de haut qualite ",
             description: "",
-            image: "/devices/DEVICE 1.png",
+            image: "/devices/DEVICE 10.png",
           },
           {
             id: 2,
             title: "Capteur de pression",
             description: "",
-            image: "/devices/DEVICE 2.webp",
+            image: "/devices/DEVICE 19.png",
           },
           {
             id: 3,
             title: "RPLIDAR A1M8-R6 360° Laser Range",
             description: "Scanner - 12m range",
-            image: "/devices/DEVICE 3.png",
+            image: "/devices/DEVICE 18.png",
           },
         ],
       },
@@ -1318,18 +1315,18 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
           <section className="flex flex-col items-center justify-between gap-20 px-6 py-10 bg-gray-100 md:px-24 md:flex-row">
             <div className="relative">
               <Image
-                src="/SATELLITE.png"
-                width={500}
-                height={500}
+                src="/about/BG11.png"
+                width={450}
+                height={450}
                 alt="Drone"
                 className="z-50 rotate-180 rounded-xl drop-shadow-sm"
                 data-aos="zoom-out-right"
                 loader={({ src }) => src}
               />
-              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
-              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" /> */}
             </div>
 
             <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
@@ -1350,21 +1347,21 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         devices: [
           {
             id: 1,
-            title: "Niveau Liquide",
-            description: "capteur De Niveau Pour Eau",
-            image: "/devices/DEVICE 1.png",
+            title: "Camera de haut qualite ",
+            description: "",
+            image: "/devices/DEVICE 10.png",
           },
           {
             id: 2,
-            title: "Capteur de turbidite",
-            description: "Mesures et Tests",
-            image: "/devices/DEVICE 2.webp",
+            title: "Capteur de pression",
+            description: "",
+            image: "/devices/DEVICE 19.png",
           },
           {
             id: 3,
-            title: "Transmetteur de turbidité",
-            description: "Pour le controle En Ligne",
-            image: "/devices/DEVICE 3.png",
+            title: "RPLIDAR A1M8-R6 360° Laser Range",
+            description: "Scanner - 12m range",
+            image: "/devices/DEVICE 18.png",
           },
         ],
       },
@@ -1401,19 +1398,19 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
 
             <div className="relative">
               <Image
-                src="/CAMERA AU SOL.png"
-                width={300}
-                height={300}
+                src="/about/BG12.png"
+                width={450}
+                height={450}
                 alt="Drone"
                 className="z-50 drop-shadow-sm"
                 unoptimized
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
             </div>
           </section>
         ),
@@ -1421,21 +1418,21 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         devices: [
           {
             id: 1,
-            title: "Niveau Liquide",
-            description: "capteur De Niveau Pour Eau",
-            image: "/devices/DEVICE 1.png",
+            title: "Camera de haut qualite ",
+            description: "",
+            image: "/devices/DEVICE 10.png",
           },
           {
             id: 2,
-            title: "Capteur de turbidite",
-            description: "Mesures et Tests",
-            image: "/devices/DEVICE 2.webp",
+            title: "Capteur d'humidité",
+            description: "",
+            image: "/devices/DEVICE 16.png",
           },
           {
             id: 3,
-            title: "Transmetteur de turbidité",
-            description: "Pour le controle En Ligne",
-            image: "/devices/DEVICE 3.png",
+            title: "Testeur portable de conductivité",
+            description: "et température sols",
+            image: "/devices/DEVICE 24.png",
           },
         ],
       },
@@ -1497,18 +1494,18 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
 
             <div className="relative">
               <Image
-                src="/DRONE.png"
-                width={400}
-                height={400}
+                src="https://dummyimage.com/1203x703"
+                width={450}
+                height={450}
                 alt="Drone"
                 className="z-[9999] rounded-xl"
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
             </div>
           </section>
         ),
@@ -1518,19 +1515,19 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
             id: 1,
             title: "Rain Gouge Sensor",
             description: "ECOWITT WH40 Wireless",
-            image: "/devices/DEVICE 1.png",
+            image: "/devices/DEVICE 4.png",
           },
           {
             id: 2,
             title: "Capteur de direction du vent",
             description: "Tous les fabricants industriels",
-            image: "/devices/DEVICE 2.webp",
+            image: "/devices/DEVICE 6.PNG",
           },
           {
             id: 3,
             title: "Capteur de vent PCE",
             description: "FST-200-201 (vitesse)",
-            image: "/devices/DEVICE 3.png",
+            image: "/devices/DEVICE 17.png",
           },
         ],
       },
@@ -1587,18 +1584,18 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
 
             <div className="relative">
               <Image
-                src="/DRONE.png"
-                width={400}
-                height={400}
+                src="/about/BG3.png"
+                width={450}
+                height={450}
                 alt="Drone"
                 className="z-[9999] rounded-xl"
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
             </div>
           </section>
         ),
@@ -1608,19 +1605,19 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
             id: 1,
             title: "Manometre",
             description: "",
-            image: "/devices/DEVICE 1.png",
+            image: "/devices/DEVICE 14.png",
           },
           {
             id: 2,
             title: "Debimetre",
             description: "",
-            image: "/devices/DEVICE 2.webp",
+            image: "/devices/DEVICE 9.png",
           },
           {
             id: 3,
             title: "Capteur EC ",
             description: "",
-            image: "/devices/DEVICE 3.png",
+            image: "/devices/DEVICE 13.png",
           },
         ],
       },
@@ -1628,21 +1625,21 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         id: 2,
         name: "SPAW",
         desc: (
-          <section className="flex flex-col items-center justify-between gap-20 px-4 bg-gray-100 md:px-24 md:flex-row">
+          <section className="flex flex-col items-center justify-between gap-20 px-4 py-10 bg-gray-100 md:px-24 md:flex-row">
             <div className="relative">
               <Image
-                src="/SATELLITE.png"
-                width={500}
-                height={500}
+                src="/about/BG6.png"
+                width={450}
+                height={450}
                 alt="Drone"
                 className="z-50 rotate-180 rounded-xl drop-shadow-sm"
                 data-aos="zoom-out-right"
                 loader={({ src }) => src}
               />
-              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
-              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" /> */}
             </div>
 
             <div className="relative flex flex-col max-w-lg px-3 space-y-3 text-justify">
@@ -1683,19 +1680,19 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
             id: 1,
             title: "Cellule de charge type- S ",
             description: "Serie HM-2300 | Geneql",
-            image: "/devices/DEVICE 1.png",
+            image: "/devices/DEVICE 11.png",
           },
           {
             id: 2,
             title: "Capteur d'humidité",
             description: "de la surface des feuilles,",
-            image: "/devices/DEVICE 2.webp",
+            image: "/devices/DEVICE 5.png",
           },
           {
             id: 3,
             title: "Capteur pH pour eau pure",
             description: "OPTISENS PH 8100 - KROHNE",
-            image: "/devices/DEVICE 3.png",
+            image: "/devices/DEVICE 21.png",
           },
         ],
       },
@@ -1748,18 +1745,18 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
 
             <div className="relative">
               <Image
-                src="/DRONE.png"
-                width={400}
-                height={400}
+                src="/about/BG4.png"
+                width={450}
+                height={450}
                 alt="Drone"
                 className="z-[9999] rounded-xl"
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
             </div>
           </section>
         ),
@@ -1772,18 +1769,18 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
           <section className="flex flex-col items-center justify-between gap-20 px-4 py-10 bg-gray-100 md:px-24 md:flex-row">
             <div className="relative">
               <Image
-                src="/SATELLITE.png"
-                width={500}
-                height={500}
+                src="/about/BG7.png"
+                width={450}
+                height={450}
                 alt="Drone"
                 className="z-50 rotate-180 rounded-xl drop-shadow-sm"
                 data-aos="zoom-out-right"
                 loader={({ src }) => src}
               />
-              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
-              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" /> */}
             </div>
 
             <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
@@ -1835,18 +1832,18 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
 
             <div className="relative">
               <Image
-                src="/DRONE.png"
-                width={400}
-                height={400}
+                src="/about/BG9.png"
+                width={450}
+                height={450}
                 alt="Drone"
                 className="z-[9999] rounded-xl"
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
             </div>
           </section>
         ),

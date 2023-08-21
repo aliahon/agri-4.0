@@ -25,7 +25,7 @@ const NavbarContext = createContext(initialState);
 const NavbarProvider: any = ({ children }: { children: React.ReactNode }) => {
   const [isSelectedOpen, setIsSelectedOpen] = React.useState<boolean>(false);
 
-  const [isNavBarOpen, setIsNavBarOpen] = React.useState<boolean>(false);
+  const [isNavBarOpen, setIsNavBarOpen] = React.useState<boolean>(true);
 
   const [isSubNavOpen, setIsSubNavOpen] = React.useState<boolean>(false);
 
