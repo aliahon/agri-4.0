@@ -345,7 +345,7 @@ export const solutions = [
   {
     id: 1,
     name: "Agriculture de précision",
-    icon: <AgriPreciseLogo />,
+    icon: <AgriPreciseLogo color="#10ac84" />,
     description:
       "L'agriculture de précision est une approche qui permet d'optimiser...",
     projects: [
@@ -381,7 +381,7 @@ export const solutions = [
   {
     id: 2,
     name: "Aquaculture 4.0",
-    icon: <AquaLogo />,
+    icon: <AquaLogo color="#10ac84" />,
     description:
       "Nous intégrons des technologies avancées et des systèmes numériques...",
     projects: [
@@ -417,7 +417,7 @@ export const solutions = [
   {
     id: 3,
     name: "Agroalimentaire 4.0",
-    icon: <AgroLogo />,
+    icon: <AgroLogo color="#10ac84" />,
     description:
       "Usines intelligentes : les capteurs IoT et les appareils connectés peuvent...",
     projects: [
@@ -453,7 +453,7 @@ export const solutions = [
   {
     id: 4,
     name: "Smart cities",
-    icon: <SmartCitiesLogo />,
+    icon: <SmartCitiesLogo color="#10ac84" />,
     description:
       "Les grandes villes marocaines ont un potentiel de développement...",
     projects: [
@@ -489,7 +489,7 @@ export const solutions = [
   {
     id: 5,
     name: "Durabilite",
-    icon: <DurabiliteLogo />,
+    icon: <DurabiliteLogo color="#10ac84" />,
     description:
       "En intégrant la durabilité dans nos activités, nous pouvons...",
     projects: [
@@ -525,7 +525,7 @@ export const solutions = [
   {
     id: 6,
     name: "CO-R&D",
-    icon: <CoRdLogo />,
+    icon: <CoRdLogo color="#10ac84" />,
     description:
       "Notre engagement envers la R&D ne relève pas d'un simple caprice...",
     projects: [
@@ -561,7 +561,7 @@ export const solutions = [
   {
     id: 7,
     name: "Conseil",
-    icon: <ConseilLogo />,
+    icon: <ConseilLogo color="#10ac84" />,
     description:
       "Agri 4.0 ne limite pas ses prestations à la vente des produits et services...",
     projects: [

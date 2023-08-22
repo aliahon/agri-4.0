@@ -21,7 +21,8 @@
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 0)
     ),
-    url("/home.jpg");
+    url("/slide1.png");
+  /* /home.jpg */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

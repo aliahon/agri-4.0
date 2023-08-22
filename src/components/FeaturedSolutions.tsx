@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { gsap } from "gsap";
 // images
 // import frigo from "/solutions/frigo.png";
@@ -37,7 +37,12 @@ const FeaturedSolutions = () => {
           Dernières Solutions
         </h1>
 
-        <div className="grid gap-5 mt-5 md:grid-cols-3 sm:grid-cols-1">
+        <div
+          className="grid gap-5 mt-5 md:grid-cols-3 sm:grid-cols-1 "
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
           {latestSolutions?.map((solution, i) => (
             <FeaturedSolutionCard key={i} solution={solution} />
           ))}
@@ -51,7 +56,10 @@ const FeaturedSolutions = () => {
           </h1>
         </div>
         <div className="max-w-3xl">
-          <p className="mb-1 text-base leading-snug text-gray-400">
+          <p
+            className="mb-1 text-base leading-snug text-gray-400"
+            data-aos="fade-up"
+          >
             Opter pour nos solutions avisées vous permettra de vous préparer
             efficacement au succès. Que vous cherchiez à superviser une ferme?
             une irrigation ou tout autre installation{" "}
@@ -62,6 +70,7 @@ const FeaturedSolutions = () => {
           <a
             className="inline-flex items-center text-[#2DB273] hover:underline"
             href="/about"
+            data-aos="fade-left"
           >
             Learn More
             <svg
@@ -115,7 +124,7 @@ const FeaturedSolutionCard = ({
   };
 }) => {
   return (
-    <div className="mb-6 border shadow-lg rounded-xl sm:mb-0">
+    <div className="mb-6 border shadow-lg rounded-xl sm:mb-0 ">
       <div className="h-64 overflow-hidden rounded-t-md">
         <Image
           alt="content"

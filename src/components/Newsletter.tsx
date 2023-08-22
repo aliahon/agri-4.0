@@ -96,7 +96,12 @@ const Newsletter = () => {
   return (
     <section className="relative bg-[#081B15] lg:pl-16 py-16 flex flex-col lg:flex-row lg:justify-between lg:items-center">
       <div className="absolute top-0 left-[500px] z-10 w-20 h-full bg-[#081B15] invisible lg:visible"></div>
-      <div className="items-center justify-center max-w-md p-6">
+      <div
+        className="items-center justify-center max-w-md p-6"
+        data-aos="fade-right"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+      >
         <h1 className="mb-3 text-2xl font-semibold text-white md:text-5xl">
           Newsletter Agri4.0
         </h1>

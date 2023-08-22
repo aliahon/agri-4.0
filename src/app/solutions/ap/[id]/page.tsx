@@ -11,6 +11,7 @@ import Satellite from "@/components/animate/Satellite";
 import Camera from "@/components/animate/Camera";
 import { SolutionsDetailsProps } from "@/utils/types";
 import DevicesSection from "@/components/DevicesSection";
+import { notFound } from "next/navigation";
 // ======================================================================
 
 const Solution = ({ params }: any) => {
@@ -20,7 +21,7 @@ const Solution = ({ params }: any) => {
     const solutions = [1, 2, 3, 4, 5, 6];
 
     if (!solutions.includes(parseInt(id))) {
-      window.location.href = "/404";
+      notFound();
     }
   }, [id]);
 

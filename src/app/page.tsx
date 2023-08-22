@@ -3,6 +3,7 @@ import Clients from "@/components/Clients";
 import FeaturedSolutions from "@/components/FeaturedSolutions";
 import Newsletter from "@/components/Newsletter";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -32,10 +33,10 @@ export default function Home() {
         </p>
         <div className="flex items-center max-w-sm gap-5">
           <button className="px-6 py-2 mt-6 font-semibold text-white transition duration-300 ease-in-out transform rounded-3xl bg-secondary hover:bg-secondary-light hover:-translate-y-1">
-            <a href="/about">About Us</a>
+            <Link href="/about">About Us</Link>
           </button>
           <button className="py-2 mt-6 font-semibold transition duration-300 ease-in-out transform border-b-4 text-secondary border-b-secondary hover:-translate-y-1">
-            <a href="/contact">Contact Us</a>
+            <Link href="/contact">Contact Us</Link>
           </button>
         </div>
       </section>
