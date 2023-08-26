@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { YoutubeLogo, LinkedinLogo } from "phosphor-react";
 import React from "react";
 
@@ -21,9 +22,8 @@ const Footer = () => {
 
             <ul className="flex gap-6 mt-8">
               <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
+                <Link
+                  href="https://www.facebook.com/agri4.0/?locale=fr_FR"
                   target="_blank"
                   className="transition text-secondary hover:opacity-75"
                 >
@@ -41,13 +41,12 @@ const Footer = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
+                <Link
+                  href="https://www.instagram.com/agri4.0/"
                   target="_blank"
                   className="transition text-secondary hover:opacity-75"
                 >
@@ -65,12 +64,12 @@ const Footer = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
 
               <li>
                 <a
-                  href="/"
+                  href="https://www.linkedin.com/company/agri-4-0/"
                   rel="noreferrer"
                   target="_blank"
                   className="transition text-secondary hover:opacity-75"
@@ -83,7 +82,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="/"
+                  href="https://www.youtube.com/channel/UCShCox0ZhntRYnBesAMS_UA"
                   rel="noreferrer"
                   target="_blank"
                   className="transition text-secondary hover:opacity-75"

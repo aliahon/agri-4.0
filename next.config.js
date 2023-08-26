@@ -4,8 +4,10 @@ const nextConfig = {
   // experimental: {
   //   serverActions: true,
   // },
-  // output: "export",
-  // trailingSlash: true,
+  // Static HTML Export
+  output: "export",
+  trailingSlash: true,
+  //
   images: {
     loader: "custom",
     domains: [
