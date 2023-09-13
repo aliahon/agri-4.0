@@ -46,26 +46,27 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
   }, [selectedSection]);
 
   useEffect(() => {
+    // TODO: Change the solutions array based on the selected item
     if (selectedItemName === "Agriculture de précision") {
       setArrSolutions(solutionsArr.slice(0, 6));
       setSelectedItemSubName("ap");
     } else if (selectedItemName === "Aquaculture 4.0") {
-      setArrSolutions(solutionsArr.slice(6, 12));
+      setArrSolutions(solutionsArr.slice(6, 13));
       setSelectedItemSubName("aqua");
     } else if (selectedItemName === "Agroalimentaire 4.0") {
-      setArrSolutions(solutionsArr.slice(6, 12));
+      setArrSolutions(solutionsArr.slice(6, 13));
       setSelectedItemSubName("agro");
     } else if (selectedItemName === "Smart cities") {
-      setArrSolutions(solutionsArr.slice(6, 12));
+      setArrSolutions(solutionsArr.slice(6, 13));
       setSelectedItemSubName("sc");
     } else if (selectedItemName === "Durabilite") {
-      setArrSolutions(solutionsArr.slice(6, 12));
+      setArrSolutions(solutionsArr.slice(6, 13));
       setSelectedItemSubName("dura");
     } else if (selectedItemName === "CO-R&D") {
-      setArrSolutions(solutionsArr.slice(6, 12));
+      setArrSolutions(solutionsArr.slice(6, 13));
       setSelectedItemSubName("co");
     } else if (selectedItemName === "Conseil") {
-      setArrSolutions(solutionsArr.slice(6, 12));
+      setArrSolutions(solutionsArr.slice(6, 13));
       setSelectedItemSubName("cons");
     }
   }, [selectedItemName]);
@@ -180,7 +181,7 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
               {selectedSection === "Solutions" && selectedItemName}
             </h1>
           </Link>
-          <p className="text-sm leading-snug text-gray-400 md-3 md:mb-5">
+          <p className="text-xs leading-snug text-gray-400 md-3 md:mb-2">
             {selectedSection === "Solutions" &&
               "L'agriculture de précision est une approche qui permet d'optimiser la production agricole"}
           </p>
@@ -207,7 +208,7 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
                           NEW
                         </span>
                       )}
-                      <p className="text-sm leading-snug text-gray-400 line-clamp-4">
+                      <p className="text-xs leading-snug text-gray-400 line-clamp-4">
                         {item?.desc}
                       </p>
                     </div>

@@ -648,41 +648,48 @@ export const solutionsArr = [
   // smart cities
   {
     id: 7,
-    name: "Gestion d'irrigation",
-    desc: "En utilisation l’IOT; l’irrigation intelligente déclenche l’arrosage en temps opportun et en quantité optimale...",
+    name: "Gestion d'energie",
+    desc: "Grace a un appareil connecte au compteur , il sera possible de visualiser la consommation energrtique...",
     imgUrl: "/solutions/smartparking.jpg",
     sectorId: 4,
   },
   {
     id: 8,
+    name: "Gestion d'irrigation",
+    desc: "En utilisation l’IOT, l’irrigation intelligente déclenche l’arrosage en temps opportun et en quantité optimale...",
+    imgUrl: "/solutions/smartparking.jpg",
+    sectorId: 4,
+  },
+  {
+    id: 9,
     name: "Gestion de l'éclairage",
     desc: "La surveillance du climat pour les cultures consiste à observer et à mesurer l'impact du temps et du climat...",
     imgUrl: "/solutions/smartparking.jpg",
     sectorId: 4,
   },
   {
-    id: 9,
+    id: 10,
     name: "Gestion de transport",
     desc: "Pour les sociétés de transport, nous offrons une application leur permettant de mieux gérer leur flotte de véhicules...",
     imgUrl: "/solutions/smartparking.jpg",
     sectorId: 4,
   },
   {
-    id: 10,
+    id: 11,
     name: "Gestion de parking",
     desc: "AGRI 4.0 offre une solution de gestion de parking permettant La gestion intelligente des parkings en utilisant...",
     imgUrl: "/solutions/smartparking.jpg",
     sectorId: 4,
   },
   {
-    id: 11,
+    id: 12,
     name: "Traffic management",
     desc: "Nos solutions offrent une multitude de services visant à mieux organiser le trafic routier. Nous utilisons...",
     imgUrl: "/solutions/smartparking.jpg",
     sectorId: 4,
   },
   {
-    id: 12,
+    id: 13,
     name: "Environnement intelligent",
     desc: "L'environnement intelligent intègre des technologies avancées dans notre environnement quotidien...",
     imgUrl: "/solutions/smartparking.jpg",
@@ -737,27 +744,12 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
               <h1 className="mb-5 text-4xl font-bold">Drone</h1>
               <ul className="px-2 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
-                  L&apos;agriculture numérique est une industrie florissante et
+                  L&apos;agriculture numérique est une industrie orissante et
                   les drones sont en train de devenir de plus en plus
                   accessibles et sophistiqués. Dotés de caméras haute
                   résolution, ces engins aériens peuvent fournir des images en
                   temps réel des cultures, ce qui en fait des outils clés pour
-                  la micro-Gestion des vastes étendues de terres agricoles.
-                </li>
-                <li className="text-sm font-light leading-snug">
-                  Les drones autonomes pourraient jouer un rôle majeur dans
-                  l&apos;inspection, le semis, l&apos;arrosage, le traitement et
-                  même la récolte des cultures. Chaque drone serait capable de
-                  prendre des microdécisions indépendantes lorsqu&apos;il se
-                  déplace entre les plantes individuelles, communiquant des
-                  informations utiles au reste de son équipe et les utilisant
-                  via l&apos;apprentissage automatique.
-                </li>
-                <li className="text-sm font-light leading-snug">
-                  {" "}
-                  Grâce aux drones il est possible de détecter le stress
-                  hydrique et réaliser des épandages précis de produits
-                  phytosanitaires ou d&apos;engrais.
+                  la micro-Gestion des vastes étendues de terres agricoles..
                 </li>
               </ul>
             </div>
@@ -829,28 +821,13 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
               <h1 className="mb-5 text-4xl font-bold">Satellite</h1>
               <ul className="px-2 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
-                  L&apos;utilisation des satellites de traitement d&apos;images
-                  dans l&apos;agriculture de précision aide les agriculteurs à
-                  prendre des décisions éclairées en fournissant des
-                  visualisations précises des variations d&apos;expression
-                  végétative des parcelles.
-                </li>
-                <li className="text-sm font-light leading-snug">
-                  Grâce à l&apos;utilisation de satellites pour le traitement
-                  d&apos;images, les agriculteurs peuvent analyser la tendance
-                  et l&apos;évolution de l&apos;état sanitaire de leurs
-                  cultures, calculer les indices de végétation et les paramètres
-                  physiologiques, et même détecter des problèmes tels que le
-                  stress hydrique, la sécheresse et la salinité des parcelles.
-                </li>
-                <li className="text-sm font-light leading-snug">
-                  Ces informations sont d&apos;une grande aide pour les
-                  agriculteurs, leur permettant de mieux comprendre la santé de
-                  leurs cultures et d&apos;ajuster leur gestion en conséquence.
-                  En fin de compte, l&apos;utilisation du traitement
-                  d&apos;images peut améliorer la productivité et la rentabilité
-                  de l&apos;exploitation agricole, tout en réduisant
-                  l&apos;impact sur l&apos;environnement.
+                  Grâce à l&apos;utilisation d&apos;images satellitaires, nous
+                  sommes en mesure de vous fournir une analyse approfondie de
+                  vos cultures, orant ainsi une visibilité précise sur la
+                  gestion optimale de vos ressources agricoles. Cette analyse
+                  permettra de mettre en place une stratégie de gestion durable,
+                  en prenant en compte les diférents facteurs qui inuencent la
+                  santé et la productivité de vos cultures.
                 </li>
               </ul>
             </div>
@@ -867,23 +844,11 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
               <h1 className="mb-5 text-4xl font-bold">Camera au sol</h1>
               <ul className="px-2 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
-                  Les caméras au sol peuvent également être utilisées pour aider
-                  à cartographier les champs et à identifier les zones qui
-                  nécessitent une gestion différente. Les informations
-                  collectées peuvent être utilisées pour créer des cartes de
-                  rendement, pour planifier la plantation et la fertilisation
-                  des cultures, et pour identifier les zones qui nécessitent des
-                  traitements supplémentaires.
-                </li>
-                <li className="text-sm font-light leading-snug">
-                  Les avantages de l&apos;utilisation de caméras au sol en
-                  agriculture de précision sont leur capacité à fournir des
-                  informations détaillées sur les cultures et le sol à un coût
-                  relativement faible. Les images collectées peuvent être
-                  analysées pour fournir des informations utiles aux
-                  agriculteurs, ce qui peut les aider à prendre des décisions
-                  plus éclairées et à améliorer l&apos;efficacité de leur
-                  gestion des cultures.
+                  Soucieux de suivre de près vos cultures et de détecter à temps
+                  tout problème ? nos caméras au sol sont faites pour vous.
+                  Grâce à nos caméras vous pouvez surveiller vos cultures,
+                  détecter avant dégénération les ravageurs ou maladies,
+                  détecter les mauvaises herbes et bien d&apos;autres avantages.
                 </li>
               </ul>
             </div>
@@ -942,7 +907,7 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                   4.0 qui regroupe toutes les informations sur les puits :
                   profondeur, quantité d’eau, qualité de l’eau, le cycle de
                   régénérations des nappes, équipement de forage pompage et
-                  maintenance.
+                  maintenance..
                 </li>
               </ul>
             </div>
@@ -1080,14 +1045,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
               <h1 className="mb-5 text-4xl font-bold">Bassin et Stockage</h1>
               <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
-                  Nos solutions permettent aux agriculteurs de maximiser leur
-                  production avec une utilisation minimale des ressources. Grâce
-                  aux données recueillies par nos capteurs, les agriculteurs
-                  écoutent mieux les plantes et prennent ainsi les décisions les
-                  plus adéquates. L&apos;eau pénètre mieux dans le sol,
-                  l&apos;absorption des nutriments est améliorée et la salinité
-                  peut être gérée de manière durable. Nous utilisons la
-                  technologie pour mieux servir les plantes.
+                  Bassin et stockage : Nous vous orons des outils vous
+                  permettant de surveiller régulièrement la qualité de
+                  l&apos;eau et ainsi garantir que vos plantes reçoivent une eau
+                  de qualité optimale pour une croissance saine et maximale. .
                 </li>
               </ul>
             </div>
@@ -1157,15 +1118,11 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
               <h1 className="mb-5 text-4xl font-bold">Filtration</h1>
               <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
-                  En surveillant régulièrement la qualité de l&apos;eau et en
-                  utilisant des systèmes de filtration appropriés, vous pouvez
-                  garantir que vos plantes reçoivent une eau de qualité optimale
-                  pour une croissance saine et maximale. Pour pouvoir y arriver
-                  nous vous proposons un système de contrôle automatisé pour
-                  surveiller la filtration de l&apos;eau. Ce système utilise des
-                  capteurs et des actionneurs pour surveiller et ajuster la
-                  qualité de l&apos;eau dans les systèmes d&apos;irrigation en
-                  temps réel.
+                  Nos solutions permettent aux agriculteurs de maximiser leur
+                  production avec une utilisation minimale des ressources. Grâce
+                  aux données recueillies par nos capteurs, les agriculteurs
+                  écoutent mieux les plantes et prennent ainsi les décisions les
+                  plus adéquates..
                 </li>
               </ul>
             </div>
@@ -1333,11 +1290,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
               <h1 className="mb-5 text-4xl font-bold">AGRIBOT Traitement</h1>
               <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
-                  Grâce à l&apos;automatisation du traitement de vos cultures,
-                  vous bénéficiez d&apos;une pulvérisation uniforme et homogène
-                  qui assure une protection optimale pour l&apos;ensemble de vos
-                  cultures. Avec AGRIBOT Traitement vous pouvez être sûr que
-                  toutes vos plantes seront servies
+                  Grâce à notre robot, vous bénéfciez d&apos;une pulvérisation
+                  uniforme et homogène qui assure une protection optimale pour
+                  l&apos;ensemble de vos cultures. Avec AGRIBOT Traitement vous
+                  pouvez être sûr que toutes vos plantes seront servies.
                 </li>
               </ul>
             </div>
@@ -1375,23 +1331,12 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
               <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   Notre robot scan sera équipé de caméras et de capteurs pour
-                  vous permettre de :
-                </li>
-                <li className="text-sm font-light leading-snug">
-                  Détecter les signes de maladies dans les plantes. Ces signes
-                  pourraient inclure des changements de couleur, de texture, de
-                  forme ou de croissance anormale.
-                </li>
-                <li className="text-sm font-light leading-snug">
-                  D’identifier les couleurs des plantes. Cela aidera à
-                  identifier les plantes qui ne sont pas en bonne santé ou qui
-                  ont besoin d&apos;être récoltées.
-                </li>
-                <li className="text-sm font-light leading-snug">
-                  D’identifier les mauvaises herbes qui poussent parmi les
-                  cultures pour cibler leur traitement herbicide uniquement sur
-                  les zones où les mauvaises herbes sont présentes, plutôt que
-                  de traiter l&apos;ensemble de leur champ.
+                  vous permettre de détecter les signes de maladies dans vos
+                  plantes. Ces signes pourraient inclure des changements de
+                  couleur, de texture, de forme ou de croissance anormale,
+                  d’identi er les couleurs des plantes. Cela aidera à identifer
+                  les plantes qui ne sont pas en bonne santé ou qui ont besoin
+                  d&apos;être récoltées..
                 </li>
               </ul>
             </div>
@@ -1443,22 +1388,16 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
     id: "4",
     name: "Suivi du Climat",
     desc: (
-      <>
-        <p className="text-sm font-light leading-snug">
-          La surveillance du climat pour les cultures consiste à observer et à
-          mesurer l&apos;impact du temps et du climat sur la production
-          agricole. Cela comprend la surveillance de variables telles que la
-          tempéra- ture, les précipitations, l&apos;humidité, le vent et le
-          rayonnement solaire, ainsi que l&apos;humidité du sol et les niveaux
-          de nutriments.
-        </p>
-        <p className="text-sm font-light leading-snug">
-          En surveillant les variables climatiques et leur impact sur la produc-
-          tion agricole, les agriculteurs et les décideurs peuvent mieux com-
-          prendre et gérer les risques et opportunités associés au change- ment
-          climatique.
-        </p>
-      </>
+      <p className="text-sm font-light leading-snug">
+        Nous vous proposons un suivi climatique avancé en mettant à votre
+        disposition tous les outils nécessaires pour surveiller à distance et en
+        temps réel le climat de vos cultures. Grâce à nos capteurs, vous pouvez
+        obtenir des informations sur la température, les précipitations,
+        l&apos;humidité, le vent, le rayonnement solaire, l&apos;humidité du sol
+        et les niveaux de nutriments. Ces données précieuses vous permettent de
+        prendre des décisions éclairées en temps opportun, de gérer les risques
+        et de saisir les opportunités liées au changement climatique..
+      </p>
     ),
     imgUrl: "/solutionDetails/climat.png",
     services: [
@@ -1471,23 +1410,20 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
               <h1 className="mb-5 text-4xl font-bold">MCCC</h1>
               <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
-                  Les solutions que nous proposons permettent la supervision des
-                  fermes à travers l&apos;installation de capteurs électroniques
-                  SMART gérées par des applications web et mobile.
+                  MCC est une solution AGRI 4.0 qui permet la supervision de vos
+                  culture à travers l&apos;installation de capteurs
+                  électroniques SMART gérées par des applications web et mobile.
                 </li>
                 <li className="text-sm font-light leading-snug">
-                  L&apos;application assure le suivi du climat sous-serre, le
-                  suivi des irrigations (Nombre d’irrigation par serre, date de
-                  début et de fin, niveau de l’EC et du PH lors de l’irrigation
-                  etc.) Le recueil des données importantes à la bonne croissance
-                  de la plante se fait de manière automatique et en temps réel
-                  et leur traitement se fait grâce à l’intelligence
-                  artificielle.
-                </li>
-                <li className="text-sm font-light leading-snug">
-                  Toutes les données du système sont exploitables par la
-                  fonction data export pour l’analyse des données et la
-                  réalisation des rapports.
+                  L&apos;application assure : Le suivi du climat sous-serre, -
+                  Le suivi des irrigations (Nombre d’irrigation par serre, date
+                  de début et de fin, niveau de l’EC et du PH lors de
+                  l’irrigation etc.) - Le recueil des données importantes à la
+                  bonne croissance de la plante se fait de manière automatique
+                  et en temps réel et leur traitement se fait grâce à
+                  l’intelligence artifcielle. Toutes les données du système sont
+                  exploitables pour l’analyse des données et la réalisation des
+                  rapports.
                 </li>
               </ul>
             </div>
@@ -1538,19 +1474,14 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
     id: "5",
     name: "Fertigation connecté",
     desc: (
-      <>
-        <p className="text-sm font-light leading-snug">
-          Nous utilisons des capteurs pour mesurer les niveaux d&apos;humidité
-          du sol, de nutriments et de pH, ainsi que des dispositifs de contrôle
-          pour ajuster les doses d&apos;eau et d&apos;engrais en fonction des
-          besoins de la plante. Ces données sont collectées et analysées à
-          distance à l&apos;aide d&apos;une application mobile.
-        </p>
-        <p className="text-sm font-light leading-snug">
-          La fertigation connectée aide les agriculteurs à optimiser leur pro-
-          duction tout en réduisant les pertes et les coûts.
-        </p>
-      </>
+      <p className="text-sm font-light leading-snug">
+        Nous mettons à votre service des capteurs intelligents vous permettant
+        de mesurer les niveaux d&apos;humidité du sol, de nutriments et de pH,
+        ainsi que des dispositifs de contrôle pour ajuster les doses d&apos;eau
+        et d&apos;engrais en fonction des besoins de la plante. Ces données sont
+        collectées et analysées à distance à l&apos;aide d&apos;une application
+        mobile accessible via téléphone, tablette ou PC.
+      </p>
     ),
     imgUrl: "/solutionDetails/fertigation.png",
     services: [
@@ -1566,18 +1497,16 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
               <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   L’application STM (Station Tête Monitoring) permet la
-                  supervision d’une ferme connectée. Elle assure le suivi du
-                  climat sous-serre, le suivi des irrigations (Nombre
-                  d’irrigation par serre, date de début et de fin, niveau de
-                  l’EC et du PH lors de l’irrigation etc.) A travers
-                  l’application, on peut aussi commander à distance et
-                  déclencher tout un système comme celui de la brumisation si un
-                  changement climatique inattendu prend place. On peut également
-                  recevoir des notifications si des indicateurs clés atteignent
-                  ou dépassent un certain seuil (humidité, température, EC, PH
-                  etc.). Toutes les données du système sont exploitables par la
-                  fonction data export pour l’analyse des données et la
-                  réalisation des rapports.
+                  supervision de vos fermes. Elle assure : - Le suivi du climat
+                  sous-serre : température, humidité, rayonnement, PH, EC et
+                  autre - Le suivi des irrigations (Nombre d’irrigation par
+                  serre, date de début et de fin, niveau de l’EC et du PH lors
+                  de l’irrigation etc.) - Commander à distance et déclencher
+                  tout un système comme celui de la brumisation si un changement
+                  climatique inattendu prend place. - Recevoir des notifications
+                  en cas de dépassement des seuils dénis - Toutes les données du
+                  système sont exploitables pour l’analyse des données et la
+                  réalisation des rapports..
                 </li>
               </ul>
             </div>
@@ -1651,24 +1580,14 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                   intégrée qui offre l’accessibilité à toutes les informations
                   liées à l’environnement de la plante, ce qui permet de donner
                   une visibilité globale sur sa santé, son évolution, sa
-                  capacité de production, les maladies dont elle peut souffrir,
+                  capacité de production, les maladies dont elle peut soufrir,
                   les ravageurs qui l’attaque, anticiper l’état de stress
                   qu’elle peut ressentir et connaitre exactement ses besoins en
-                  nutrition et en eau.
-                </li>
-                <li className="text-sm font-light leading-snug">
-                  Cette solution permet de remonter en temps réel toutes les
-                  informations utiles liés au sol, les plantes, l’air et l’eau.
-                </li>
-                <li className="text-sm font-light leading-snug">
-                  Les données acquises sont accessibles à tout moment via une
-                  application web dédiée, développée par Agri 4.0.
-                </li>
-                <li className="text-sm font-light leading-snug">
-                  Ce suivi permet de connaitre les besoins exacts de la plante
-                  et ainsi réduire les intrants inutiles, économiser l’eau et
-                  l’énergie et donc profiter d’une agriculture saine et
-                  rentable.
+                  nutrition et en eau. Cette solution permet de remonter en
+                  temps réel toutes les informations utiles liés au sol, les
+                  plantes, l’air et l’eau. Les données acquises sont accessibles
+                  à tout moment via une application web dédiée, développée par
+                  Agri 4.0..
                 </li>
               </ul>
             </div>
@@ -1822,10 +1741,9 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
               <ul className="px-3 space-y-3 list-disc marker:text-secondary">
                 <li className="text-sm font-light leading-snug">
                   Notre application supply chain permet aux agriculteurs la
-                  gestion de la chaîne d&apos;approvisionnement, notamment la
-                  planification de la demande, la planification de la
-                  production, la gestion des stocks, la gestion des entrepôts et
-                  autres
+                  gestion de leur chaîne d&apos;approvisionnement, notamment le
+                  suivi de la demande, la planification des achats, la gestion
+                  des stocks, la gestion des magasins et autres.
                 </li>
               </ul>
             </div>
