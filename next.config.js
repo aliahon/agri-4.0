@@ -6,7 +6,7 @@ const nextConfig = {
   // },
   // Static HTML Export
   output: "export",
-  trailingSlash: true,
+  // trailingSlash: true,
   //
   images: {
     loader: "custom",

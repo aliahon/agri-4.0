@@ -1,12 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { YoutubeLogo, LinkedinLogo } from "phosphor-react";
 import React from "react";
 
 const Footer = () => {
   return (
-    <footer aria-label="Site Footer" className="bg-primary">
+    <footer aria-label="Site Footer" className="bg-[#212121] md:pt-10">
       <div className="max-w-screen-xl px-4 py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
@@ -14,11 +15,15 @@ const Footer = () => {
               <span className="sr-only">agri4.0</span>
             </div>
 
-            <p className="max-w-xs mt-4 text-sm text-white">
-              L&apos;agriculture de précision est une stratégie de gestion qui
-              tient compte de la variabilité temporelle et spatiale pour
-              améliorer la durabilité de la production agricole.
-            </p>
+            <div className="max-w-xs mt-4 text-sm text-white">
+              <Image
+                src="/logo2.svg"
+                width={80}
+                height={80}
+                alt="agri4.0"
+                loader={({ src }) => src}
+              />
+            </div>
 
             <ul className="flex gap-6 mt-8">
               <li>
@@ -251,61 +256,22 @@ const Footer = () => {
                       Water
                     </a>
                   </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      Balance
-                    </a>
-                  </li>
                 </ul>
               </nav>
             </div>
 
-            <div>
-              <p className="font-medium text-secondary">Société</p>
-
-              <nav aria-label="Footer Navigation - Legal" className="mt-6">
-                <ul className="space-y-4 text-sm">
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      Agri Solutions
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      Returns Policy
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      Refund Policy
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      Hiring Statistics
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+            <div className="w-full">
+              <p className="max-w-sm mt-4 text-sm text-white mb-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <button
+                type="button"
+                className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-xl shadow-sm bg-secondary hover:bg-opacity-75 focus:outline-none focus:ring-0 focus:ring-offset-2 focus:ring-secondary"
+              >
+                <span className="text-sm font-medium text-white">
+                  Rejoignez-Nous
+                </span>
+              </button>
             </div>
           </div>
         </div>

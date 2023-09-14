@@ -380,6 +380,42 @@ export const solutions = [
   },
   {
     id: 2,
+    name: "Smart cities",
+    icon: <SmartCitiesLogo color="#10ac84" />,
+    description:
+      "Les grandes villes marocaines ont un potentiel de développement...",
+    projects: [
+      {
+        name: "Projet 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 3",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+    apps: [
+      {
+        name: "App 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "App 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+  },
+  {
+    id: 3,
     name: "Aquaculture 4.0",
     icon: <AquaLogo color="#10ac84" />,
     description:
@@ -415,47 +451,11 @@ export const solutions = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: "Agroalimentaire 4.0",
     icon: <AgroLogo color="#10ac84" />,
     description:
       "Usines intelligentes : les capteurs IoT et les appareils connectés peuvent...",
-    projects: [
-      {
-        name: "Projet 1",
-        description:
-          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      },
-      {
-        name: "Projet 2",
-        description:
-          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      },
-      {
-        name: "Projet 3",
-        description:
-          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      },
-    ],
-    apps: [
-      {
-        name: "App 1",
-        description:
-          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      },
-      {
-        name: "App 2",
-        description:
-          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      },
-    ],
-  },
-  {
-    id: 4,
-    name: "Smart cities",
-    icon: <SmartCitiesLogo color="#10ac84" />,
-    description:
-      "Les grandes villes marocaines ont un potentiel de développement...",
     projects: [
       {
         name: "Projet 1",
@@ -1768,6 +1768,133 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
         imgUrl: "/solutions/sig.png",
       },
     ],
+  },
+];
+
+export const smartCitiesSolutions = [
+  // Gestion d'énergie
+  {
+    id: "7",
+    name: "Gestion d'énergie",
+    desc: (
+      <>
+        <p className="text-sm font-light leading-snug">
+          En utilisant notre dispositif connecté à votre compteur et une
+          application dédiée, notre solution vous offre la capacité de
+          surveiller instantanément et à distance votre consommation
+          d&apos;énergie. Vous pourrez ainsi ajuster vos habitudes pour une
+          utilisation plus parcimonieuse et ciblée. Notre système de gestion de
+          la consommation énergétique s&apos;avère un allié efficace pour
+          réduire vos dépenses énergétiques.
+        </p>
+      </>
+    ),
+    imgUrl: "/solutionDetails/Group 832.png",
+    services: [],
+  },
+  // Gestion d'irrigation
+  {
+    id: "8",
+    name: "Gestion d'irrigation",
+    desc: (
+      <>
+        <p className="text-sm font-light leading-snug">
+          Avec notre système de contrôle de l&apos;irrigation, vous serez en
+          mesure de déclencher l&apos;arrosage au moment propice et avec la
+          quantité idéale. Cela assurera le développement optimal de vos
+          végétaux tout en optimisant l&apos;utilisation de l&apos;eau et de
+          l&apos;énergie.
+        </p>
+      </>
+    ),
+    imgUrl: "/solutionDetails/Group 833.png",
+    services: [],
+  },
+  // Gestion de l'éclairage
+  {
+    id: "9",
+    name: "Gestion de l'éclairage",
+    desc: (
+      <>
+        <p className="text-sm font-light leading-snug">
+          Grâce à des capteurs avancés et une technologie de pointe, nos
+          solutions sont conçues pour répondre aux besoins spécifiques de chaque
+          espace. En utilisant nos capteurs smart, notre système ajuste
+          automatiquement l&apos;intensité lumineuse et permet ainsi un
+          éclairage adéquat tout en minimisant la consommation d&apos;énergie.
+          De plus, notre plateforme offre une interface conviviale qui permet
+          aux utilisateurs de personnaliser les paramètres d&apos;éclairage en
+          fonction de leurs préférences. .
+        </p>
+      </>
+    ),
+    imgUrl: "/solutionDetails/Group 836.png",
+    services: [],
+  },
+  // Gestion de transport
+  {
+    id: "10",
+    name: "Gestion de transport",
+    desc: (
+      <p className="text-sm font-light leading-snug">
+        Notre solution repose sur des capteurs intelligents, des données en
+        temps réel et des algorithmes, permettant de surveiller et
+        d&apos;analyser en temps réel le flux de circulation, les conditions
+        météorologiques et d&apos;autres paramètres pertinents. Cette analyse
+        approfondie permet une gestion proactive du trafic, des itinéraires
+        optimisés et une réduction des embouteillages.
+      </p>
+    ),
+    imgUrl: "/solutionDetails/Group 834.png",
+    services: [],
+  },
+  // Gestion de parking
+  {
+    id: "11",
+    name: "Gestion de parking",
+    desc: (
+      <>
+        <p className="text-sm font-light leading-snug">
+          PARKINO une solution de gestion de parking développée par AGRI 4.0
+          permettant La gestion intelligente des parkings, elle comporte :
+        </p>
+        <ul>
+          <li>
+            - Un système de comptage et de détection permettant aux conducteurs
+            de trouver rapidement des places de parking disponibles à travers
+            l&apos;application mobile dédiée.
+          </li>
+          <li>
+            - Itinéraires en temps réel vers les places de parking disponibles,
+            en tenant compte de la disponibilité.
+          </li>
+          <li>
+            - Gestion des accès : faciliter le processus d&apos;entrée et de
+            sortie dans les zones à barrières.
+          </li>
+        </ul>
+      </>
+    ),
+    imgUrl: "/solutionDetails/Group 835.png",
+    services: [],
+  },
+  // Gestion de trafic
+  {
+    id: "12",
+    name: "Gestion de trafic",
+    desc: (
+      <>
+        <p className="text-sm font-light leading-snug">
+          Avec notre système de contrôle de l&apos;irrigation, vous serez en
+          mesure de déclencher l&apos;arrosage au moment propice et avec la
+          quantité idéale. Cela assurera le développement optimal de vos
+          végétaux tout en optimisant l&apos;utilisation de l&apos;eau et de
+          l&apos;énergie.
+        </p>
+      </>
+    ),
+    imgUrl: "/solutionDetails/Group 837.png",
+    services: [],
   },
 ];
 
