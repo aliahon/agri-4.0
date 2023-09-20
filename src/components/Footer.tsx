@@ -7,7 +7,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer aria-label="Site Footer" className="bg-[#212121] md:pt-10">
+    <footer aria-label="Site Footer" className="bg-[#17352C] md:pt-10">
       <div className="max-w-screen-xl px-4 py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
@@ -261,12 +261,12 @@ const Footer = () => {
             </div>
 
             <div className="w-full">
-              <p className="max-w-sm mt-4 text-sm text-white mb-2">
+              <p className="max-w-sm mt-4 mb-2 text-sm text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <button
                 type="button"
-                className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-xl shadow-sm bg-secondary hover:bg-opacity-75 focus:outline-none focus:ring-0 focus:ring-offset-2 focus:ring-secondary"
+                className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent shadow-sm rounded-xl bg-secondary hover:bg-opacity-75 focus:outline-none focus:ring-0 focus:ring-offset-2 focus:ring-secondary"
               >
                 <span className="text-sm font-medium text-white">
                   Rejoignez-Nous

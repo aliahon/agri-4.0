@@ -20,3 +20,7 @@ export const getSCSolutionDetails = (
 export const getSectorById = (sectorId: string) => {
   return secteurs?.find((sector) => sector?.id === sectorId) || {};
 };
+
+export const getSectors = async () => {
+  return secteurs;
+};

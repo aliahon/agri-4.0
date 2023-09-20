@@ -20,7 +20,7 @@ export default function Home() {
           </span>
         </h1>
         <p
-          className="max-w-md mt-3 leading-snug text-gray-300 text-md"
+          className="max-w-md mt-3 leading-snug text-gray-300 text-md test-txt"
           data-aos="fade-right"
         >
           L&apos;agriculture{" "}
