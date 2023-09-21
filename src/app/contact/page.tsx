@@ -12,7 +12,7 @@ const navigation = [
   { name: "Blog", href: "#" },
 ];
 
-export default function Example() {
+export default function Contact() {
   const validationSchema = z.object({
     firstName: z.string().min(2, "Too Short!").max(50, "Too Long!"),
     lastName: z.string().min(2, "Too Short!").max(50, "Too Long!"),

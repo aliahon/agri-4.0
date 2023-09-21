@@ -11,6 +11,7 @@ const nextConfig = {
   // distDir: 'dist',
   images: {
     loader: "custom",
+    loaderFile: "./src/utils/image-loader.js",
     domains: [
       "images.pexels.com",
       "dummyimage.com",
