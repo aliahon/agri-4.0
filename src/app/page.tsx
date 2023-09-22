@@ -4,6 +4,12 @@ import FeaturedSolutions from "@/components/FeaturedSolutions";
 import Newsletter from "@/components/Newsletter";
 import Image from "next/image";
 import Link from "next/link";
+// ======================================================================
+
+export const metadata = {
+  title: "agri4.0 | We innovate for agriculture",
+  description: "We innovate for agriculture",
+};
 
 export default function Home() {
   return (
