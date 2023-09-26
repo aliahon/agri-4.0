@@ -5,11 +5,8 @@
   "homepage": "https://agri40.ma",
   "scripts": {
     "dev": "next dev",
-    "export": "next build && next export",
-    "dev:server": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "start:static": "next start",
+    "start": "next start",
     "lint": "next lint",
     "email:dev": "email dev --dir src/emails"
   },
