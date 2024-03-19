@@ -1,9 +1,7 @@
-"use client";
-
+"use client";;
 import Image from "next/image";
 import Link from "next/link";
 import { YoutubeLogo, LinkedinLogo } from "phosphor-react";
-import React from "react";
 
 const Footer = () => {
   return (
@@ -261,9 +259,6 @@ const Footer = () => {
             </div>
 
             <div className="w-full">
-              <p className="max-w-sm mt-4 mb-2 text-sm text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
               <button
                 type="button"
                 className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent shadow-sm rounded-xl bg-secondary hover:bg-opacity-75 focus:outline-none focus:ring-0 focus:ring-offset-2 focus:ring-secondary"

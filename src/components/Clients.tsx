@@ -1,18 +1,16 @@
 "use client";
-
 import Image from "next/image";
-import React from "react";
 import Slider from "react-slick";
 
 const Clients = () => {
   const settings = {
     dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 6,
-    slidesToScroll: 2,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 7,
+    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     cssEase: "linear",
     responsive: [
       {
@@ -33,7 +31,28 @@ const Clients = () => {
     ],
   };
 
-  const clients = ["1", "2", "3", "4", "5", "6", "7"];
+  const clients = [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+  ];
 
   return (
     <section className="px-16 py-12">
@@ -41,7 +60,7 @@ const Clients = () => {
         Partners & Clients
       </h1>
       <hr className="w-16 h-1 mt-1 bg-secondary" />
-      <Slider {...settings}>
+      <Slider arrows={false} {...settings}>
         {clients.map((_, i) => (
           <div
             key={i}
@@ -50,7 +69,7 @@ const Clients = () => {
             <Image
               src={`/clients/${i + 1}.png`}
               alt=""
-              className="object-contain w-28 h-28 grayscale hover:grayscale-0 "
+              className="object-contain w-28 h-28"
               width={200}
               height={200}
               loader={({ src }) => src}

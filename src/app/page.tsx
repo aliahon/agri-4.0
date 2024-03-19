@@ -2,7 +2,6 @@ import ActivitySectors from "@/components/ActivitySectors";
 import Clients from "@/components/Clients";
 import FeaturedSolutions from "@/components/FeaturedSolutions";
 import Newsletter from "@/components/Newsletter";
-import Image from "next/image";
 import Link from "next/link";
 // ======================================================================
 
@@ -29,13 +28,12 @@ export default function Home() {
           className="max-w-md mt-3 leading-snug text-gray-300 text-md test-txt"
           data-aos="fade-right"
         >
-          L&apos;agriculture{" "}
+          Nous mettons{" "}
           <span className="font-semibold text-secondary drop-shadow-md">
-            4.0
+            L&apos;IoT{" "}
           </span>{" "}
-          est l&apos;évolution de l&apos;agriculture de précision et désigne
-          l&apos;ensemble des actions qui sont mises en œuvre dans
-          l&apos;agriculture.
+          au profit des agriculture pour passer d&apos;une agriculture riche en
+          intrants a une agriculture riche en connainssances.
         </p>
         <div className="flex items-center max-w-sm gap-5">
           <button className="px-6 py-2 mt-6 font-semibold text-white transition duration-300 ease-in-out transform rounded-3xl bg-secondary hover:bg-secondary-light hover:-translate-y-1">

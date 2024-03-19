@@ -47,7 +47,7 @@ const Navbar = () => {
           />
         </Link>
       </div>
-      {/*  */}
+
       <div className="block lg:flex-grow lg:hidden">
         <button
           className="flex items-center px-3 py-2 text-black border-2 border-white rounded hover:text-secondary hover:border-secondary"
