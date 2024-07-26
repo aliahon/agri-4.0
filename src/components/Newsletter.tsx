@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
+import {motion} from "framer-motion"
+import { useState } from "react";
+
 
 const Newsletter = () => {
   const settings = {

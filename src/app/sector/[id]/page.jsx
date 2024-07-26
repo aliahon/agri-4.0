@@ -1,5 +1,3 @@
-"use client";
-
 import SectorSection from "@/components/SectorSection";
 import { secteurs } from "@/utils/Constants";
 import React from "react";

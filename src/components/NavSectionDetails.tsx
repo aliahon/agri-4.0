@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useEffect } from "react";
@@ -54,7 +55,7 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
       setArrSolutions(solutionsArr.slice(6, 13));
       setSelectedItemSubName("aqua");
     } else if (selectedItemName === "Agroalimentaire 4.0") {
-      setArrSolutions(solutionsArr.slice(6, 13));
+      setArrSolutions(solutionsArr.slice(13, 17));
       setSelectedItemSubName("agro");
     } else if (selectedItemName === "Smart cities") {
       setArrSolutions(solutionsArr.slice(6, 13));
@@ -66,7 +67,7 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
       setArrSolutions(solutionsArr.slice(6, 13));
       setSelectedItemSubName("co");
     } else if (selectedItemName === "Conseil") {
-      setArrSolutions(solutionsArr.slice(6, 13));
+      setArrSolutions(solutionsArr.slice(17,19 ));
       setSelectedItemSubName("cons");
     }
   }, [selectedItemName]);
@@ -171,7 +172,7 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
                 ? "6"
                 : selectedItemName === "Conseil"
                 ? "7"
-                : "1"
+                : ""
             }`}
             onClick={() => {
               setIsSelectedOpen(false);
@@ -182,8 +183,16 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
             </h1>
           </Link>
           <p className="text-xs leading-snug text-gray-400 md-3 md:mb-2">
-            {selectedSection === "Solutions" &&
+            {selectedItemName === "Agriculture de précision" &&
               "L'agriculture de précision est une approche qui permet d'optimiser la production agricole"}
+          </p>
+          <p className="text-xs leading-snug text-gray-400 md-3 md:mb-2">
+            {selectedItemName ===  "Agroalimentaire 4.0" &&
+              "Nous offrons des solutions avancées pour optimiser les chambres froides, les machines agroalimentaires..."}
+          </p>
+          <p className="text-xs leading-snug text-gray-400 md-3 md:mb-2">
+            {selectedItemName ===  "Conseil" &&
+              "Chez Agri 4.0, nous allons bien au-delà de la simple vente de produits et services."}
           </p>
           <div className="flex flex-wrap justify-between gap-4 md:flex-nowrap z ">
             <div className="w-full">
@@ -215,7 +224,7 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
                   ))
                 ) : (
                   <h1 className="text-sm font-semibold text-gray-700">
-                    Under Construction
+                  
                   </h1>
                 )}
               </div>

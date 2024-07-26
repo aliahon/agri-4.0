@@ -18,7 +18,7 @@ const Solution = ({ params }: any) => {
   const { id } = params;
 
   useEffect(() => {
-    const solutions = [1, 2, 3, 4, 5, 6];
+    const solutions = [1, 2, 3, 4, 5, 6, 7];
 
     if (!solutions.includes(parseInt(id))) {
       notFound();
@@ -74,7 +74,7 @@ const Solution = ({ params }: any) => {
         ))
       ) : (
         <h1 className="text-xl font-bold text-center my-14 text-primary">
-          Under Construction
+         
         </h1>
       )}
     </section>
@@ -84,7 +84,7 @@ const Solution = ({ params }: any) => {
 export default Solution;
 
 {
-  /* <>
+  <>
   <section className="relative flex items-center justify-between gap-10 px-24">
     
     <div className="absolute -z-10 bottom-[200px] left-20 opacity-20">
@@ -227,5 +227,5 @@ export default Solution;
       <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
     </div>
   </section>
-</>; */
+</>; 
 }

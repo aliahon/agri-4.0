@@ -3,6 +3,8 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import CountUp from "react-countup"
+
 // images
 // import frigo from "/solutions/frigo.png";
 // import spaw from "/solutions/spaw.png";
@@ -85,26 +87,35 @@ const FeaturedSolutions = () => {
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </a>
-          {/* <div className="grid grid-cols-3 gap-5 text-center text-white">
+          <div className="grid grid-cols-3 gap-5 text-center text-white">
             <div>
-              <h1 className="font-bold text-8xl">20+</h1>
+              <h1 className="font-bold text-8xl">
+                <CountUp enableScrollSpy scrollSpyOnce end={20} duration={1} />
+                +
+              </h1>
               <h3 className="text-[#2DB273] font-semibold text-xl uppercase">
                 EXPERIENCE
               </h3>
             </div>
             <div>
-              <h1 className="font-bold text-8xl">30+</h1>
+              <h1 className="font-bold text-8xl">
+              <CountUp enableScrollSpy scrollSpyOnce end={30} duration={1} />
+              +
+              </h1>
               <h3 className="text-[#2DB273] font-semibold text-xl uppercase">
                 clients
               </h3>
             </div>
             <div>
-              <h1 className="font-bold text-8xl">80+</h1>
+              <h1 className="font-bold text-8xl">
+              <CountUp enableScrollSpy scrollSpyOnce end={80} duration={1} />
+              +
+              </h1>
               <h3 className="text-[#2DB273] font-semibold text-xl uppercase">
                 solutions
               </h3>
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
       {/*  */}

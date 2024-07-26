@@ -28,7 +28,7 @@ const Footer = () => {
                 <Link
                   href="https://www.facebook.com/agri4.0/?locale=fr_FR"
                   target="_blank"
-                  className="transition text-secondary hover:opacity-75"
+                  className="transition text-secondary hover:opacity-50"
                 >
                   <span className="sr-only">Facebook</span>
 
@@ -51,7 +51,7 @@ const Footer = () => {
                 <Link
                   href="https://www.instagram.com/agri4.0/"
                   target="_blank"
-                  className="transition text-secondary hover:opacity-75"
+                  className="transition text-secondary hover:opacity-50"
                 >
                   <span className="sr-only">Instagram</span>
 
@@ -75,7 +75,7 @@ const Footer = () => {
                   href="https://www.linkedin.com/company/agri-4-0/"
                   rel="noreferrer"
                   target="_blank"
-                  className="transition text-secondary hover:opacity-75"
+                  className="transition text-secondary hover:opacity-50"
                 >
                   <span className="sr-only">LinkedIn</span>
 
@@ -88,7 +88,7 @@ const Footer = () => {
                   href="https://www.youtube.com/channel/UCShCox0ZhntRYnBesAMS_UA"
                   rel="noreferrer"
                   target="_blank"
-                  className="transition text-secondary hover:opacity-75"
+                  className="transition text-secondary hover:opacity-50"
                 >
                   <span className="sr-only">Youtube</span>
 
@@ -106,8 +106,8 @@ const Footer = () => {
                 <ul className="space-y-4 text-sm">
                   <li>
                     <a
-                      href="#"
-                      className="text-white transition hover:opacity-75"
+                      href="solutions/ap/1"
+                      className="text-white transition hover:opacity-50"
                     >
                       Agriculture de précision
                     </a>
@@ -116,7 +116,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-white transition hover:opacity-75"
+                      className="text-white transition hover:opacity-50"
                     >
                       Aquaculture 4.0
                     </a>
@@ -125,7 +125,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-white transition hover:opacity-75"
+                      className="text-white transition hover:opacity-50"
                     >
                       Agroalimentaire 4.0
                     </a>
@@ -134,7 +134,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-white transition hover:opacity-75"
+                      className="text-white transition hover:opacity-50"
                     >
                       Smart cities
                     </a>
@@ -143,7 +143,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-white transition hover:opacity-75"
+                      className="text-white transition hover:opacity-50"
                     >
                       Durabilité
                     </a>
@@ -152,7 +152,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-white transition hover:opacity-75"
+                      className="text-white transition hover:opacity-50"
                     >
                       Co&Rd
                     </a>
@@ -161,7 +161,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-white transition hover:opacity-75"
+                      className="text-white transition hover:opacity-50"
                     >
                       Conseil
                     </a>
@@ -178,7 +178,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-white transition hover:opacity-75"
+                      className="text-white transition hover:opacity-50"
                     >
                       Logicels et application
                     </a>
@@ -187,7 +187,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-white transition hover:opacity-75"
+                      className="text-white transition hover:opacity-50"
                     >
                       Traitement d’image et drones
                     </a>
@@ -196,7 +196,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-white transition hover:opacity-75"
+                      className="text-white transition hover:opacity-50"
                     >
                       Capteurs intelligents
                     </a>
@@ -205,7 +205,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-white transition hover:opacity-75"
+                      className="text-white transition hover:opacity-50"
                     >
                       Suivi et conseil
                     </a>
@@ -222,7 +222,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-white transition hover:opacity-75"
+                      className="text-white transition hover:opacity-50"
                     >
                       Sol
                     </a>
@@ -231,7 +231,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-white transition hover:opacity-75"
+                      className="text-white transition hover:opacity-50"
                     >
                       Plant
                     </a>
@@ -240,7 +240,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-white transition hover:opacity-75"
+                      className="text-white transition hover:opacity-50"
                     >
                       Air
                     </a>
@@ -249,7 +249,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-white transition hover:opacity-75"
+                      className="text-white transition hover:opacity-50"
                     >
                       Water
                     </a>

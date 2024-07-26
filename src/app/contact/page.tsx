@@ -42,6 +42,10 @@ export default function Contact() {
       body: JSON.stringify({
         firstName,
         email,
+        company,
+        lastName,
+        message,
+        phone,
       }),
     });
     reset();

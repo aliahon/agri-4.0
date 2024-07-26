@@ -16,6 +16,7 @@ import Dashboard from "@/components/animate/Dashboard";
 import Fertigation from "@/components/animate/Fertigation";
 import Image from "next/image";
 import Satellite from "@/components/animate/Satellite";
+import Solution from "@/app/solutions/agro/[id]/page";
 // ===============================================================================================
 
 export const sidebarMenu = [
@@ -128,43 +129,74 @@ export const secteurs: SelectedProps[] = [
     id: "3",
     img: "/sectors/agroalimentaire.jpg",
     name: "Agroalimentaire 4.0",
-    desc: "Usines intelligentes : les capteurs IoT et les appareils connectés peuvent aider à optimiser les processus de production, à améliorer l'efficacité et à réduire les temps d'arrêt.Maintenance prédictive...",
+    desc: "Nous offrons des solutions avancées pour optimiser les chambres froides, les machines agroalimentaires, la consommation énergétique et l'analyse des données via l'intelligence artificielle....",
     subItems: [
       {
-        id: "/agro/1",
-        icon: <AgroLogo />,
-        name: "Frigo connecté",
+        id: 'chambres-froides',
+        name : 'Suivi des Chambres Froides',
+      // desc: `
+      //     Assurez le bon fonctionnement de vos chambres froides avec notre solution de suivi avancée. Nous vous offrons :
+      //     <ul>
+      //       <li>Surveillance de la Température et de l'Humidité (T & H) : Contrôle en temps réel des conditions internes pour garantir la conservation optimale de vos produits.</li>
+      //       <li>Suivi des Équipements : Vérification continue des performances des équipements de refroidissement.</li>
+      //       <li>Moniteur des Ouvertures et Fermetures des Portes : Analyse de la fréquence et de la durée des ouvertures de portes pour optimiser l'efficacité énergétique et réduire les pertes de froid.</li>
+      //     </ul>
+       // `,
+       icon: <AgroLogo />,
       },
       {
-        id: "/agro/2",
-        icon: <AgroLogo />,
-        name: "Lorem ipsume",
+        id: 'machines-agroalimentaire',
+        name : 'Monitoring des Machines dans l\'Agroalimentaire',
+        // desc: `
+        //   Optimisez la performance de vos machines avec notre plateforme de monitoring dédiée :
+        //   <ul>
+        //     <li>Remontée des Performances : Collecte et visualisation des données de performance de vos machines en temps réel.</li>
+        //     <li>Maintenance Préventive : Notifications automatiques et planification des interventions pour prévenir les pannes et minimiser les arrêts de production.</li>
+        //   </ul>
+        // `,
+       icon: <AgroLogo />,
       },
       {
-        id: "/agro/3",
-        icon: <AgroLogo />,
-        name: "Lorem ipsume",
+        id: 'consommation-energetique',
+        name : 'Suivi de la Consommation Énergétique',
+        // desc: `
+        //   Réduisez vos coûts énergétiques et votre empreinte carbone grâce à notre solution de suivi énergétique :
+        //   <ul>
+        //     <li>Surveillance Continue : Mesure et analyse de la consommation énergétique de vos installations.</li>
+        //     <li>Identification des Déperditions : Détection des sources de gaspillage énergétique et recommandations pour améliorer l'efficacité.</li>
+        //     <li>Rapports Personnalisés : Visualisation des données et génération de rapports pour une prise de décision éclairée.</li>
+        //   </ul>
+        // `,
+       icon: <AgroLogo />,
       },
       {
-        id: "/agro/4",
-        icon: <AgroLogo />,
-        name: "Lorem ipsume",
+        id: 'intelligence-artificielle',
+        name : 'Intelligence Artificielle (IA)',
+        // desc: `
+        //   Exploitez la puissance de l'IA pour transformer vos données en informations exploitables :
+        //   <ul>
+        //     <li>Analyse des Données : Traitement et analyse des grandes quantités de données collectées pour extraire des insights pertinents.</li>
+        //     <li>Interprétation des Résultats : Visualisation intuitive et compréhension des tendances et des anomalies.</li>
+        //     <li>Recommandations Prédictives : Suggestions basées sur les données pour améliorer vos processus, réduire les coûts et augmenter l'efficacité.</li>
+        //   </ul>
+        // `,
+         icon: <AgroLogo />,
       },
-      {
-        id: "/agro/5",
-        icon: <AgroLogo />,
-        name: "Lorem ipsume",
-      },
-      {
-        id: "/agro/6",
-        icon: <AgroLogo />,
-        name: "Lorem ipsume",
-      },
-      {
-        id: "/agro/7",
-        icon: <AgroLogo />,
-        name: "Lorem ipsume",
-      },
+      // {
+      //   id: "/agro/5",
+      //   icon: <AgroLogo />,
+      //   name: "Lorem ipsume",
+      // },
+      // {
+      //   id: "/agro/6",
+      //   icon: <AgroLogo />,
+      //   name: "Lorem ipsume",
+      // },
+      // {
+      //   id: "/agro/7",
+      //   icon: <AgroLogo />,
+      //   name: "Lorem ipsume",
+      // },
     ],
   },
   {
@@ -300,43 +332,19 @@ export const secteurs: SelectedProps[] = [
     id: "7",
     img: "/sectors/conseil.jpg",
     name: "Conseil",
-    desc: "Agri 4.0 ne limite pas ses prestations à la vente des produits et services. Nous assurons également un accompagnement de qualité avec une équipe jeune et pluridisciplinaire ayant comme point...",
+    desc: "Chez Agri 4.0, nous allons bien au-delà de la simple vente de produits et services. Nous nous engageons à offrir un accompagnement complet, assuré par une équipe jeune, dynamique et pluridisciplinaire, partageant une même motivation: vous apporter le meilleur.Nos agronomes sont à vos côtés sur le terrain, fournissant des formations approfondies et des conseils personnalisés. Grâce à l'analyse des données recueillies, ils vous guident vers les meilleures pratiques agricoles, optimisant ainsi la rentabilité et la qualité de vos récoltes.",
     subItems: [
       {
         id: "/cons/1",
         icon: <ConseilLogo />,
-        name: "Lorem ipsume",
+        name: "Engagement et équipe d'Agri 4.0",
       },
       {
         id: "/cons/2",
         icon: <ConseilLogo />,
-        name: "Lorem ipsume",
+        name: "Support sur le terrain et formation",
       },
-      {
-        id: "/cons/3",
-        icon: <ConseilLogo />,
-        name: "Lorem ipsume",
-      },
-      {
-        id: "/cons/4",
-        icon: <ConseilLogo />,
-        name: "Lorem ipsume",
-      },
-      {
-        id: "/cons/5",
-        icon: <ConseilLogo />,
-        name: "Lorem ipsume",
-      },
-      {
-        id: "/cons/6",
-        icon: <ConseilLogo />,
-        name: "Lorem ipsume",
-      },
-      {
-        id: "/cons/7",
-        icon: <ConseilLogo />,
-        name: "Lorem ipsume",
-      },
+     
     ],
   },
 ];
@@ -381,6 +389,261 @@ export const solutions = [
   {
     id: 2,
     name: "Smart cities",
+    icon: <SmartCitiesLogo color="#10ac84" />,
+    description:
+      "Les grandes villes marocaines ont un potentiel de développement...",
+    projects: [
+      {
+        name: "Projet 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 3",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+    apps: [
+      {
+        name: "App 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "App 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Aquaculture 4.0",
+    icon: <AquaLogo color="#10ac84" />,
+    description:
+      "Nous intégrons des technologies avancées et des systèmes numériques...",
+    projects: [
+      {
+        name: "Projet 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 3",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+    apps: [
+      {
+        name: "App 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "App 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Agroalimentaire 4.0",
+    icon: <AgroLogo color="#10ac84" />,
+    description:
+      "Nous offrons des solutions avancées pour optimiser les chambres froides...",
+    projects: [
+      {
+        name: "Projet 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 3",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+    apps: [
+      {
+        name: "App 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "App 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Durabilite",
+    icon: <DurabiliteLogo color="#10ac84" />,
+    description:
+      "En intégrant la durabilité dans nos activités, nous pouvons...",
+    projects: [
+      {
+        name: "Projet 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 3",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+    apps: [
+      {
+        name: "App 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "App 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "CO-R&D",
+    icon: <CoRdLogo color="#10ac84" />,
+    description:
+      "Notre engagement envers la R&D ne relève pas d'un simple caprice...",
+    projects: [
+      {
+        name: "Projet 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 3",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+    apps: [
+      {
+        name: "App 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "App 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: "Conseil",
+    icon: <ConseilLogo color="#10ac84" />,
+    description:
+      "Chez Agri 4.0, nous allons bien au-delà de la simple vente de produits et services...",
+    projects: [
+      {
+        name: "Projet 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 3",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+    apps: [
+      {
+        name: "App 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "App 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+  },
+];
+
+export const devices = [
+  {
+    id: 1,
+    name: "device",
+    icon: <AgriPreciseLogo color="#10ac84" />,
+    description:
+      "L'agriculture de précision est une approche qui permet d'optimiser...",
+    projects: [
+      {
+        name: "Projet 1",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 2",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+      {
+        name: "Projet 3",
+        description:
+          "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      },
+    ],
+    apps: [
+      {
+        name: "Frigo.ma",
+        description:
+          "AGRI 4.0 propose des solutions de gestion à distance des chambres froides ; des cartes électroniques gérées par des applications web et mobile",
+      },
+      {
+        name: "App 2",
+        description:
+          "AGRI 4.0 propose des solutions de gestion à distance des chambres froides ; des cartes électroniques gérées par des applications web et mobile",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "hhhhhhhhhhhhhh",
     icon: <SmartCitiesLogo color="#10ac84" />,
     description:
       "Les grandes villes marocaines ont un potentiel de développement...",
@@ -695,6 +958,42 @@ export const solutionsArr = [
     imgUrl: "/solutions/smartparking.jpg",
     sectorId: 4,
   },
+  {
+    id: 14,
+    name : "Suivi des Chambres Froides",
+    desc : "Assurez le bon fonctionnement de vos chambres froides avec notre solution de suivi avancée...",
+
+  },
+  {
+    id:15,
+    name : "Monitoring des Machines dans l'Agroalimentaire",
+    desc : "Assurez le bon fonctionnement de vos chambres froides avec notre solution de suivi avancée...",
+
+  },
+  {
+    id: 16,
+    name : "Suivi de la Consommation Énergétique",
+    desc : "Assurez le bon fonctionnement de vos chambres froides avec notre solution de suivi avancée...",
+
+  },
+  {
+    id: 17,
+    name : "Intelligence Artificielle (IA)",
+    desc : "Assurez le bon fonctionnement de vos chambres froides avec notre solution de suivi avancée...",
+
+  },
+  {
+    id: 18,
+    name : "Engagement et équipe d'Agri 4.0",
+    desc : "Agri 4.0 ne se limite pas à la vente de produits et services, mais offre également un accompagnement complet grâce à une équipe jeune, dynamique et pluridisciplinaire, tous motivés par le désir de fournir les meilleures solutions.",
+  },
+  {
+    id: 19,
+    name : "Support sur le terrain et formation",
+    desc : "Les agronomes d'Agri 4.0 travaillent directement sur le terrain, offrant des formations détaillées et des conseils personnalisés, et utilisent l'analyse de données pour recommander les meilleures pratiques agricoles afin d'optimiser la rentabilité et la qualité des récoltes."
+  }
+
+
 ];
 
 export const solutionsDetails: SolutionsDetailsProps[] = [
@@ -922,10 +1221,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
             </div>
           </section>
         ),
@@ -966,10 +1265,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 data-aos="zoom-out-right"
                 loader={({ src }) => src}
               />
-              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
-              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" /> */}
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
             </div>
 
             <div className="relative flex flex-col max-w-2xl space-y-3 text-justify">
@@ -1064,10 +1363,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
             </div>
           </section>
         ),
@@ -1108,10 +1407,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 data-aos="zoom-out-right"
                 loader={({ src }) => src}
               />
-              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
-              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" /> */}
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
             </div>
 
             <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
@@ -1236,10 +1535,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
             </div>
           </section>
         ),
@@ -1280,10 +1579,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 data-aos="zoom-out-right"
                 loader={({ src }) => src}
               />
-              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
-              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" /> */}
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
             </div>
 
             <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
@@ -1352,10 +1651,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
             </div>
           </section>
         ),
@@ -1438,10 +1737,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
             </div>
           </section>
         ),
@@ -1521,10 +1820,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
             </div>
           </section>
         ),
@@ -1565,10 +1864,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 data-aos="zoom-out-right"
                 loader={({ src }) => src}
               />
-              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
-              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" /> */}
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
             </div>
 
             <div className="relative flex flex-col max-w-lg px-3 space-y-3 text-justify">
@@ -1672,10 +1971,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
             </div>
           </section>
         ),
@@ -1696,10 +1995,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 data-aos="zoom-out-right"
                 loader={({ src }) => src}
               />
-              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
-              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" /> */}
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
             </div>
 
             <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
@@ -1758,10 +2057,10 @@ export const solutionsDetails: SolutionsDetailsProps[] = [
                 data-aos="zoom-out-left"
                 loader={({ src }) => src}
               />
-              {/* <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
 
               <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
-              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" /> */}
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
             </div>
           </section>
         ),
@@ -1898,6 +2197,157 @@ export const smartCitiesSolutions = [
   },
 ];
 
+export const agroalimenatairesolutions = [
+  // Suivi des Chambres Froids
+  {
+    id: "1",
+    name: "Suivi des Chambres Froids",
+    desc: (
+      <>
+        <p className="text-sm font-light leading-snug">
+         
+        </p>
+        <p className="text-sm font-light leading-snug">
+          
+        </p>
+        <p className="text-sm font-light leading-snug">
+          
+        </p>
+      </>
+    ),
+    imgUrl: "",
+    services: [
+      {
+        id: 1,
+        name: "",
+        desc: (
+          <section className="relative flex flex-col items-center justify-between gap-10 px-5 md:px-24 md:flex-row">
+            <div className="absolute -z-10 bottom-[200px] left-20 opacity-20">
+              
+            </div>
+
+            <div className="flex flex-col max-w-2xl space-y-3 text-justify ">
+              <h1 className="mb-5 text-4xl font-bold">Lorem iPsum</h1>
+              <ul className="px-2 space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                 
+                
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative">
+              <Image
+                src=""
+                width={400}
+                height={400}
+                alt="Lorem Ipsum"
+                className="z-[9999] rounded-xl"
+                data-aos="zoom-out-left"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-6 z-20 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+            </div>
+          </section>
+        ),
+        imgUrl: "",
+        devices: [
+          {
+            id: 1,
+            title: "Parrot Sequoia",
+            description: "The revolutionary multispectral",
+            image: "/devices/DEVICE 1.png",
+          },
+          {
+            id: 2,
+            title: "MicaSense RedEdge-MX",
+            description: "Multispectral camera",
+            image: "/devices/DEVICE 2.webp",
+          },
+          {
+            id: 3,
+            title: "SLANTRANGE 3P",
+            description: "NDVI Camera",
+            image: "/devices/DEVICE 3.png",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Lorem Ipsum",
+        desc: (
+          <section className="flex flex-col items-center justify-between gap-20 p-4 py-10 bg-gray-100 md:px-24 md:flex-row">
+            <div className="relative">
+              <Image
+                src="/SATELLITE.png"
+                width={500}
+                height={500}
+                alt="Drone"
+                className="z-50 rotate-180 rounded-xl drop-shadow-sm"
+                data-aos="zoom-out-right"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+            </div>
+
+            <div className="relative flex flex-col max-w-lg space-y-3 text-justify">
+              <div className="absolute z-0 right-4 -top-[125px] opacity-20">
+                <Satellite />
+              </div>
+              <h1 className="mb-5 text-4xl font-bold">Satellite</h1>
+              <ul className="px-2 space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  
+                </li>
+              </ul>
+            </div>
+          </section>
+        ),
+        imgUrl: "",
+      },
+      {
+        id: 3,
+        name: "Lorem ipsum",
+        desc: (
+          <section className="flex flex-col items-center justify-between gap-20 p-4 md:px-24 md:flex-row ">
+            <div className="flex flex-col max-w-lg space-y-3 text-justify">
+              <h1 className="mb-5 text-4xl font-bold">Lorem Ipsum...</h1>
+              <ul className="px-2 space-y-3 list-disc marker:text-secondary">
+                <li className="text-sm font-light leading-snug">
+                  
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative">
+              <Image
+                src="/CAMERA AU SOL.png"
+                width={300}
+                height={300}
+                alt="Drone"
+                className="z-50 drop-shadow-sm"
+                unoptimized
+                data-aos="zoom-out-left"
+                loader={({ src }) => src}
+              />
+              <div className="absolute top-0 left-0 z-10 w-12 h-12 bg-[#2DB273] rounded-xl shadow-md" />
+
+              <div className="absolute bottom-6 right-8 w-12 h-12 bg-[#081B15] rounded-xl shadow-sm" />
+              <div className="absolute bottom-0 right-0 z-10 w-12 h-12 bg-green-600 shadow-md rounded-xl" />
+            </div>
+          </section>
+        ),
+        imgUrl: "/solutions/sig.png",
+      },
+    ],
+  },
+]
 export const sectors = [
   {
     id: "1",
@@ -1934,3 +2384,25 @@ export const sectors = [
     ],
   },
 ];
+export const conseil = [
+  {
+    id:1,
+    name: "Conseil",
+    description: "Chez Agri 4.0, nous allons bien au-delà de la simple vente de produits et services. Nous nous engageons à offrir un accompagnement complet, assuré par une équipe jeune, dynamique et pluridisciplinaire, partageant une même motivation : vous apporter le meilleur",
+  },
+  {
+    id:2,
+    name: "Conseil",
+    description: "Chez Agri 4.0, nous allons bien au-delà de la simple vente de produits et services. Nous nous engageons à offrir un accompagnement complet, assuré par une équipe jeune, dynamique et pluridisciplinaire, partageant une même motivation : vous apporter le meilleur",
+  },
+  {
+    id:3,
+    name: "Conseil",
+    description: "Chez Agri 4.0, nous allons bien au-delà de la simple vente de produits et services. Nous nous engageons à offrir un accompagnement complet, assuré par une équipe jeune, dynamique et pluridisciplinaire, partageant une même motivation : vous apporter le meilleur",
+  },
+  {
+    id:4,
+    name: "Conseil",
+    description: "Chez Agri 4.0, nous allons bien au-delà de la simple vente de produits et services. Nous nous engageons à offrir un accompagnement complet, assuré par une équipe jeune, dynamique et pluridisciplinaire, partageant une même motivation : vous apporter le meilleur",
+  },
+]

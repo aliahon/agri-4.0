@@ -28,12 +28,11 @@ export default function Home() {
           className="max-w-md mt-3 leading-snug text-gray-300 text-md test-txt"
           data-aos="fade-right"
         >
-          Nous mettons{" "}
+           L&apos;agriculture {" "}
           <span className="font-semibold text-secondary drop-shadow-md">
-            L&apos;IoT{" "}
+            4.0{" "}
           </span>{" "}
-          au profit des agriculture pour passer d&apos;une agriculture riche en
-          intrants a une agriculture riche en connainssances.
+          est l&apos;évolution de l&apos;agriculture de précision et désigne l&apos;ensemble des actions qui sont mises en œuvre dans l&apos;agriculture.
         </p>
         <div className="flex items-center max-w-sm gap-5">
           <button className="px-6 py-2 mt-6 font-semibold text-white transition duration-300 ease-in-out transform rounded-3xl bg-secondary hover:bg-secondary-light hover:-translate-y-1">
@@ -44,6 +43,7 @@ export default function Home() {
           </button>
         </div>
       </section>
+      
       {/* Second Section */}
 
       <ActivitySectors />
