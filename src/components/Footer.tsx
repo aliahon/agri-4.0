@@ -5,25 +5,246 @@ import { YoutubeLogo, LinkedinLogo } from "phosphor-react";
 
 const Footer = () => {
   return (
-    <footer aria-label="Site Footer" className="bg-[#17352C] md:pt-10">
+    <footer aria-label="Site Footer" className="bg-[#081B15] md:py-2 lg:pl-80 ">
       <div className="max-w-screen-xl px-4 py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-3 lg:grid-cols-5">
+            <div>
+              <p className="font-bold text-secondary">Agri Solutions</p>
+
+              <nav aria-label="Footer Navigation - Services" className="mt-6">
+                <ul className="space-y-4 text-sm">
+                  <li>
+                    <a
+                      href="solutions/ap/1"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Agriculture de précision
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Aquaculture 4.0
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Agroalimentaire 4.0
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Smart cities
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Durabilité
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Co&Rd
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Conseil
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div>
+              <p className="font-bold text-secondary">Agri Services</p>
+
+              <nav aria-label="Footer Navigation - Company" className="mt-6">
+                <ul className="space-y-4 text-sm">
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Conception d'application<br></br> web et mobile
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Suivi et conseil
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Formation
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Accompagnement
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div>
+              <p className="font-bold text-secondary">Agri Produits</p>
+
+              <nav aria-label="Footer Navigation - Company" className="mt-6">
+                <ul className="space-y-4 text-sm">
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Capteur Sol
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Capteur Plant
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Capteur Air
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Capteur Water
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div>
+              <p className="font-bold text-secondary">Solutions</p>
+
+              <nav aria-label="Footer Navigation - Company" className="mt-6">
+                <ul className="space-y-4 text-sm">
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      SPAW
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      AgriBot
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white text-sm font-light transition hover:opacity-50"
+                    >
+                      Agri STM
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div className="w-full mt-24 mr-10">
+              <button
+                type="button"
+                className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent shadow-sm rounded-3xl bg-secondary hover:bg-opacity-75 focus:outline-none focus:ring-0 focus:ring-offset-2 focus:ring-secondary"
+              >
+                <span className="text-sm font-semibold text-white">
+                  Rejoignez-Nous
+                </span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <hr className="h-px my-8 bg-[#106357] border-0 dark:bg-gray-700 w-full"></hr>
+
+      <div className="flex justify-between">
+      <div className="flex flex-wrap text-white text-xs">
+          <div className="relative ml-0 pl-0 mb-12  lg:mb-0">
+            <h6 className="mb-0 font-normal pr-4 dark:text-neutral-50">We Innovate For Agriculture</h6>
+            <div
+              className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-[#3AAA35] from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block" ></div>
+          </div>
+          <div className="relative mb-12  lg:mb-0">
+            <h6 className="mb-0 font-normal px-4 dark:text-neutral-50">Terms and conditions</h6>
+            <div
+              className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-[#3AAA35] from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
+          </div>
+          <div className="relative mb-12  lg:mb-0">
+            <h6 className="mb-0 font-normal px-4 dark:text-neutral-50">Privacy policy</h6>
+            <div
+              className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-[#3AAA35] from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
+          </div>
+          <div className="relative mb-12 pl-4 lg:mb-0">
+            <h6 className="mb-0 font-normal dark:text-neutral-50">Cookies</h6>
+          </div>
+        </div>
+
+
           <div>
-            <div className="text-teal-600">
-              <span className="sr-only">agri4.0</span>
-            </div>
-
-            <div className="max-w-xs mt-4 text-sm text-white">
-              <Image
-                src="/logo2.svg"
-                width={80}
-                height={80}
-                alt="agri4.0"
-                loader={({ src }) => src}
-              />
-            </div>
-
-            <ul className="flex gap-6 mt-8">
+            <ul className="flex flex-wrap gap-6 m-0">
               <li>
                 <Link
                   href="https://www.facebook.com/agri4.0/?locale=fr_FR"
@@ -98,182 +319,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
-            <div>
-              <p className="font-medium text-secondary">Agri Solutions</p>
+      </div>
 
-              <nav aria-label="Footer Navigation - Services" className="mt-6">
-                <ul className="space-y-4 text-sm">
-                  <li>
-                    <a
-                      href="solutions/ap/1"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Agriculture de précision
-                    </a>
-                  </li>
 
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Aquaculture 4.0
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Agroalimentaire 4.0
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Smart cities
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Durabilité
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Co&Rd
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Conseil
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-
-            <div>
-              <p className="font-medium text-secondary">Agri Services</p>
-
-              <nav aria-label="Footer Navigation - Company" className="mt-6">
-                <ul className="space-y-4 text-sm">
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Logicels et application
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Traitement d’image et drones
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Capteurs intelligents
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Suivi et conseil
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-
-            <div>
-              <p className="font-medium text-secondary">Agri Produits</p>
-
-              <nav aria-label="Footer Navigation - Company" className="mt-6">
-                <ul className="space-y-4 text-sm">
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Sol
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Plant
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Air
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-white transition hover:opacity-50"
-                    >
-                      Water
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-
-            <div className="w-full">
-              <button
-                type="button"
-                className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent shadow-sm rounded-xl bg-secondary hover:bg-opacity-75 focus:outline-none focus:ring-0 focus:ring-offset-2 focus:ring-secondary"
-              >
-                <span className="text-sm font-medium text-white">
-                  Rejoignez-Nous
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <p className="text-xs text-gray-400">
-          &copy; 2023. agri4.0 - All rights reserved.
-        </p>
       </div>
     </footer>
   );
