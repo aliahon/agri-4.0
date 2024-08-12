@@ -53,14 +53,13 @@ const Clients = () => {
     "19",
     "20",
   ];
-
   return (
-    <section className="px-16 py-12">
-      <h1 className="text-[#00594C] text-3xl font-semibold">
+    <section className="px-24 py-16">
+      <h1 className="text-[#00594C] text-4xl font-bold">
         Partners & Clients
       </h1>
-      <hr className="w-16 h-1 mt-1 bg-secondary" />
-      <Slider arrows={false} {...settings}>
+      <hr className="w-16 h-1 mt-1 bg-secondary  mb-8" />
+      <Slider {...settings}>
         {clients.map((_, i) => (
           <div
             key={i}
@@ -69,7 +68,7 @@ const Clients = () => {
             <Image
               src={`/clients/${i + 1}.png`}
               alt=""
-              className="object-contain w-28 h-28"
+              className="object-contain w-32 h-36 grayscale hover:grayscale-0 "
               width={200}
               height={200}
               loader={({ src }) => src}
