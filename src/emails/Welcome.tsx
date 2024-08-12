@@ -27,9 +27,9 @@ export const WelcomeEmail = ({ firstName = "User" }: WelcomeEmailProps) => (
         <Img
           // TODO: Replace with your logo
           src={`http://localhost:4000/Vector.png`}
-          width="170"
-          height="50"
           alt="Agri4.0"
+          width={170}
+          height={50}
           style={logo}
         />
         <Text style={paragraph}>Hi {firstName},</Text>

@@ -172,7 +172,7 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
                 ? "6"
                 : selectedItemName === "Conseil"
                 ? "7"
-                : ""
+                : "1"
             }`}
             onClick={() => {
               setIsSelectedOpen(false);

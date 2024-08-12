@@ -958,6 +958,7 @@ export const solutionsArr = [
     imgUrl: "/solutions/smartparking.jpg",
     sectorId: 4,
   },
+  //Agroalimentaire 4.0
   {
     id: 14,
     name : "Suivi des Chambres Froides",
@@ -982,6 +983,7 @@ export const solutionsArr = [
     desc : "Assurez le bon fonctionnement de vos chambres froides avec notre solution de suivi avancée...",
 
   },
+  //Conseil
   {
     id: 18,
     name : "Engagement et équipe d'Agri 4.0",

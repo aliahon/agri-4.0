@@ -19,10 +19,10 @@ const Device = ({ params }: any) => {
             Capteur de vent PCE FST-200-201 (vitesse)
           </p>
           <p className="mt-2 text-sm text-gray-500 md:max-w-lg md:text-base">
-            Le capteur de vitesse est un générateur d&apos;impulsion qui
+            Le capteur de vitesse est un générateur d’impulsion qui
             transforme un mouvement de rotation mécanique en un signal
             électrique. Ce dernier est envoyé au calculateur pour être
-            interprété et utilisé notamment par l&apos;affichage sur le tableau
+            interprété et utilisé notamment par l’affichage sur le tableau
             de bord.
           </p>
         </div>
@@ -30,8 +30,8 @@ const Device = ({ params }: any) => {
           <Image
             src="/logo.svg"
             alt="logo"
-            width="350"
-            height="350"
+            width={350}
+            height={350}
             loader={({ src }) => src}
           />
         </div>
@@ -47,9 +47,9 @@ const Device = ({ params }: any) => {
             <p className="mt-2 text-base text-gray-500 ">
               L&apos;utilisation des capteurs de roue actifs présente plusieurs
               avantages : Ils détectent la vitesse de rotation des roues à
-              partir de l&apos;arrêt, donc permettent de fournir des données
+              partir de l’arrêt, donc permettent de fournir des données
               précises au système anti-patinage (ASR) lors du démarrage de la
-              voiture. Ils détectent les mouvements d&apos;avance et de recul du
+              voiture. Ils détectent les mouvements d’avance et de recul du
               véhicule.
               <br />
               <br />
@@ -94,8 +94,8 @@ const Device = ({ params }: any) => {
               <Image
                 src="/devices/DEVICE 3.png"
                 alt="logo"
-                width="250"
-                height="250"
+                width={250}
+                height={250}
                 loader={({ src }) => src}
               />
               <p className="mt-2 text-base font-bold text-gray-900">

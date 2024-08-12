@@ -91,7 +91,7 @@ const Footer = () => {
                       href="#"
                       className="text-white text-sm font-light transition hover:opacity-50"
                     >
-                      Conception d'application<br></br> web et mobile
+                      Conception d’application<br></br> web et mobile
                     </a>
                   </li>
 
