@@ -113,7 +113,7 @@ const Newsletter = () => {
           et mises à jour sur nos produits et services.
         </p>
       </div>
-      <div className="w-full gap-2 overflow-x-hidden lg:gap-4 ">
+      <div className="w-full gap-0 overflow-x-hidden lg:gap-2 ">
         <Slider {...settings}>
           {news.map((news, i) => (
             <NewsletterCard
@@ -134,7 +134,7 @@ export default Newsletter;
 
 const NewsletterCard = ({ title, description, image, link }: any) => {
   return (
-    <div className="flex flex-col justify-between w-full p-5 py-4 overflow-hidden bg-white shadow-lg lg:h-[500px] md:m-2 md:space-y-2 rounded-2xl">
+    <div className="flex flex-col justify-between w-full p-5 py-4 overflow-hidden bg-white shadow-lg md:h-[479px] md:w-[385px] lg:h-[494px] lg:w-[400px]  md:m-2 md:space-y-2 rounded-2xl">
       <Image
         src={image}
         alt=""
