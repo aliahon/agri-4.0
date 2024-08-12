@@ -18,7 +18,7 @@ const ActivitySectors = () => {
 
   const [selected, setSelected] = React.useState<SelectedProps>(secteurs[0]);
 
-  const handleChangeSector = (sector: any) => {
+  const handleChangeSector = (sector: SelectedProps) => {
     setSelected(sector);
   };
 
@@ -51,6 +51,20 @@ const ActivitySectors = () => {
     }
   };
 
+  const handleSlideChange = () => {
+    if (swiperRef.current) {
+      const swiperInstance = swiperRef.current.swiper;
+      const activeIndex = swiperInstance.activeIndex;
+      const slide = swiperInstance.slides[activeIndex];
+      const id = slide?.id;
+
+      const sector = secteurs.find((sec) => sec.id === id);
+      if (sector) {
+        setSelected(sector);
+      }
+    }
+  };
+
   return (
     <section className="flex flex-col md:flex-row justify-center w-full  mx-auto bg-[#F5F5F5] h-[700px]">
       <div className="flex-col items-center justify-center p-4 h-46 md:h-full md:p-10 md:w-1/3 bg-primary">
@@ -74,7 +88,8 @@ const ActivitySectors = () => {
       </div>
 
       <div className="w-full md:w-[75%] md:h-full bg-[#F5F5F5]">
-        <Swiper ref={swiperRef} slidesPerView={1}>
+        <Swiper ref={swiperRef} slidesPerView={1} onSlideChange={handleSlideChange}>
+          
           <SwiperSlide id="1">
             <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:pt-24 md:flex-row">
               <div className="relative">
@@ -378,3 +393,4 @@ const ActivitySectors = () => {
 };
 
 export default ActivitySectors;
+

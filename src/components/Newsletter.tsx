@@ -100,7 +100,7 @@ const Newsletter = () => {
     <section className="relative bg-[#081B15] lg:pl-16 py-16 flex flex-col lg:flex-row lg:justify-between lg:items-center">
       <div className="absolute top-0 left-[500px] z-10 w-20 h-full bg-[#081B15] invisible lg:visible"></div>
       <div
-        className="items-center justify-center max-w-md p-6"
+        className="items-center justify-center max-w-md p-6 px-16"
         data-aos="fade-right"
         data-aos-delay="200"
         data-aos-duration="1000"
@@ -112,9 +112,6 @@ const Newsletter = () => {
           Abonnez-vous à notre newsletter pour recevoir les dernières nouvelles
           et mises à jour sur nos produits et services.
         </p>
-        <button className="px-6 py-2 font-semibold text-white transition-all duration-300 ease-in-out transform bg-transparent border-2 border-white rounded-3xl hover:bg-secondary hover:-translate-y-1 ">
-          Learn more
-        </button>
       </div>
       <div className="w-full gap-2 overflow-x-hidden lg:gap-4 ">
         <Slider {...settings}>
