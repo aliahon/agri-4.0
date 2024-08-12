@@ -33,7 +33,7 @@ const Navbar = () => {
   const { isNavBarOpen, setIsNavBarOpen, setIsSubNavOpen } = useNavbarContext();
 
   return (
-    <nav className="fixed top-0 z-50 flex flex-wrap items-center justify-between w-full px-6 py-2 bg-white border-b-2 border-gray-300 shadow-md md:px-20">
+    <nav className="fixed top-0 z-50 flex flex-wrap items-center justify-between w-full mx-auto max-w-[2000px] px-6 py-2 bg-white border-b-2 border-gray-300 shadow-md md:px-20">
       <div className="flex items-center flex-shrink-0 mr-6 text-black">
         <Link href="/">
           <Image
