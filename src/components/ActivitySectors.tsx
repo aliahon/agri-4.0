@@ -66,7 +66,7 @@ const ActivitySectors = () => {
   };
 
   return (
-    <section className="flex flex-col md:flex-row justify-center w-full  mx-auto bg-[#F5F5F5] h-[700px]">
+    <section className="flex flex-col md:flex-row justify-center w-full  mx-auto bg-[#F5F5F5] h-[520px]">
       <div className="flex-col items-center justify-center p-4 h-46 md:h-full md:p-10 md:w-1/3 bg-primary">
         <h1 className="text-2xl font-bold text-white md:text-4xl">
           Secteurs d&apos;activités
