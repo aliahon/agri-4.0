@@ -52,7 +52,7 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
       setArrSolutions(solutionsArr.slice(0, 6));
       setSelectedItemSubName("ap");
     } else if (selectedItemName === "Aquaculture 4.0") {
-      setArrSolutions(solutionsArr.slice(6, 13));
+      setArrSolutions(solutionsArr.slice(20, 21));
       setSelectedItemSubName("aqua");
     } else if (selectedItemName === "Agroalimentaire 4.0") {
       setArrSolutions(solutionsArr.slice(13, 17));
@@ -61,10 +61,10 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
       setArrSolutions(solutionsArr.slice(6, 13));
       setSelectedItemSubName("sc");
     } else if (selectedItemName === "Durabilite") {
-      setArrSolutions(solutionsArr.slice(6, 13));
+      setArrSolutions(solutionsArr.slice(20, 21));
       setSelectedItemSubName("dura");
     } else if (selectedItemName === "CO-R&D") {
-      setArrSolutions(solutionsArr.slice(6, 13));
+      setArrSolutions(solutionsArr.slice(20, 21));
       setSelectedItemSubName("co");
     } else if (selectedItemName === "Conseil") {
       setArrSolutions(solutionsArr.slice(17,19 ));
@@ -95,13 +95,13 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
 
   return (
     <div
-      className={`absolute left-0 w-full py-6 transition duration-300 ease-in-out transform bg-white h-[600px] md:px-14 z-90 top-14
+      className={`absolute left-0 w-full py-16 px-20 transition duration-300 ease-in-out transform bg-white h-[600px] md:px-14 z-90 top-14
       ${isSubNavOpen ? "translate-x-0" : "-translate-x-full"}
       `}
     >
       <div className="flex flex-col items-center justify-center w-full h-full overflow-y-scroll scrollbar-hide md:flex-row md:justify-between md:items-start md:space-x-4 ">
         {/* Sidebar */}
-        <div className="flex flex-col w-1/3 h-full overflow-y-scroll scrollbar-hide">
+        <div className="flex flex-col w-1/3 h-full overflow-y-scroll scrollbar-hide px-8">
           {navDetails?.map((item, i) => (
             <div
               key={i}
@@ -121,11 +121,14 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
                 <span className="items-center justify-center text-center align-middle">
                   {item?.icon}
                 </span>
-                <span className="text-sm font-semibold text-gray-700">
+                <span className="text-base font-medium text-gray-700 flex justify-between">
                   {item?.name}
+                  <svg className="text-gray-900 w-4 h-4 text-center align-middle mt-1 ml-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
                 </span>
               </div>
-              <span className="text-sm text-gray-400">{item?.description}</span>
+              <span className="font-normal text-xs text-gray-400">{item?.description}</span>
             </div>
           ))}
         </div>
@@ -156,7 +159,7 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
             </svg>
           </button>
 
-          <Link
+          <Link className="text-2xl font-medium"
             href={`/sector/${
               selectedItemName === "Agriculture de précision"
                 ? "1"
@@ -182,21 +185,21 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
               {selectedSection === "Solutions" && selectedItemName}
             </h1>
           </Link>
-          <p className="text-xs leading-snug text-gray-400 md-3 md:mb-2">
+          <p className="mt-2 text-2xs font-normal leading-snug text-gray-400 md-3 md:mb-2">
             {selectedItemName === "Agriculture de précision" &&
               "L'agriculture de précision est une approche qui permet d'optimiser la production agricole"}
           </p>
-          <p className="text-xs leading-snug text-gray-400 md-3 md:mb-2">
+          <p className="mt-2  text-2xs font-normal  leading-snug text-gray-400 md-3 md:mb-2">
             {selectedItemName ===  "Agroalimentaire 4.0" &&
               "Nous offrons des solutions avancées pour optimiser les chambres froides, les machines agroalimentaires..."}
           </p>
-          <p className="text-xs leading-snug text-gray-400 md-3 md:mb-2">
+          <p className="mt-2 text-2xs  font-normal leading-snug text-gray-400 md-3 md:mb-2">
             {selectedItemName ===  "Conseil" &&
               "Chez Agri 4.0, nous allons bien au-delà de la simple vente de produits et services."}
           </p>
           <div className="flex flex-wrap justify-between gap-4 md:flex-nowrap z ">
-            <div className="w-full">
-              <hr className="my-2 mb-5 border-gray-300 md:w-1/2" />
+            <div className="w-full mt-2 md:mt-10 pr-20 ">
+              <hr className="my-2 mb-5 border-gray-300 md:w-full" />
               <div className="grid items-center grid-cols-2 gap-7">
                 {selectedSection === "Solutions" ? (
                   arrSolutions?.map((item, i) => (
@@ -204,7 +207,7 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
                       key={i}
                       className="relative flex flex-col max-w-[285px] space-y-2"
                     >
-                      <span className="text-sm font-semibold text-green-700 cursor-pointer hover:underline">
+                      <span className="text-xs  font-semibold text-tertiary cursor-pointer hover:underline">
                         <Link
                           href={`/solutions/${selectedtemSubName}/${item?.id}`}
                           onClick={() => setIsSelectedOpen(false)}
@@ -217,22 +220,22 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
                           NEW
                         </span>
                       )}
-                      <p className="text-xs leading-snug text-gray-400 line-clamp-4">
+                      <p className="text-2xs font-normal leading-snug text-gray-400 line-clamp-4">
                         {item?.desc}
                       </p>
                     </div>
                   ))
                 ) : (
                   <h1 className="text-sm font-semibold text-gray-700">
-                  
+                  Under construction
                   </h1>
                 )}
               </div>
             </div>
             {selectedSection === "Solutions" && (
               <div className="w-full md:w-1/2">
-                <h1 className="mt-4 text-sm font-semibold uppercase">apps</h1>
-                <hr className="w-1/2 my-2 mb-1 border-gray-300 md:mb-5" />
+                <h1 className="mb-6 text-base font-semibold">Apps</h1>
+                <hr className="w-full my-2 mb-1 border-gray-300 md:mb-5" />
                 <div className="flex-col space-y-6">
                   {/* @ts-ignore */}
                   {solutions[selectedItem]?.map((item: any, i: number) => (
@@ -251,7 +254,8 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
                   ))}
                 </div>
                 <button className="text-sm font-semibold md:mt-6 text-secondary">
-                  View all solutions -&gt;{" "}
+                  
+                  <Link href="#secAc">View all solutions -&gt;{" "}</Link>
                 </button>
               </div>
             )}

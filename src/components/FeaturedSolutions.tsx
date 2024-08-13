@@ -34,8 +34,8 @@ const latestSolutions = [
 const FeaturedSolutions = () => {
   return (
     <>
-      <section className="flex flex-col justify-center w-full h-full px-3 py-16 md:px-14">
-        <h1 className="text-2xl md:text-4xl font-semibold text-[#00594C]">
+      <section className="flex flex-col justify-center w-full h-full px-3 md:px-14 mb-16" id="Solution">
+        <h1 className="text-4xl  p-10 font-bold text-[#00594C]">
           Dernières Solutions
         </h1>
 
@@ -118,14 +118,14 @@ const FeaturedSolutionCard = ({
         />
       </div>
       <div className="pb-6 px-16">
-        <h2 className="mt-5 text-lg font-semibold text-gray-900 title-font ">
+        <h2 className="mt-5 text-lg font-semibold text-gray-900 title-font">
           {solution?.name || "Agriculture de Précision"}
         </h2>
-        <p className="mt-2 text-base leading-snug text-gray-600">
+        <p className="mt-2 text-base font-light leading-snug text-gray-600">
           {solution?.description || "Lorem ipsum dolor sit amet consectetur."}
         </p>
         <a
-          className="inline-flex items-center mt-3 text-secondary text-lg hover:underline"
+          className="inline-flex items-center mt-3 text-secondary text-lg hover:underline font-normal text-lg"
           href=""
         >
           En savoir plus

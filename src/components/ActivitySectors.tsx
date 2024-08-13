@@ -66,16 +66,18 @@ const ActivitySectors = () => {
   };
 
   return (
-    <section className="flex flex-col md:flex-row justify-center w-full  mx-auto bg-[#F5F5F5] h-[520px]">
-      <div className="flex-col items-center justify-center p-4 h-46 md:h-full md:p-10 md:w-1/3 bg-primary">
-        <h1 className="text-2xl font-bold text-white md:text-4xl">
-          Secteurs d&apos;activités
+    <section className="flex flex-col md:flex-row justify-center w-full  mx-auto bg-[#F5F5F5] h-[520px]" id="secAc">
+      <div className="flex-col items-center justify-center h-46 md:h-full  md:w-1/4 bg-[#081B15]">
+
+        <div className="p-40 md:p-10">
+        <h1 className="text-4xl font-black text-white">
+          Secteurs d’activités
         </h1>
-        <ul className="flex mt-8 space-x-2 overflow-x-scroll text-white md:space-x-0 style-scrollbar md:overflow-x-hidden md:flex-col md:space-y-3 text-md">
+        <ul className="flex mt-8 space-x-2 overflow-x-scroll font-medium text-white md:space-x-0 style-scrollbar md:overflow-x-hidden md:flex-col md:space-y-3 text-base">
           {secteurs?.map((item, i) => (
             <li
               key={i}
-              className="p-2 transition duration-300 ease-in-out transform border-2 rounded-md cursor-pointer text-md md:py-2 md:pl-5 md:rounded-3xl border-secondary hover:bg-secondary "
+              className="p-2 transition duration-300 ease-in-out transform border-2 rounded-md cursor-pointer text-base md:py-2 md:pl-5 md:rounded-3xl border-secondary hover:bg-secondary "
               onClick={() => {
                 handleChangeSector(item);
                 handleSwitch(item.id);
@@ -85,6 +87,8 @@ const ActivitySectors = () => {
             </li>
           ))}
         </ul>
+        </div>
+        
       </div>
 
       <div className="w-full md:w-[75%] md:h-full bg-[#F5F5F5]">

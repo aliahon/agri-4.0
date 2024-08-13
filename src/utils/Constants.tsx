@@ -91,8 +91,9 @@ export const secteurs: SelectedProps[] = [
       {
         id: "/aqua/1",
         icon: <AquaLogo />,
-        name: "Lorem ipsume",
+        name: "Under construction",
       },
+      /*
       {
         id: "/aqua/2",
         icon: <AquaLogo />,
@@ -122,7 +123,7 @@ export const secteurs: SelectedProps[] = [
         id: "/aqua/7",
         icon: <AquaLogo />,
         name: "Lorem ipsume",
-      },
+      },*/
     ],
   },
   {
@@ -251,8 +252,8 @@ export const secteurs: SelectedProps[] = [
       {
         id: "/dura/1",
         icon: <DurabiliteLogo />,
-        name: "Lorem ipsume",
-      },
+        name: "Under construction",
+      },/*
       {
         id: "/dura/2",
         icon: <DurabiliteLogo />,
@@ -282,7 +283,7 @@ export const secteurs: SelectedProps[] = [
         id: "/dura/7",
         icon: <DurabiliteLogo />,
         name: "Lorem ipsume",
-      },
+      },*/
     ],
   },
   {
@@ -294,8 +295,8 @@ export const secteurs: SelectedProps[] = [
       {
         id: "/co/1",
         icon: <CoRdLogo />,
-        name: "Lorem ipsume",
-      },
+        name: "Under construction",
+      },/*
       {
         id: "/co/2",
         icon: <CoRdLogo />,
@@ -325,7 +326,7 @@ export const secteurs: SelectedProps[] = [
         id: "/co/7",
         icon: <CoRdLogo />,
         name: "Lorem ipsume",
-      },
+      },*/
     ],
   },
   {
@@ -993,6 +994,19 @@ export const solutionsArr = [
     id: 19,
     name : "Support sur le terrain et formation",
     desc : "Les agronomes d'Agri 4.0 travaillent directement sur le terrain, offrant des formations détaillées et des conseils personnalisés, et utilisent l'analyse de données pour recommander les meilleures pratiques agricoles afin d'optimiser la rentabilité et la qualité des récoltes."
+  },
+
+  //autre
+
+  {
+    id:20,
+    name:"Under construction",
+    desc:""
+  },
+  {
+    id:21,
+    name:"Under construction",
+    desc:""
   }
 
 

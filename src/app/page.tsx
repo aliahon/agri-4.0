@@ -13,11 +13,12 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="flex flex-col text-justify pt-14">
-      <section className="flex flex-col justify-center w-full h-full px-8 py-20 border-b-8 md:px-20 main-section bg-gradient-to-r border-b-secondary">
+      <section className="border-b-8  main-section bg-gradient-to-r border-b-secondary mb-8">
+        <div className="flex flex-col justify-center mt-44 py-20 pl-46 pr-20 ml-16 md:px-20 ">
         <h1
           className="text-3xl font-bold md:text-7xl drop-shadow-md"
           // aos
-          data-aos="fade-right"
+          data-aos="fade-left"
         >
           We Innovate for{" "}
           <span className="block text-secondary drop-shadow-md">
@@ -28,11 +29,11 @@ export default function Home() {
           className="max-w-md mt-3 leading-snug text-gray-300 text-md test-txt"
           data-aos="fade-right"
         >
-           L&apos;agriculture {" "}
+           L’agriculture {" "}
           <span className="font-semibold text-secondary drop-shadow-md">
             4.0{" "}
           </span>{" "}
-          est l&apos;évolution de l&apos;agriculture de précision et désigne l&apos;ensemble des actions qui sont mises en œuvre dans l&apos;agriculture.
+          est l’évolution de l’agriculture de précision et désigne l’ensemble des actions qui sont mises en œuvre dans l’agriculture.
         </p>
         <div className="flex items-center max-w-sm gap-5">
           <button className="px-6 py-2 mt-6 font-semibold text-white transition duration-300 ease-in-out transform rounded-3xl bg-secondary hover:bg-secondary-light hover:-translate-y-1">
@@ -42,6 +43,8 @@ export default function Home() {
             <Link href="/contact">Contact Us</Link>
           </button>
         </div>
+        </div>
+        
       </section>
       
       {/* Second Section */}
