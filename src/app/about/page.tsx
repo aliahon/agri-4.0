@@ -5,9 +5,9 @@ import Image from "next/image";
 const About = () => {
   return (
     <main className="flex flex-col text-justify bg-gray-100 pt-14">
-      <section className="flex flex-col justify-center w-full h-full px-20 py-20 border-b-8 main-section2 bg-gradient-to-r border-b-secondary">
-        <h1 className="text-5xl font-bold drop-shadow-md">A propos de nous</h1>
-        <p className="max-w-3xl mt-3 leading-snug text-gray-300 text-md drop-shadow-2xl">
+      <section className="relative flex flex-col justify-center w-full h-full px-40 py-20 border-b-8 main-section2 bg-gradient-to-r border-b-secondary">
+        <h1 className="text-6xl font-black drop-shadow-md">A propos de nous</h1>
+        <p className="max-w-3xl mt-3 leading-snug text-gray-300 text-base font-normal drop-shadow-2xl">
           A <span className="font-semibold text-secondary">AGRI 4.0</span> nous
           nous chargeons de la recherche des solutions, le design et la
           réalisation de capteurs électroniques et développement des
@@ -23,13 +23,13 @@ const About = () => {
         </p>
       </section>
       {/*  */}
-      <section className="flex items-center justify-between px-24 py-10 my-5 bg-gray-100 gap-x-4">
+      <section className="flex  items-center justify-between px-24 my-10 bg-[#FAFAFA] gap-x-4">
         <div className="flex-col justify-center ">
           <h1 className="text-xl font-bold">
             Pourquoi nous choisir AGRI{" "}
             <span className="text-secondary">4.0</span>
           </h1>
-          <p className="max-w-3xl mt-3 text-sm text-gray-700">
+          <p className="max-w-3xl mt-3 text-base font-light text-gray-700">
             A AGRI 4.0 nous nous chargeons de la recherche des solutions, le
             design et la réalisation de capteurs électroniques et développement
             des applications web et mobile permettant la gestion intelligente
@@ -45,7 +45,7 @@ const About = () => {
           <Image
             src="/about/why.jpeg"
             alt="why us"
-            className="object-cover rounded-xl w-[521px] h-[345px]"
+            className="object-cover rounded-xl w-[576px] h-[400px]"
             width={521}
             height={344}
             loader={({ src }) => src}
@@ -53,23 +53,23 @@ const About = () => {
         </div>
       </section>
       {/*  */}
-      <section className="flex items-center justify-between px-24 py-10 my-5 bg-[#081B15] text-white">
+      <section className="flex items-center justify-between px-24 my-10  bg-[#081B15] text-white gap-x-4">
         <div>
           <Image
             src="/about/why2.svg"
             alt="why us"
-            className="object-cover rounded-xl w-[521px] h-[345px]"
+            className="object-cover rounded-xl w-[576px] h-[400px]"
             width={521}
             height={344}
             loader={({ src }) => src}
           />
         </div>
         <div className="flex-col justify-center ">
-          <h1 className="text-xl font-bold">
+          <h1 className="text-xl font-black">
             Pourquoi nous choisir AGRI{" "}
             <span className="text-secondary">4.0</span>
           </h1>
-          <p className="max-w-3xl mt-3 text-sm text-gray-300">
+          <p className="max-w-3xl mt-3 text-base font-light text-gray-300">
             Nous misons sur la R&D, c’est le cœur de notre quotidien. Pas pour
             se doter d’un luxe, mais parce que nous sommes totalement convaincus
             que c’est l’outil le plus garantissant de la survie d’une entreprise
@@ -111,7 +111,7 @@ const About = () => {
 export default About;
 
 const Card = ({ icon, title, desc }: any) => (
-  <div className="flex flex-col items-center justify-center w-64 h-64 gap-6">
+  <div className="flex flex-col items-center p-16 justify-center w-64 h-64 gap-6">
     <Image
       src={icon}
       alt={title}
@@ -120,7 +120,7 @@ const Card = ({ icon, title, desc }: any) => (
       height={100}
       loader={({ src }) => src}
     />
-    <h1 className="mt-5 text-2xl font-bold uppercase text-primary">{title}</h1>
-    <p className="max-w-md mt-3 text-sm text-center text-gray-500">{desc}</p>
+    <h1 className="mt-5 text-3xl font-bold uppercase text-primary">{title}</h1>
+    <p className="max-w-md mt-3 text-2xl font-normal text-center text-gray-500">{desc}</p>
   </div>
 );
