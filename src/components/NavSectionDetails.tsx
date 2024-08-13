@@ -79,7 +79,6 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
       setSelectedItem(item);
     }
   };
-
   useEffect(() => {
     // setSelectedOpen false when click outside the navbar
     const handleClickOutside = (e: any) => {
@@ -92,6 +91,8 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
       window.removeEventListener("click", handleClickOutside);
     };
   }, [setIsSelectedOpen]);
+
+  
 
   return (
     <div
@@ -185,18 +186,23 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
               {selectedSection === "Solutions" && selectedItemName}
             </h1>
           </Link>
+          {selectedSection === "Solutions" &&(
           <p className="mt-2 text-2xs font-normal leading-snug text-gray-400 md-3 md:mb-2">
             {selectedItemName === "Agriculture de précision" &&
               "L'agriculture de précision est une approche qui permet d'optimiser la production agricole"}
-          </p>
+          </p>)}
+          {selectedSection === "Solutions" &&(
           <p className="mt-2  text-2xs font-normal  leading-snug text-gray-400 md-3 md:mb-2">
             {selectedItemName ===  "Agroalimentaire 4.0" &&
               "Nous offrons des solutions avancées pour optimiser les chambres froides, les machines agroalimentaires..."}
-          </p>
+          </p>)}
+
+          {selectedSection === "Solutions" &&(
           <p className="mt-2 text-2xs  font-normal leading-snug text-gray-400 md-3 md:mb-2">
             {selectedItemName ===  "Conseil" &&
               "Chez Agri 4.0, nous allons bien au-delà de la simple vente de produits et services."}
-          </p>
+          </p>)}
+      
           <div className="flex flex-wrap justify-between gap-4 md:flex-nowrap z ">
             <div className="w-full mt-2 md:mt-10 pr-20 ">
               <hr className="my-2 mb-5 border-gray-300 md:w-full" />

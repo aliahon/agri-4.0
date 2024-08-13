@@ -86,14 +86,14 @@ export const secteurs: SelectedProps[] = [
     id: "2",
     img: "/sectors/aquaculture.jpg",
     name: "Aquaculture 4.0",
-    desc: "Nous intégrons des technologies avancées et des systèmes numériques dans l'industrie aquacole, dans le but d'améliorer l'efficacité, la durabilité et la rentabilité de la production. Cela comprend l'utilisation de capteurs, d'application",
-    subItems: [
+    desc: "Nous utilisons des technologies avancées et des systèmes numériques dans l'industrie aquacole pour améliorer l'efficacité, la durabilité et la rentabilité de la production. Cela inclut l'utilisation de capteurs, d'applications d'analyse de données, d'intelligence artificielle, d'apprentissage automatique et d'autres technologies numériques pour surveiller et contrôler différents aspects des opérations aquacoles....",
+    subItems: [/*
       {
         id: "/aqua/1",
         icon: <AquaLogo />,
         name: "Under construction",
       },
-      /*
+      
       {
         id: "/aqua/2",
         icon: <AquaLogo />,
@@ -130,7 +130,7 @@ export const secteurs: SelectedProps[] = [
     id: "3",
     img: "/sectors/agroalimentaire.jpg",
     name: "Agroalimentaire 4.0",
-    desc: "Nous offrons des solutions avancées pour optimiser les chambres froides, les machines agroalimentaires, la consommation énergétique et l'analyse des données via l'intelligence artificielle....",
+    desc: "Nous offrons des solutions avancées pour optimiser les chambres froides, les machines agroalimentaires, la consommation énergétique et l'analyse des données via l'intelligence artificielle...",
     subItems: [
       {
         id: 'chambres-froides',
@@ -247,13 +247,13 @@ export const secteurs: SelectedProps[] = [
     id: "5",
     img: "/sectors/durabilite.jpg",
     name: "Durabilite",
-    desc: "En intégrant la durabilité dans nos activités, nous pouvons contribuer à créer un monde plus juste, équitable et durable pour les générations futures. Cela peut se faire à travers des actions telles que la réduction de l'utilisation ...",
-    subItems: [
+    desc: "En intégrant la durabilité dans nos activités, nous pouvons contribuer à créer un monde plus juste, équitable et durable pour les générations futures. Cela peut se faire à travers des actions telles que la réduction de l'utilisation...",
+    subItems: [/*
       {
         id: "/dura/1",
         icon: <DurabiliteLogo />,
         name: "Under construction",
-      },/*
+      },
       {
         id: "/dura/2",
         icon: <DurabiliteLogo />,
@@ -290,13 +290,13 @@ export const secteurs: SelectedProps[] = [
     id: "6",
     img: "/sectors/co-rd.jpg",
     name: "CO-R&D",
-    desc: "Notre engagement envers la R&D ne relève pas d'un simple caprice, mais plutôt de notre conviction que c'est la pierre angulaire de la survie de toute entreprise, quelle que soit sa taille ou son modèle économique.",
-    subItems: [
+    desc: "Notre engagement envers la R&D ne relève pas d'un simple caprice, mais plutôt de notre conviction que c'est la pierre angulaire de la survie de toute entreprise, quelle que soit sa taille ou son modèle économique...",
+    subItems: [/*
       {
         id: "/co/1",
         icon: <CoRdLogo />,
         name: "Under construction",
-      },/*
+      },
       {
         id: "/co/2",
         icon: <CoRdLogo />,
@@ -333,7 +333,7 @@ export const secteurs: SelectedProps[] = [
     id: "7",
     img: "/sectors/conseil.jpg",
     name: "Conseil",
-    desc: "Chez Agri 4.0, nous allons bien au-delà de la simple vente de produits et services. Nous nous engageons à offrir un accompagnement complet, assuré par une équipe jeune, dynamique et pluridisciplinaire, partageant une même motivation: vous apporter le meilleur.Nos agronomes sont à vos côtés sur le terrain, fournissant des formations approfondies et des conseils personnalisés. Grâce à l'analyse des données recueillies, ils vous guident vers les meilleures pratiques agricoles, optimisant ainsi la rentabilité et la qualité de vos récoltes.",
+    desc: "Chez Agri 4.0, nous allons bien au-delà de la simple vente de produits et services. Nous nous engageons à offrir un accompagnement complet, assuré par une équipe jeune, dynamique et pluridisciplinaire, partageant une même motivation: vous apporter le meilleur.Nos agronomes sont à vos côtés sur le terrain, fournissant des formations approfondies et des conseils personnalisés. Grâce à l'analyse des données recueillies, ils vous guident vers les meilleures pratiques agricoles, optimisant ainsi la rentabilité et la qualité de vos récoltes...",
     subItems: [
       {
         id: "/cons/1",
@@ -2210,6 +2210,24 @@ export const smartCitiesSolutions = [
     ),
     imgUrl: "/solutionDetails/Group 837.png",
     services: [],
+  },
+  // Gestion de trafic
+  {
+    id: "12",
+    name: "Gestion de trafic",
+    desc: (
+      <>
+        <p className="text-sm font-light leading-snug">
+          Avec notre système de contrôle de l&apos;irrigation, vous serez en
+          mesure de déclencher l&apos;arrosage au moment propice et avec la
+          quantité idéale. Cela assurera le développement optimal de vos
+          végétaux tout en optimisant l&apos;utilisation de l&apos;eau et de
+          l&apos;énergie.
+        </p>
+      </>
+    ),
+    imgUrl: "/solutionDetails/Group 837.png",
+    services: []
   },
 ];
 

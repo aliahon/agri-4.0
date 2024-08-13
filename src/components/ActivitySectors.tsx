@@ -66,34 +66,33 @@ const ActivitySectors = () => {
   };
 
   return (
-    <section className="flex flex-col md:flex-row justify-center w-full  mx-auto bg-[#F5F5F5] h-[520px]" id="secAc">
-      <div className="flex-col items-center justify-center h-46 md:h-full  md:w-1/4 bg-[#081B15]">
+    <section className="flex flex-col lg:flex-row justify-center w-full  mx-auto bg-[#F5F5F5] h-1/6" id="secAc">
+      <div className="flex-col items-center justify-center h-46 lg:h-full  md:w-1/4 bg-[#081B15]">
 
-        <div className="p-40 md:p-10">
-        <h1 className="text-4xl font-black text-white">
-          Secteurs d’activités
-        </h1>
-        <ul className="flex mt-8 space-x-2 overflow-x-scroll font-medium text-white md:space-x-0 style-scrollbar md:overflow-x-hidden md:flex-col md:space-y-3 text-base">
-          {secteurs?.map((item, i) => (
-            <li
-              key={i}
-              className="p-2 transition duration-300 ease-in-out transform border-2 rounded-md cursor-pointer text-base md:py-2 md:pl-5 md:rounded-3xl border-secondary hover:bg-secondary "
-              onClick={() => {
-                handleChangeSector(item);
-                handleSwitch(item.id);
-              }}
-            >
-              <span>{item?.name}</span>
-            </li>
-          ))}
-        </ul>
+        <div className="p-8 lg:p-28">
+          <h1 className="text-4xl font-black text-white">
+            Secteurs d’activités
+          </h1>
+          <ul className="flex mt-8 space-x-2 overflow-x-scroll font-medium text-white md:space-x-0 style-scrollbar md:overflow-x-hidden md:flex-col md:space-y-3 text-base">
+            {secteurs?.map((item, i) => (
+              <li
+                key={i}
+                className="p-2 transition duration-300 ease-in-out transform border-2 rounded-md cursor-pointer text-base md:py-2 md:pl-5 md:rounded-3xl border-secondary hover:bg-secondary "
+                onClick={() => {
+                  handleChangeSector(item);
+                  handleSwitch(item.id);
+                }}
+              >
+                <span>{item?.name}</span>
+              </li>
+            ))}
+          </ul>
         </div>
         
       </div>
 
       <div className="w-full md:w-[75%] md:h-full bg-[#F5F5F5]">
         <Swiper ref={swiperRef} slidesPerView={1} onSlideChange={handleSlideChange}>
-          
           <SwiperSlide id="1">
             <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:pt-24 md:flex-row">
               <div className="relative">

@@ -27,28 +27,33 @@ const Solution = ({ params }: any) => {
   }, [id]);
 
   return (
-    (id===13)?
-    <section className="flex-col pt-14">
+    id!=13 ?
+    (<section className="flex-col pt-14">
       <div className="flex justify-between w-full px-2 md:px-20 pb-10 pt-16 text-white border-b-[10px] bg-[#3054A5] border-b-[#7BADCA] flex-col-reverse md:flex-row">
-        <div className="flex flex-col space-y-3 md:max-w-2xl md:text-justify">
-          <h1 className="mb-5 text-xl font-bold md:text-4xl">
+        <div className="flex flex-col space-y-3 md:max-w-2xl md:text-justify p-20">
+          <h1 className="mb-5 text-3xl font-black md:text-5xl">
             {solution?.name || null}
           </h1>
-          {solution?.desc}
+          <p className="text-base font-normal">
+            {solution?.desc}
+          </p>
+          
         </div>
         <div className="relative">
           <Image
+            className="p-16
+            "
             src={solution?.imgUrl || ""}
-            width={500}
-            height={500}
-            alt="Vision et Traitement D’image"
+            width={700}
+            height={700}
+            alt="Solution image"
             loader={({ src }) => src}
           />
         </div>
       </div>
-    </section>
+    </section>)
     :
-    <section className="flex-col pt-14">
+    (<section className="flex-col pt-14">
       <div className="flex justify-between w-full px-2 md:px-20 pb-10 pt-16 text-white border-b-[10px] bg-[#3054A5] border-b-[#7BADCA] flex-col-reverse md:flex-row">
         <div className="flex flex-col space-y-3 md:max-w-2xl md:text-justify">
           <h1 className="mb-5 text-xl font-bold md:text-4xl">
@@ -61,12 +66,12 @@ const Solution = ({ params }: any) => {
             src={solution?.imgUrl || ""}
             width={500}
             height={500}
-            alt="Vision et Traitement D’image"
+            alt="Solution image"
             loader={({ src }) => src}
           />
         </div>
       </div>
-    </section>
+    </section>)
   );
 };
 
