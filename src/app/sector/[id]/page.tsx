@@ -50,11 +50,13 @@ const Sector = ({ params }: any) => {
           <>
             {/* tabs */}
             <div className="flex items-center justify-center w-full px-24 pt-20 mt-5 overflow-x-scroll no-scrollbar">
-              <ul className="flex items-center justify-center w-full gap-5 pb-5 border-b-2 max-w-7xl border-b-gray-300">
+              <ul className={`flex items-center justify-center w-full gap-5 pb-0 max-w-7xl border-b-2 border-b-gray-300`}>
                 {solutionsArr.slice(0, 7).map((tab, i) => (
                   <li
                     key={i}
-                    className="flex items-center gap-3 w-full md:h-[50px] text-md font-bold cursor-pointer transition duration-300 ease-in-out"
+                    className={`flex items-center gap-3 m-0 w-full md:h-[50px] text-md font-bold cursor-pointer transition duration-300 ease-in-out pb-10 m-0 ${
+                      openTab === tab.id ? "border-b-4 border-b-[#2DB273]" : ""
+                    }`}
                     onClick={(e) => {
                       e.preventDefault();
                       setOpenTab(tab.id);
