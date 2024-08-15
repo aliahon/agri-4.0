@@ -77,7 +77,8 @@ const ActivitySectors = () => {
             {secteurs?.map((item, i) => (
               <li
                 key={i}
-                className="p-2 transition duration-300 ease-in-out transform border-2 rounded-md cursor-pointer text-base md:py-2 md:pl-5 md:rounded-3xl border-secondary hover:bg-secondary "
+                className={`p-2 transition duration-300 ease-in-out transform border-2 rounded-md cursor-pointer text-base md:py-2 md:pl-5 md:rounded-3xl border-secondary hover:bg-secondary`}
+                //${item.bgColor} make the color dynamic 
                 onClick={() => {
                   handleChangeSector(item);
                   handleSwitch(item.id);

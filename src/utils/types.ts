@@ -3,6 +3,7 @@ export type SelectedProps = {
   img: string;
   name: string;
   desc: string;
+  bgColor:string,
   subItems: Array<{
     id: string;
     icon: any;

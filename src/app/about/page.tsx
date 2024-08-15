@@ -6,8 +6,8 @@ const About = () => {
   return (
     <main className="flex flex-col text-justify bg-gray-100 pt-14">
       <section className="relative flex flex-col justify-center w-full h-full px-40 py-20 border-b-8 main-section2 bg-gradient-to-r border-b-secondary">
-        <h1 className="text-6xl font-black drop-shadow-md">A propos de nous</h1>
-        <p className="max-w-3xl mt-3 leading-snug text-gray-300 text-base font-normal drop-shadow-2xl">
+        <h1 className="text-6xl font-black drop-shadow-md" data-aos="fade-left">A propos de nous</h1>
+        <p className="max-w-3xl mt-3 leading-snug text-gray-300 text-base font-normal drop-shadow-2xl" data-aos="fade-right">
           A <span className="font-semibold text-secondary">AGRI 4.0</span> nous
           nous chargeons de la recherche des solutions, le design et la
           réalisation de capteurs électroniques et développement des

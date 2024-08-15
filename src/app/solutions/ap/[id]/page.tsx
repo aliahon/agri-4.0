@@ -94,7 +94,7 @@ export default Solution;
       <h1 className="mb-5 text-4xl font-bold">Drone</h1>
       <ul className="space-y-3 list-disc marker:text-secondary">
         <li className="text-sm font-light leading-snug">
-          L&apos;agriculture numérique est une industrie florissante et les
+          L’agriculture numérique est une industrie florissante et les
           drones sont en train de devenir de plus en plus accessibles et
           sophistiqués. Dotés de caméras haute résolution, ces engins aériens
           peuvent fournir des images en temps réel des cultures, ce qui en fait
@@ -103,17 +103,17 @@ export default Solution;
         </li>
         <li className="text-sm font-light leading-snug">
           Les drones autonomes pourraient jouer un rôle majeur dans
-          l&apos;inspection, le semis, l&apos;arrosage, le traitement et même la
+          l’inspection, le semis, l’arrosage, le traitement et même la
           récolte des cultures. Chaque drone serait capable de prendre des
-          microdécisions indépendantes lorsqu&apos;il se déplace entre les
+          microdécisions indépendantes lorsqu’il se déplace entre les
           plantes individuelles, communiquant des informations utiles au reste
-          de son équipe et les utilisant via l&apos;apprentissage automatique.
+          de son équipe et les utilisant via l’apprentissage automatique.
         </li>
         <li className="text-sm font-light leading-snug">
           {" "}
           Grâce aux drones il est possible de détecter le stress hydrique et
           réaliser des épandages précis de produits phytosanitaires ou
-          d&apos;engrais.
+          d’engrais.
         </li>
       </ul>
     </div>
@@ -161,26 +161,26 @@ export default Solution;
       <h1 className="mb-5 text-4xl font-bold">Satellite</h1>
       <ul className="space-y-3 list-disc marker:text-secondary">
         <li className="text-sm font-light leading-snug">
-          L&apos;utilisation des satellites de traitement d&apos;images dans
-          l&apos;agriculture de précision aide les agriculteurs à prendre des
+          L’utilisation des satellites de traitement d’images dans
+          l’agriculture de précision aide les agriculteurs à prendre des
           décisions éclairées en fournissant des visualisations précises des
-          variations d&apos;expression végétative des parcelles.
+          variations d’expression végétative des parcelles.
         </li>
         <li className="text-sm font-light leading-snug">
-          Grâce à l&apos;utilisation de satellites pour le traitement
-          d&apos;images, les agriculteurs peuvent analyser la tendance et
-          l&apos;évolution de l&apos;état sanitaire de leurs cultures, calculer
+          Grâce à l’utilisation de satellites pour le traitement
+          d’images, les agriculteurs peuvent analyser la tendance et
+          l’évolution de l’état sanitaire de leurs cultures, calculer
           les indices de végétation et les paramètres physiologiques, et même
           détecter des problèmes tels que le stress hydrique, la sécheresse et
           la salinité des parcelles.
         </li>
         <li className="text-sm font-light leading-snug">
-          Ces informations sont d&apos;une grande aide pour les agriculteurs,
+          Ces informations sont d’une grande aide pour les agriculteurs,
           leur permettant de mieux comprendre la santé de leurs cultures et
-          d&apos;ajuster leur gestion en conséquence. En fin de compte,
-          l&apos;utilisation du traitement d&apos;images peut améliorer la
-          productivité et la rentabilité de l&apos;exploitation agricole, tout
-          en réduisant l&apos;impact sur l&apos;environnement.
+          d’ajuster leur gestion en conséquence. En fin de compte,
+          l’utilisation du traitement d’images peut améliorer la
+          productivité et la rentabilité de l’exploitation agricole, tout
+          en réduisant l’impact sur l’environnement.
         </li>
       </ul>
     </div>
@@ -199,12 +199,12 @@ export default Solution;
           nécessitent des traitements supplémentaires.
         </li>
         <li className="text-sm font-light leading-snug">
-          Les avantages de l&apos;utilisation de caméras au sol en agriculture
+          Les avantages de l’utilisation de caméras au sol en agriculture
           de précision sont leur capacité à fournir des informations détaillées
           sur les cultures et le sol à un coût relativement faible. Les images
           collectées peuvent être analysées pour fournir des informations utiles
           aux agriculteurs, ce qui peut les aider à prendre des décisions plus
-          éclairées et à améliorer l&apos;efficacité de leur gestion des
+          éclairées et à améliorer l’efficacité de leur gestion des
           cultures.
         </li>
       </ul>

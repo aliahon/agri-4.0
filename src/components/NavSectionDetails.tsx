@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { solutions, solutionsArr } from "@/utils/Constants";
+import { solutions, solutionsArr, sectors } from "@/utils/Constants";
 import Link from "next/link";
 import { useNavbarContext } from "@/contexts/navbarContext";
 
@@ -186,7 +186,7 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
               {selectedSection === "Solutions" && selectedItemName}
             </h1>
           </Link>
-          {selectedSection === "Solutions" &&(
+          {/*selectedSection === "Solutions" &&(
           <p className="mt-2 text-2xs font-normal leading-snug text-gray-400 md-3 md:mb-2">
             {selectedItemName === "Agriculture de précision" &&
               "L'agriculture de précision est une approche qui permet d'optimiser la production agricole"}
@@ -201,7 +201,13 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
           <p className="mt-2 text-2xs  font-normal leading-snug text-gray-400 md-3 md:mb-2">
             {selectedItemName ===  "Conseil" &&
               "Chez Agri 4.0, nous allons bien au-delà de la simple vente de produits et services."}
-          </p>)}
+          </p>)*/}
+          {solutions?.map((item, i) => (
+           selectedSection === "Solutions" &&(
+          <p className="mt-2 text-2xs  font-normal leading-snug text-gray-400 md-3 md:mb-2">
+            {selectedItemName ===  item?.name &&
+              item?.description}
+          </p>)))}
       
           <div className="flex flex-wrap justify-between gap-4 md:flex-nowrap z ">
             <div className="w-full mt-2 md:mt-10 pr-20 ">
