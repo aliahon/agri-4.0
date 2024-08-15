@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="flex flex-col text-justify pt-14">
       <section className="border-b-8  main-section bg-gradient-to-r border-b-secondary mb-8">
-        <div className="flex flex-col justify-center mt-44 py-20 pl-46 pr-20 ml-16 md:px-20 ">
+        <div className="flex flex-col justify-center mt-16 lg:mt-44 lg:py-20 lg:pl-46 pr-20 ml-16 md:px-20 ">
         <h1
           className="text-3xl font-bold md:text-7xl drop-shadow-md"
           // aos

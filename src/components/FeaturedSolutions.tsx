@@ -106,7 +106,7 @@ const FeaturedSolutionCard = ({
   };
 }) => {
   return (
-    <div className="mb-6 border  pt-16 shadow-lg rounded-xl sm:mb-0 ">
+    <div className="mb-6 border p-2  lg:pt-16 shadow-lg rounded-xl sm:mb-0 ">
       <div className="h-64 overflow-hidden rounded-t-md">
         <Image
           alt="content"
@@ -117,12 +117,12 @@ const FeaturedSolutionCard = ({
           height={503}
         />
       </div>
-      <div className="pb-6 px-16">
+      <div className="p-2 lg:pb-6 lg:px-16">
         <h2 className="mt-5 text-lg font-semibold text-gray-900 title-font">
           {solution?.name || "Agriculture de Précision"}
         </h2>
         <p className="mt-2 text-base font-light leading-snug text-gray-600">
-          {solution?.description || "Lorem ipsum dolor sit amet consectetur."}
+          {solution?.description}
         </p>
         <a
           className="inline-flex items-center mt-3 text-secondary text-lg hover:underline font-normal text-lg"

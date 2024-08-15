@@ -66,14 +66,14 @@ const ActivitySectors = () => {
   };
 
   return (
-    <section className="flex flex-col lg:flex-row justify-center w-full  mx-auto bg-[#F5F5F5] h-1/6" id="secAc">
-      <div className="flex-col items-center justify-center h-46 lg:h-full  md:w-1/4 bg-[#081B15]">
+    <section className="flex flex-col md:flex-col  lg:flex-row justify-center w-full  mx-auto bg-[#F5F5F5] h-1/6" id="secAc">
+      <div className="flex-col items-center justify-center h-46 bg-[#081B15]">
 
-        <div className="p-8 lg:p-28">
+        <div className="p-8 lg:p-16">
           <h1 className="text-4xl font-black text-white">
             Secteurs d’activités
           </h1>
-          <ul className="flex mt-8 space-x-2 overflow-x-scroll font-medium text-white md:space-x-0 style-scrollbar md:overflow-x-hidden md:flex-col md:space-y-3 text-base">
+          <ul className="flex mt-8 space-x-2 overflow-x-scroll font-medium text-white lg:space-x-0 style-scrollbar lg:overflow-x-hidden  md:flex-row lg:flex-col md:space-y-3 text-base">
             {secteurs?.map((item, i) => (
               <li
                 key={i}
@@ -94,7 +94,7 @@ const ActivitySectors = () => {
       <div className="w-full md:w-[75%] md:h-full bg-[#F5F5F5]">
         <Swiper ref={swiperRef} slidesPerView={1} onSlideChange={handleSlideChange}>
           <SwiperSlide id="1">
-            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:pt-24 md:flex-row">
+            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:pt-24 md:flex-col lg:flex-row">
               <div className="relative">
                 <div
                   className={`bg-[#2DB273] w-full md:w-[400px] h-40 md:h-96 rounded-3xl`}
@@ -138,7 +138,7 @@ const ActivitySectors = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide id="2">
-            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:pt-24 md:flex-row">
+            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:p-20 md:pt-24 md:flex-col lg:flex-row">
               <div className="relative">
                 <div
                   className={`bg-[#809DD0] w-full md:w-[400px] h-40 md:h-96 rounded-3xl`}
@@ -180,7 +180,7 @@ const ActivitySectors = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide id="3">
-            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:pt-24 md:p-20 md:flex-row">
+            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:pt-24 md:p-20 md:flex-col lg:flex-row">
               <div className="relative">
                 <div
                   className={`bg-[#B87950] w-full md:w-[400px] h-40 md:h-96 rounded-3xl`}
@@ -222,7 +222,7 @@ const ActivitySectors = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide id="4">
-            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:pt-24 md:p-20 md:flex-row">
+            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:pt-24 md:p-20 md:flex-col lg:flex-row">
               <div className="relative">
                 <div
                   className={`bg-[#7BADCAD1] w-full md:w-[400px] h-40 md:h-96 rounded-3xl`}
@@ -264,7 +264,7 @@ const ActivitySectors = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide id="5">
-            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:pt-24 md:p-20 md:flex-row">
+            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:pt-24 md:p-20 md:flex-col lg:flex-row">
               <div className="relative">
                 <div
                   className={`bg-[#4DA99C] w-full md:w-[400px] h-40 md:h-96 rounded-3xl`}
@@ -306,7 +306,7 @@ const ActivitySectors = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide id="6">
-            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:pt-24 md:p-20 md:flex-row">
+            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:pt-24 md:p-20 md:flex-col lg:flex-row">
               <div className="relative">
                 <div
                   className={`bg-[#585C5B] w-full md:w-[400px] h-40 md:h-96 rounded-3xl`}
@@ -348,7 +348,7 @@ const ActivitySectors = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide id="7">
-            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:pt-24 md:p-20 md:flex-row">
+            <div className="relative flex flex-col w-full h-full gap-10 p-6 md:pt-24 md:p-20 md:flex-col lg:flex-row">
               <div className="relative">
                 <div
                   className={`bg-[#595866] w-full md:w-[400px] h-40 md:h-96 rounded-3xl`}

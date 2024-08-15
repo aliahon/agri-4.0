@@ -36,7 +36,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${poppins.className} w-full mx-auto max-w-[2000px]`}>
+      <body className={`${poppins.className} w-full mx-auto max-w-[2000px] `}>
         <NavbarProvider>
           <Navbar />
           {children}
