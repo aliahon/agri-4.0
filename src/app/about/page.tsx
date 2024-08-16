@@ -5,9 +5,9 @@ import Image from "next/image";
 const About = () => {
   return (
     <main className="flex flex-col text-justify bg-gray-100 pt-14">
-      <section className="relative flex flex-col justify-center w-full h-full px-40 py-20 border-b-8 main-section2 bg-gradient-to-r border-b-secondary">
-        <h1 className="text-6xl font-black drop-shadow-md" data-aos="fade-left">A propos de nous</h1>
-        <p className="max-w-3xl mt-3 leading-snug text-gray-300 text-base font-normal drop-shadow-2xl" data-aos="fade-right">
+      <section className="relative flex flex-col justify-center w-full h-full px-8 py-10 md:px-40 md:py-20 border-b-8 main-section2 bg-gradient-to-r border-b-secondary">
+        <h1 className="text-2xl mt-4 md:text-6xl font-black drop-shadow-md" data-aos="fade-left">A propos de nous</h1>
+        <p className="max-w-3xl mt-3 leading-snug text-gray-300 text-sm md:text-base font-normal drop-shadow-2xl" data-aos="fade-right">
           A <span className="font-semibold text-secondary">AGRI 4.0</span> nous
           nous chargeons de la recherche des solutions, le design et la
           réalisation de capteurs électroniques et développement des
@@ -23,8 +23,8 @@ const About = () => {
         </p>
       </section>
       {/*  */}
-      <section className="flex  items-center justify-between px-24 my-10 bg-[#FAFAFA] gap-x-4">
-        <div className="flex-col justify-center ">
+      <section className="md:flex  md:items-center py-4 md:justify-between px-8 md:px-24 md:my-10 bg-[#FAFAFA] gap-x-4">
+        <div className="flex-col  justify-center ">
           <h1 className="text-xl font-bold">
             Pourquoi nous choisir AGRI{" "}
             <span className="text-secondary">4.0</span>
@@ -45,7 +45,7 @@ const About = () => {
           <Image
             src="/about/why.jpeg"
             alt="why us"
-            className="object-cover rounded-xl w-[576px] h-[400px]"
+            className="object-cover rounded-xl w-[521px] h-[344px]"
             width={521}
             height={344}
             loader={({ src }) => src}
@@ -53,12 +53,12 @@ const About = () => {
         </div>
       </section>
       {/*  */}
-      <section className="flex items-center justify-between px-24 my-10  bg-[#081B15] text-white gap-x-4">
+      <section className="md:flex items-center justify-between py-4 px-8 md:px-24 my-10  bg-[#081B15] text-white gap-x-4">
         <div>
           <Image
             src="/about/why2.svg"
             alt="why us"
-            className="object-cover rounded-xl w-[576px] h-[400px]"
+            className="object-cover rounded-xl w-[521px] h-[344px]"
             width={521}
             height={344}
             loader={({ src }) => src}
@@ -66,27 +66,17 @@ const About = () => {
         </div>
         <div className="flex-col justify-center ">
           <h1 className="text-xl font-black">
-            Pourquoi nous choisir AGRI{" "}
+            Notre équipe AGRI {" "}
             <span className="text-secondary">4.0</span>
           </h1>
           <p className="max-w-3xl mt-3 text-base font-light text-gray-300">
-            Nous misons sur la R&D, c’est le cœur de notre quotidien. Pas pour
-            se doter d’un luxe, mais parce que nous sommes totalement convaincus
-            que c’est l’outil le plus garantissant de la survie d’une entreprise
-            quel que soit son modèle économique ou sa taille d’une part et
-            d’autre part car c’est la première étape dans la promotion de
-            l’innovation au sein de toute organisation. <br />
-            <br />
-            La R&D établit une feuille de route et crée une vision et une
-            stratégie à long terme pour une entreprise en quête de l’innovation.
-            Les innovations sont la clé pour accroître l’efficience et
-            l’efficacité au sein d’une organisation et dans les produits et
-            services qu’elle offre et nous mettons notre savoir-faire dans ce
-            volet au service de nos clients pour améliorer leur quotidien.
+          Une équipe jeune, créative, pluridisciplinaire et motivée. Nous rassemblons des compétences complémentaires, avec un point commun qui est la motivation à donner le meilleur.
+          <br />
+          Notre équipe est composée d'ingénieurs en électronique, informatique, agronomie, industrie, marketing et commerce. Nous disposons de nombreuses années d'expérience et aujourd'hui, on s'associe à de jeunes diplômés pour allier le savoir et l’innovation pour atteindre l'objectif ultime : Mettre la technologie au service de tous.
           </p>
         </div>
       </section>
-      <section className="flex justify-between px-24 py-10 mb-5">
+      <section className="flex flex-col md:flex-row md:flex-row  justify-between px-4 lg:px-24 md:py-10 mb-5">
         {[
           [
             "/about/culture.svg",
@@ -111,7 +101,7 @@ const About = () => {
 export default About;
 
 const Card = ({ icon, title, desc }: any) => (
-  <div className="flex flex-col items-center p-16 justify-center w-64 h-64 gap-6">
+  <div className="flex flex-col items-center p-16 justify-center md:w-64 md:h-64 gap-6">
     <Image
       src={icon}
       alt={title}
@@ -120,7 +110,7 @@ const Card = ({ icon, title, desc }: any) => (
       height={100}
       loader={({ src }) => src}
     />
-    <h1 className="mt-5 text-3xl font-bold uppercase text-primary">{title}</h1>
-    <p className="max-w-md mt-3 text-2xl font-normal text-center text-gray-500">{desc}</p>
+    <h1 className="mt-5 lg:text-3xl font-bold uppercase text-primary">{title}</h1>
+    <p className="max-w-md mt-3 md:text-2xl font-normal text-center text-gray-500">{desc}</p>
   </div>
 );
