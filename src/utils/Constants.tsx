@@ -363,7 +363,7 @@ export const solutions = [
     name: "Agriculture de précision",
     icon: <AgriPreciseLogo color="#10ac84" />,
     description:
-      "L'agriculture de précision est une approche qui permet d'optimiser...",
+      "L'agriculture de précision est une approche qui permet d'optimiser la production...",
     projects: [
       /*{
         name: "Projet 1",
@@ -399,7 +399,7 @@ export const solutions = [
     name: "Smart cities",
     icon: <SmartCitiesLogo color="#10ac84" />,
     description:
-      "Les grandes villes marocaines ont un potentiel de développement...",
+      "Les grandes villes marocaines ont un potentiel de développement considérable...",
     projects: [
       /*{
         name: "Projet 1",
