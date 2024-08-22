@@ -38,9 +38,9 @@ export const WelcomeEmail = ({ firstName = "User" }: WelcomeEmailProps) => (
           to have you on board!
         </Text>
         <Section style={btnContainer}>
-          <Button pX={12} pY={12} style={button} href="https://agri40.ma/s">
+          {<Button style={button} href="https://agri40.ma/s">
             Get started
-          </Button>
+          </Button>}
         </Section>
         <Text style={paragraph}>
           Best,

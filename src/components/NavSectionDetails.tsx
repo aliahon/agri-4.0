@@ -204,7 +204,7 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
           </p>)*/}
           {solutions?.map((item, i) => (
            selectedSection === "Solutions" &&(
-          <p className="mt-2 text-2xs  font-normal leading-snug text-gray-400 md-3 md:mb-2">
+          <p key={i} className="mt-2 text-2xs  font-normal leading-snug text-gray-400 md-3 md:mb-2">
             {selectedItemName ===  item?.name &&
               item?.description}
           </p>)))}

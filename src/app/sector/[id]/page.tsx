@@ -133,19 +133,19 @@ const Sector = ({ params }: any) => {
                   data-aos="fade-left"
                 >
                   <li>
-                    L`agriculture de précision est une approche de l`agriculture
-                    qui utilise les technologies de l`information et de la
+                    L’agriculture de précision est une approche de l’agriculture
+                    qui utilise les technologies de l’information et de la
                     communication pour optimiser la gestion des cultures. Cette
                     méthode permet de maximiser les rendements agricoles tout en
-                    réduisant l`utilisation de ressources telles que l`eau, les
+                    réduisant l’utilisation de ressources telles que l’eau, les
                     engrais et les pesticides. Les agriculteurs peuvent ainsi
                     mieux contrôler et ajuster les pratiques agricoles en fonction
                     des variations de conditions locales telles que les conditions
                     climatiques, la qualité des sols et la présence de maladies ou
-                    d`insectes nuisibles.
+                    d’insectes nuisibles.
                   </li>
                   <li>
-                    L`agriculture de précision peut également aider les
+                    L’agriculture de précision peut également aider les
                     agriculteurs à améliorer la qualité de leurs produits en
                     ajustant la gestion des cultures en fonction de leurs besoins
                     spécifiques. Cela peut aider à augmenter la valeur ajoutée des

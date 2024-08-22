@@ -12,14 +12,14 @@ const About = () => {
           nous chargeons de la recherche des solutions, le design et la
           réalisation de capteurs électroniques et développement des
           applications web et mobile permettant la gestion intelligente des
-          fermes et tous les équipements qui s&apos;y réfèrent à travers des
+          fermes et tous les équipements qui s’y réfèrent à travers des
           outils de suivi, monitoring et analyse en temps réel facilitant le
           processus de prise de décision et pouvant mener à des processus de
           gestion prédictive. <br />
           <br />
-          Nous sommes aussi actifs dans les domaines de l&apos;agoralimentaire
-          4.0, l&apos;aquaculture 4.0, SMART cities, la durabilité, la CO R&D et
-          l&apos;Accompagnement/Conseil.
+          Nous sommes aussi actifs dans les domaines de l’agoralimentaire
+          4.0, l’aquaculture 4.0, SMART cities, la durabilité, la CO R&D et
+          l’Accompagnement/Conseil.
         </p>
       </section>
       {/*  */}
@@ -33,12 +33,12 @@ const About = () => {
             A AGRI 4.0 nous nous chargeons de la recherche des solutions, le
             design et la réalisation de capteurs électroniques et développement
             des applications web et mobile permettant la gestion intelligente
-            des fermes et tous les équipements qui s&apos;y réfèrent à travers
+            des fermes et tous les équipements qui s’y réfèrent à travers
             des outils de suivi, monitoring et analyse en temps réel facilitant
             le processus de prise de décision et pouvant mener à des processus
             de gestion prédictive. Nous sommes aussi actifs dans les domaines de
-            l&apos;agoralimentaire 4.0, l&apos;aquaculture 4.0, SMART cities, la
-            durabilité, la CO R&D et l&apos;Accompagnement/Conseil.
+            l’agoralimentaire 4.0, l’aquaculture 4.0, SMART cities, la
+            durabilité, la CO R&D et l’Accompagnement/Conseil.
           </p>
         </div>
         <div>

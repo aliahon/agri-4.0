@@ -11,7 +11,7 @@ export async function POST(req: Request) {
     const data = await resend.emails.send({
       // TODO: add your email address here
       from: "agri4.0 <onboarding@resend.dev>",
-      to: "monsefetta4@gmail.com",
+      to: "nohaila09el@gmail.com",
       subject: "Hello world",
       react: WelcomeEmail({ firstName }),
     });
