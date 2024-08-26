@@ -96,13 +96,13 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
 
   return (
     <div
-      className={`absolute left-0 w-full py-16 px-20 transition duration-300 ease-in-out transform bg-white h-[600px] md:px-14 z-90 top-14
+      className={`absolute left-0 w-full p-4 lg:py-16 lg:px-20 transition duration-300 ease-in-out transform bg-white h-[600px] md:px-14 z-90 top-14
       ${isSubNavOpen ? "translate-x-0" : "-translate-x-full"}
       `}
     >
-      <div className="flex flex-col items-center justify-center w-full h-full overflow-y-scroll scrollbar-hide md:flex-row md:justify-between md:items-start md:space-x-4 ">
+      <div className="flex flex-col items-center justify-center w-full h-full overflow-y-scroll scrollbar-hide lg:flex-row lg:justify-between lg:items-start lg:space-x-4 ">
         {/* Sidebar */}
-        <div className="flex flex-col w-1/3 h-full overflow-y-scroll scrollbar-hide px-8">
+        <div className="flex flex-row lg:flex-col w-full lg:w-1/3 h-fill lg:h-full space-x-2 overflow-x-scroll lg:overflow-y-scroll scrollbar-hide px-8">
           {navDetails?.map((item, i) => (
             <div
               key={i}
@@ -129,14 +129,14 @@ const NavSectionDetails = ({ selectedSection }: NavSectionDetailsProps) => {
                   </svg>
                 </span>
               </div>
-              <span className="font-normal text-xs text-gray-400">{item?.description}</span>
+              <span className="hidden lg:font-normal lg:text-xs lg:text-gray-400">{item?.description}</span>
             </div>
           ))}
         </div>
         {/* End Sidebar */}
 
         {/* Content */}
-        <div className="w-full h-full px-10 pt-4">
+        <div className="w-full overflow-y-scroll h-full px-10 pt-4">
           <button
             className="absolute top-0 px-1 py-1 text-sm font-semibold text-gray-700 transition duration-500 ease-in-out transform bg-white border border-gray-300 rounded-md left-15 hover:bg-gray-100 hover:scale-105 hover:shadow-xl md:hidden "
             onClick={() => {
